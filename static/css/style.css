@@ -1,0 +1,4449 @@
+
+/* SMART MALAYSIA TRAVEL RECOMMENDATION SYSTEM */
+/* DCS2114 Intelligent Systems */
+
+/* GENERAL STYLES */
+
+:root {
+    --primary: #087f72;
+    --primary-dark: #075e55;
+    --primary-light: #e6f5ef;
+    --background: #f5f8f7;
+    --white: #ffffff;
+    --text: #20332f;
+    --muted: #637773;
+    --border: #dce8e3;
+    --success: #16834d;
+    --danger: #d94c4c;
+    --shadow: 0 10px 30px rgba(20, 60, 49, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 70px 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #075e55, #0b9885);
+    color: white;
+    margin-top: -100px;
+}
+
+header h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    max-width: 900px;
+    margin: 0 auto 15px;
+    line-height: 1.25;
+}
+
+header p {
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #e6faf4;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: min(1400px, calc(100% - 48px));
+    max-width: 1400px;
+    margin: 35px auto 70px;
+    flex: 1;
+    min-width: 0;
+}
+
+.section {
+    width: 100%;
+    min-width: 0;
+    padding: 32px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.section h2,
+.section h3 {
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-size: 1.7rem;
+}
+
+.section h3 {
+    font-size: 1.35rem;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+.hidden,
+.section.hidden,
+.tab-content.hidden {
+    display: none !important;
+}
+
+/* LOGIN SECTION */
+
+#login-section {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#login-section .form-group {
+    text-align: left;
+    margin-top: 25px;
+}
+
+/* DASHBOARD */
+
+#dashboard-section {
+    width: 100%;
+    min-width: 0;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.dashboard-header h2 {
+    margin-bottom: 0;
+}
+
+/* NAVIGATION TABS */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tab-button {
+    padding: 12px 18px;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.tab-button:hover {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+.tab-button.active {
+    background: var(--primary);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    min-width: 0;
+    animation: fadeIn 0.25s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content.hidden {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TRAVEL PREFERENCES */
+
+#travel-preferences-form {
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 22px;
+    min-width: 0;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 650;
+    color: var(--text);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    background: white;
+    border: 1px solid #cbdcd5;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text);
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(8, 127, 114, 0.12);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 7px;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+/* ACTIVITY CHECKBOXES */
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: #f8fbf9;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 0.92rem;
+    cursor: pointer;
+}
+
+.checkbox-group label:hover,
+.checkbox-group label:has(input:checked) {
+    background: var(--primary-light);
+    border-color: var(--primary);
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--primary);
+}
+
+/* BUTTONS */
+
+button {
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary,
+#login-button,
+#recommend-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 46px;
+    padding: 12px 24px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 9px;
+}
+
+.btn-primary:hover,
+#login-button:hover,
+#recommend-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.btn-logout {
+    padding: 10px 18px;
+    background: white;
+    color: var(--danger);
+    border: 1px solid #e9bdbd;
+    border-radius: 9px;
+}
+
+.btn-logout:hover {
+    background: #fff1f1;
+}
+
+.btn-favourite,
+.btn-bookmark {
+    padding: 10px 15px;
+    background: #fff3cf;
+    color: #846000;
+    border: 1px solid #f0d98a;
+    border-radius: 8px;
+}
+
+.btn-favourite:hover,
+.btn-bookmark:hover {
+    background: #ffe7a2;
+}
+
+.btn-favourite.saved,
+.btn-bookmark.bookmarked {
+    background: #e0f4e9;
+    color: var(--success);
+    border-color: #91d4ab;
+}
+
+/* DESTINATION SEARCH AND FILTERS */
+
+#destinations-tab {
+    width: 100%;
+    min-width: 0;
+}
+
+.destination-filters {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        auto;
+    gap: 16px;
+    align-items: end;
+    width: 100%;
+    min-width: 0;
+    margin: 25px 0 22px;
+    padding: 22px;
+    background: #f1f8f5;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.destination-filters .form-group {
+    min-width: 0;
+    margin: 0;
+}
+
+.destination-filters label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+.destination-filters input,
+.destination-filters select {
+    width: 100%;
+    min-width: 0;
+    height: 46px;
+    padding: 10px 13px;
+    background: white;
+}
+
+#clear-filters-button {
+    height: 46px;
+    padding: 10px 18px;
+    margin: 0;
+    white-space: nowrap;
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 9px;
+}
+
+#clear-filters-button:hover {
+    background: var(--primary-light);
+    transform: none;
+}
+
+#destination-results-count {
+    display: block;
+    width: 100%;
+    margin: 18px 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+/* DESTINATION GRID */
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    width: 100%;
+    min-width: 0;
+    margin-top: 25px;
+    align-items: stretch;
+}
+
+#all-destinations-list,
+#recommendations-list,
+#favourites-list {
+    width: 100%;
+    min-width: 0;
+}
+
+/* SAFEGUARD IF GRID IS NESTED IN FILTER PANEL */
+
+.destination-filters > #all-destinations-list,
+.destination-filters > .resources-grid,
+.destination-filters > #destination-results-count {
+    grid-column: 1 / -1;
+}
+
+/* DESTINATION CARDS */
+
+.destination-card,
+.resource-card {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(20, 60, 49, 0.06);
+    transition: 0.2s ease;
+}
+
+.destination-card:hover,
+.resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(20, 60, 49, 0.12);
+}
+
+.destination-image {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #e4eeea;
+}
+
+.destination-content {
+    width: 100%;
+    min-width: 0;
+    padding: 22px;
+    overflow-wrap: break-word;
+}
+
+.destination-content h3,
+.destination-content h4 {
+    margin-bottom: 8px;
+    color: var(--text);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.destination-state {
+    margin-bottom: 10px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.destination-description {
+    margin-bottom: 15px;
+    color: var(--muted);
+    font-size: 0.93rem;
+    overflow-wrap: break-word;
+}
+
+.destination-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.match-score {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #e0f4e9;
+    color: #146c42;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.destination-price {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    font-weight: 750;
+}
+
+/* DESTINATION TAGS */
+
+.destination-tags,
+.resource-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+.tag {
+    display: inline-block;
+    max-width: 100%;
+    padding: 5px 10px;
+    background: #edf4f0;
+    color: #3b675b;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+/* AI RECOMMENDATION EXPLANATIONS */
+
+.recommendation-reasons {
+    margin-top: 16px;
+    padding: 15px;
+    background: #f2f8f5;
+    border-left: 3px solid var(--primary);
+    border-radius: 8px;
+    font-size: 0.88rem;
+}
+
+.recommendation-reasons strong {
+    color: var(--primary-dark);
+}
+
+.recommendation-reasons ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.recommendation-reasons li {
+    margin-bottom: 5px;
+}
+
+/* DESTINATION ACTIONS */
+
+.destination-actions,
+.resource-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.destination-actions button,
+.resource-actions button {
+    flex: 1;
+}
+
+/* RECOMMENDATION HISTORY */
+
+.history-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.history-item {
+    padding: 18px;
+    background: #fafcfb;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: 10px;
+}
+
+.history-item h4 {
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.history-item p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.history-item ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+
+.history-time {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+/* LOADING ANIMATION */
+
+.loading {
+    text-align: center;
+    padding: 45px 20px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.loading::after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 16px auto 0;
+    border: 3px solid #dce8e3;
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* EMPTY STATES */
+
+.empty-state {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--muted);
+    background: #f8fbf9;
+    border: 1px dashed #bfd6cc;
+    border-radius: 12px;
+}
+
+.empty-state p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* STATUS MESSAGES */
+
+#recommendation-status,
+#preferences-status {
+    margin-top: 15px;
+    font-size: 0.93rem;
+    color: var(--primary-dark);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    padding: 28px 20px;
+    background: #123a33;
+    color: #e4f2ed;
+    text-align: center;
+    font-size: 0.88rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+    .destination-filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+    header {
+        padding: 55px 18px;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    main {
+        width: calc(100% - 24px);
+        margin: 22px auto 45px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-logout {
+        width: 100%;
+    }
+
+    .tabs {
+        gap: 7px;
+    }
+
+    .tab-button {
+        padding: 10px 13px;
+        font-size: 0.85rem;
+    }
+
+    .destination-filters {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    #clear-filters-button {
+        width: 100%;
+    }
+
+    .resources-grid,
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-image {
+        height: 210px;
+    }
+
+    .destination-actions {
+        flex-direction: column;
+    }
+
+    .destination-actions button {
+        width: 100%;
+    }
+}
+
+/* DESTINATION HIGHLIGHTS */
+
+.destination-highlights {
+    margin-top: 18px;
+    padding: 16px;
+    background: #f1f8f5;
+    border-radius: 10px;
+    border: 1px solid #dce8e3;
+}
+
+.destination-highlights h4 {
+    margin-bottom: 10px;
+    color: #075e55;
+    font-size: 0.95rem;
+}
+
+.destination-highlights ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.destination-highlights li {
+    margin-bottom: 6px;
+    font-size: 0.88rem;
+    color: #45665d;
+}
+
+.destination-highlights li:last-child {
+    margin-bottom: 0;
+}
+
+.destination-duration {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    color: #637773;
+}
+
+/* DESTINATION CARD IMAGES */
+
+.destination-image {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.destination-card {
+    overflow: hidden;
+}
+
+/* DESTINATION IMAGE CONTAINER */
+
+.destination-image-container {
+    display: block;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #e8f0eb;
+}
+
+.destination-image-container .destination-image {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none;
+    object-fit: cover;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.destination-card {
+    overflow: hidden;
+}
+
+
+/* FIX DESTINATION PHOTO GALLERY */
+
+.destination-gallery {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #e8f0eb;
+    border-radius: 12px 12px 0 0;
+}
+
+.destination-gallery .gallery-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.destination-gallery .gallery-images img.destination-image {
+    display: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 220px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+}
+
+.destination-gallery .gallery-images img.destination-image.active {
+    display: block !important;
+}
+
+.destination-gallery .gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.destination-gallery .gallery-prev {
+    left: 10px;
+}
+
+.destination-gallery .gallery-next {
+    right: 10px;
+}
+
+.destination-gallery .gallery-counter {
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+    z-index: 10;
+
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 12px;
+}
+
+.destination-card {
+    overflow: hidden;
+}
+
+
+/* SECTION: FESTIVAL MODE */
+.dashboard-actions {display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.btn-festival,.btn-exit-festival,.btn-festival-back {border:1px solid #d5a6c8;border-radius:9px;padding:10px 16px;font-weight:700;background:#fff0fa;color:#8a3067}
+.btn-festival:hover,.btn-exit-festival:hover,.btn-festival-back:hover {background:#f9dbef}
+body.festival-mode {--primary:#99416f;--primary-dark:#763056;--primary-light:#fff0f8;--background:#fff8fb;--border:#ecd9e6;--shadow:0 10px 30px rgba(97,35,68,.09)}
+body.festival-mode header {background:linear-gradient(135deg,#6e295a,#b54f84)}
+body.festival-mode footer {background:#512446}
+body.festival-mode .tabs .tab-button.active {background:var(--primary)}
+body.festival-mode #normal-navigation {display:none!important}
+body.festival-mode .festival-navigation {display:flex!important}
+.festival-banner {padding:18px 22px;margin-bottom:22px;background:linear-gradient(105deg,#fff1df,#ffe5f0);border:1px solid #f0c9dc;border-radius:13px}
+.festival-banner h3 {color:#81375d;margin-bottom:5px}
+.festival-banner p {margin-bottom:7px}
+.festival-insight {font-size:.8rem;color:#7a536b;font-weight:650}
+.festival-toolbar {display:flex;gap:20px;align-items:end;justify-content:space-between;flex-wrap:wrap}
+.festival-toolbar h3 {margin-bottom:7px}
+.festival-selector {min-width:210px;margin:0}
+.festival-explanation {font-size:.88rem;color:var(--muted);margin-top:14px}
+#festival-status {margin-top:8px;color:var(--primary-dark)}
+.festival-deal-card {background:#fff;border:1px solid #ebd7e2;border-radius:14px;overflow:hidden;box-shadow:0 5px 16px rgba(50,20,40,.08);display:flex;flex-direction:column}
+.festival-deal-card .destination-gallery {height:190px;border-radius:0}
+.festival-deal-card .destination-gallery .gallery-images img.destination-image {max-height:190px}
+.festival-deal-card .deal-cover {width:100%;height:190px;object-fit:cover;background:#eee3ed}
+.festival-deal-card .deal-content {padding:18px;display:flex;flex-direction:column;gap:12px;flex:1}
+.festival-deal-card .deal-head {display:flex;justify-content:space-between;align-items:start;gap:9px;flex-wrap:wrap}
+.festival-deal-card h4 {font-size:1.12rem;color:#40243b}
+.discount-badge {display:inline-block;color:#146c42;background:#e0f4e9;font-size:.77rem;padding:5px 9px;border-radius:50px;font-weight:750;white-space:nowrap}
+.festival-price,.discount-price-line {display:flex;align-items:baseline;flex-wrap:wrap;gap:8px}
+.price-original {color:#8b858a;text-decoration:line-through;font-size:.88em;font-weight:500}
+.price-discounted {color:#16834d;font-weight:800;font-size:1.2em}
+.price-caption {color:#6c6270;font-size:.8rem}
+.festival-deal-card .btn-view-festival {background:#99416f;color:white;border:0;border-radius:9px;padding:11px 16px;margin-top:auto}
+.festival-deal-card .btn-view-festival:hover {background:#783258}
+.festival-back-bar {display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+.festival-back-bar.hidden {display:none!important}
+#festival-back-hint {font-size:.85rem;color:#7f6274}
+body.festival-mode .destination-card.festival-target {outline:3px solid #af5a8b;outline-offset:2px}
+.destination-price .discount-price-line {justify-content:flex-end}
+.destination-price .price-caption {display:block;text-align:right}
+@media (max-width:650px){.dashboard-actions{width:100%}.dashboard-actions .btn-logout{width:auto}.festival-toolbar{display:block}.festival-selector{margin-top:14px}.festival-deal-card .deal-cover{height:210px}}
+
+
+/* SECTION: PROFESSIONAL TRIP PLANNER / FESTIVAL MODE */
+.festival-trip-controls, .explore-trip-planner {
+    display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px;
+    align-items:end; padding:18px; margin:18px 0;
+    background:#f8faf9; border:1px solid var(--border); border-radius:14px;
+}
+.festival-trip-controls .form-group, .explore-trip-planner .form-group {margin:0;}
+.festival-affordable, .explore-affordable {display:flex;gap:9px;align-items:center;font-weight:600;grid-column:1/-1;}
+.festival-affordable input, .explore-affordable input {accent-color:var(--primary);width:18px;height:18px;}
+.pricing-context {font-size:.86rem;color:#687a74;}
+.festival-deal-card .budget-indicator {display:inline-block;margin-top:8px;font-size:.8rem;font-weight:600;}
+.festival-deal-card .budget-indicator.in-budget {color:#177447;}
+.festival-deal-card .budget-indicator.over-budget {color:#956733;}
+.destination-price .price-caption {display:block;font-size:.77rem;font-weight:500;color:#697c73;margin-top:4px;}
+@media(max-width:780px){
+    .festival-trip-controls,.explore-trip-planner {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:520px){
+    .festival-trip-controls,.explore-trip-planner {grid-template-columns:1fr;}
+}
+
+/* SECTION: FESTIVAL EXPLORE DESTINATIONS */
+.explore-festival-context {
+    margin: 18px 0 20px;
+    padding: 18px 20px;
+    border-radius: 12px;
+    border: 1px solid #e9cbdc;
+    background: linear-gradient(120deg,#fff4eb,#ffebf4);
+}
+.explore-festival-topline {display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;color:#78345d;}
+.explore-festival-label {background:#fff;color:#8b3362;font-size:.78rem;font-weight:700;padding:5px 10px;border-radius:30px;}
+.explore-festival-context p {margin:8px 0 12px;font-size:.92rem;color:#745b6b;}
+body:not(.festival-mode) #explore-festival-context {display:none!important;}
+body.festival-mode #destinations-tab .destination-card {border-color:#e8c6db;}
+body.festival-mode #destinations-tab .destination-price .price-discounted {font-size:1.18rem;}
+body.festival-mode #destinations-tab .discount-badge {background:#f9e4ef;color:#963c70;}
+
+
+/* Single source of truth: Travel Preferences */
+.preferences-main-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+    margin: 8px 0 20px;
+}
+.preferences-main-row .form-group { margin: 0; }
+.preferences-main-row .form-group small { line-height: 1.4; }
+.saved-trip-summary {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+.trip-summary-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #edf5f1;
+    border: 1px solid #d5e8df;
+    border-radius: 25px;
+    padding: 8px 12px;
+    color: #205b50;
+    font-size: .88rem;
+    font-weight: 650;
+}
+.edit-preferences-link { font-size: .85rem; font-weight: 650; color: var(--primary); text-decoration: underline; }
+body.festival-mode .trip-summary-chip { background: #fff0f6; border-color: #f0d6e1; color: #81335a; }
+.festival-filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 16px;
+}
+.festival-filter-controls .festival-sort { flex: 0 1 290px; }
+.festival-filter-controls .festival-affordable { margin: 0; }
+.explore-filter-controls { margin: 8px 0 16px; }
+.explore-filter-controls .explore-affordable { margin: 0; }
+@media (max-width: 740px) { .preferences-main-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .preferences-main-row { grid-template-columns: 1fr; } }
+
+/* SMART TRAVEL PREFERENCES — COST-AWARE OPTIONS */
+.smart-availability {
+    margin: 18px 0 24px; padding: 16px 18px; border: 1px solid var(--border);
+    border-radius: 13px; background: #f1f8f5;
+}
+.smart-availability-top {display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+.smart-availability-top strong {color:var(--primary-dark); font-size:.97rem;}
+.smart-availability-top p {margin:4px 0 0; font-size:.83rem; color:var(--muted);}
+.smart-match-counter {display:inline-block; padding:7px 12px; border-radius:100px; background:#d9efe5; color:#086a56; font-weight:700; font-size:.82rem;}
+.smart-selection-tip {font-size:.84rem; color:var(--muted); margin:10px 0 0 !important;}
+#activities-options label.smart-unavailable {opacity:.43; background:#f1f2f1; cursor:not-allowed;}
+#activities-options label.smart-unavailable input {cursor:not-allowed;}
+#category-select option:disabled {color:#9a9a9a; background:#eeeeee;}
+body.festival-mode .smart-availability {background:#fff5f8; border-color:#edd9e2;}
+body.festival-mode .smart-match-counter {background:#fbe5ed; color:#86375b;}
+
+/* SMART EXPLORE LOCATION FILTERS */
+#state-filter option:disabled {
+    color: #9ca8a5;
+    background-color: #f0f3f2;
+}
+#state-filter, #region-filter {
+    cursor: pointer;
+}
+
+/* TRAVEL PREFERENCES: ACTIVITIES ON THE LEFT, DETAILS ON THE RIGHT */
+.preferences-details-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 22px;
+    align-items: start;
+    margin: 18px 0 20px;
+}
+.preferences-details-layout > .form-group {
+    margin: 0;
+    min-width: 0;
+}
+.preferences-details-layout #activities-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+.preferences-side-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+.preferences-side-fields .form-group {
+    margin: 0;
+    min-width: 0;
+}
+.preferences-side-fields select {
+    width: 100%;
+}
+@media (max-width: 760px) {
+    .preferences-details-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+}
+@media (max-width: 420px) {
+    .preferences-details-layout #activities-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --------- TEAMMATE'S NORMAL MODE LAYOUT + WELCOME/SLIDESHOW --------- */
+body:not(.festival-mode) {
+    --primary:#000000;
+    --primary-dark:#3c94ff;
+    --primary-light:#e6e8f5;
+    --background:#b7ccde;
+    --text:#202133;
+    --muted:#3a5fb5;
+}
+body:not(.festival-mode) header {
+    background: linear-gradient(135deg,#302724,#220b98);
+    color:rgb(234,254,117);
+    padding:70px 25px;
+}
+body:not(.festival-mode) header p {color:#94ffdf;}
+body:not(.festival-mode) main {
+    width:min(1400px,calc(100% - 48px)); max-width:1400px;
+    margin:35px auto 70px;
+}
+/* Keep existing controls and grids responsive; don't restrict form to 850px */
+#travel-preferences-form {max-width:none;}
+body:not(.festival-mode) .section {border-radius:16px;}
+
+/* --------- ICONS ALONGSIDE NAVIGATION TEXT --------- */
+.tabs .tab-button {display:inline-flex;align-items:center;justify-content:center;gap:9px;}
+.tabs .tab-button .nav-icon {display:inline-flex;align-items:center;justify-content:center;flex:none;}
+.tabs .tab-button .nav-icon svg {
+ width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;
+ stroke-linecap:round;stroke-linejoin:round;
+}
+@media(max-width:650px) {
+ body:not(.festival-mode) main {width:calc(100% - 24px);}
+ .tabs .tab-button {gap:6px;}
+ .tabs .tab-button .nav-icon svg {width:16px;height:16px;}
+}
+
+.home-slideshow {
+    width: 100%;
+    height: clamp(200px, 35vw, 400px);
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.home-slideshow-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: home-photo-slide 20s infinite;
+}
+
+.home-slideshow-track img {
+    flex: 0 0 100%;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes home-photo-slide {
+    0%, 17%   { transform: translateX(0); }
+    20%, 37%  { transform: translateX(-100%); }
+    40%, 57%  { transform: translateX(-200%); }
+    60%, 77%  { transform: translateX(-300%); }
+    80%, 97%  { transform: translateX(-400%); }
+    100%      { transform: translateX(-500%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-slideshow-track {
+        animation: none;
+    }
+}
+/* Before login */
+.welcome-banner {
+    width: 100%;
+max-width: none;
+    height: auto;
+    margin: -10px auto 20px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 3px auto 5px;
+}
+
+.welcome-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-slideshow {
+    display: none;
+}
+
+/* After login */
+body:has(#dashboard-section:not(.hidden)) .welcome-banner {
+    display: none;
+}
+
+body:has(#dashboard-section:not(.hidden)) .home-slideshow {
+    display: block;
+}
+
+/* Show teammate's banner and slideshow only in Normal Mode */
+body.festival-mode .home-slideshow,
+body.festival-mode .welcome-banner {display:none !important;}
+body:not(.festival-mode):has(#dashboard-section:not(.hidden)) .home-slideshow {display:block;}
+body:not(.festival-mode):has(#dashboard-section:not(.hidden)) .welcome-banner {display:none;}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .home-slideshow {display:none;}
+/* Accommodate missing team photo files until supplied without blocking page content */
+.home-slideshow img {background:#e8f1ec;}
+
+
+/* =========================================
+   COMPACT WEBSITE HEADER
+   ========================================= */
+
+/* Slideshow sticks directly to the header */
+.home-slideshow {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* Reduce header height */
+header {
+    margin-top: 0 !important;
+    padding: 24px 20px !important;
+    text-align: center;
+}
+
+/* Keep title and beach icon on one line */
+header h1 {
+    font-size: clamp(18px, 2.2vw, 32px) !important;
+    max-width: none !important;
+    white-space: nowrap;
+    margin: 0 auto 6px !important;
+    line-height: 1.25;
+}
+
+/* Subtitle directly below the title */
+header p {
+    font-size: 0.9rem;
+    max-width: none;
+    margin: 0 auto !important;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 18px 10px !important;
+    }
+
+    header h1 {
+        font-size: clamp(12px, 2.8vw, 22px) !important;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* =========================================
+   FOOTER COLOURS FOR NORMAL & FESTIVAL MODE
+   ========================================= */
+
+/* NORMAL MODE - Dark Blue */
+body:not(.festival-mode) footer {
+    background-color: #0e2039 !important;
+    color: #FFFFFF !important;
+}
+
+/* FESTIVAL MODE - Dark Green */
+body.festival-mode footer {
+    background-color: #155041 !important;
+    color: #FFFFFF !important;
+}
+
+/* Footer text */
+footer p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* =======================================================
+   LANDMARK LOGIN DESIGN — NORMAL MODE ONLY
+   Matches the selected Kuala Lumpur sunset login demo.
+   Dashboard slideshow and festival styles stay unchanged.
+   ======================================================= */
+
+/* On the login page the entire container becomes a scenic hero. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container {
+    position: relative;
+    isolation: isolate;
+    display: grid !important;
+    grid-template-columns: minmax(0, 55fr) minmax(0, 45fr) !important;
+    grid-template-rows: auto minmax(520px, 1fr) auto;
+    gap: 0 !important;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    background: #123f79;
+}
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(90deg, rgba(4, 30, 76, .22) 0%, rgba(4, 30, 76, .07) 46%, rgba(4, 30, 76, 0) 100%), url("/static/images/login_landmarks.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Remove teammate's old welcome image and slideshow only during login. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .welcome-banner,
+body:not(.festival-mode):has(#login-section:not(.hidden)) .home-slideshow {
+    display: none !important;
+}
+
+/* Title at the top, not an additional navbar. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    margin: 0 !important;
+    padding: 25px 18px 8px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    background-image: none !important;
+    text-align: center;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header h1 {
+    max-width: none !important;
+    margin: 0 auto !important;
+    color: #fff !important;
+    font-size: clamp(20px, 2.55vw, 38px) !important;
+    font-weight: 800;
+    line-height: 1.25;
+    white-space: nowrap;
+    text-shadow: 0 3px 12px rgba(4, 22, 58, .4);
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header h1::after {
+    content: "";
+    display: block;
+    width: min(360px, 37vw);
+    height: 6px;
+    margin: 9px auto 0;
+    border-radius: 100%;
+    transform: rotate(-1deg);
+    background: linear-gradient(90deg, transparent, #ffd544 16%, #ffe66c 82%, transparent);
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header p {
+    display: none !important; /* Keep the sentence in the HTML, show only brand on login. */
+}
+
+/* Left editorial headline. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .login-intro {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 30px 20px 80px;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .login-intro-content {
+    width: 100%;
+    max-width: 640px;
+    color: #fff;
+    text-align: center;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .travel-plane {
+    color: #fff;
+    font-size: clamp(30px, 3.7vw, 54px);
+    line-height: 1;
+    margin-bottom: 2px;
+    text-shadow: 0 4px 15px rgba(4, 28, 64, .3);
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .login-intro-content h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: .99;
+    margin: 0;
+    gap: 0;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .discover-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 88px);
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0 4px 18px rgba(0, 15, 46, .43);
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .malaysia-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(64px, 6.4vw, 116px);
+    font-style: italic;
+    font-weight: 800;
+    color: #ffdb3f;
+    text-shadow: 0 5px 17px rgba(0, 15, 46, .34);
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .adventure-text {
+    display: inline-block;
+    padding: 10px 22px;
+    margin: 24px 0 0;
+    color: #092c5c;
+    background: rgba(255, 255, 255, .94);
+    border-radius: 12px;
+    box-shadow: 0 7px 20px rgba(8, 25, 57, .19);
+    font-size: clamp(15px, 1.25vw, 22px);
+    font-style: italic;
+    font-weight: 800;
+    transform: rotate(-1deg);
+}
+
+/* Centre login form on the right, allowing the background to show through. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > main {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 35px clamp(18px, 3vw, 56px) 65px !important;
+    background: transparent !important;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section {
+    position: relative;
+    width: 100%;
+    max-width: 595px;
+    margin: 0 auto !important;
+    padding: 44px clamp(24px, 3vw, 48px) 62px !important;
+    overflow: hidden;
+    text-align: center;
+    color: #102c55;
+    background: rgba(255, 255, 255, .82) !important;
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, .82) !important;
+    border-radius: 30px !important;
+    box-shadow: 0 18px 48px rgba(0, 20, 55, .22) !important;
+}
+
+/* Decorative little mountain/sun logo in the card. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .login-mark {
+    width: 115px;
+    height: 61px;
+    margin: 0 auto 10px;
+    display: block;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .login-mark svg { width: 100%; height: 100%; }
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section h2 {
+    margin: 0 0 16px !important;
+    font-size: clamp(26px, 2.6vw, 41px) !important;
+    font-weight: 800;
+    line-height: 1.17;
+    color: #092c60 !important;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section > p {
+    margin: 0 auto 25px !important;
+    max-width: 420px;
+    font-size: 16px !important;
+    line-height: 1.55;
+    color: #244367 !important;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section .form-group {
+    width: 100%;
+    margin: 0 !important;
+    text-align: left;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section label {
+    display: block;
+    margin-bottom: 9px !important;
+    color: #092a55 !important;
+    font-size: 15px;
+    font-weight: 750;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #user-id {
+    width: 100%;
+    min-height: 54px;
+    margin: 0 0 22px !important;
+    padding: 13px 16px;
+    border: 1px solid #b7cadd;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .92);
+    color: #102b50;
+    font-size: 16px;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #user-id:focus {
+    border-color: #1479c5;
+    box-shadow: 0 0 0 3px rgba(20, 121, 197, .18);
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-button {
+    display: flex;
+    width: 100%;
+    min-height: 56px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    border: 0;
+    border-radius: 14px;
+    background: linear-gradient(115deg, #05265b, #06529a) !important;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 800;
+    box-shadow: 0 9px 18px rgba(0, 40, 100, .19);
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 11px 23px rgba(0, 40, 100, .3);
+}
+
+/* Light blue silhouette at the bottom of the card. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 34px;
+    opacity: .64;
+    background: linear-gradient(165deg, transparent 15%, #a2d6f4 16%, #b9e4fa 45%, #79bdeb 46%, #9bd3f2 75%);
+    clip-path: polygon(0 60%, 12% 35%, 27% 57%, 42% 20%, 59% 62%, 73% 26%, 87% 52%, 100% 16%, 100% 100%, 0 100%);
+}
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 100%;
+    margin: 0 !important;
+    padding: 15px 20px !important;
+    background: #0e2039 !important;
+    color: white !important;
+    text-align: center;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > footer p {
+    margin: 0 !important;
+    color: white !important;
+}
+
+/* Tablet / mobile: stack the headline and card without breaking the form. */
+@media (max-width: 960px) {
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto 1fr auto;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 22px 12px 8px !important;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header h1 {
+        font-size: clamp(17px, 3.1vw, 27px) !important;
+        white-space: normal;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .login-intro {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 20px 12px 5px;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .travel-plane { font-size: 31px; }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .discover-text { font-size: 48px; }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .malaysia-text { font-size: 62px; }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .adventure-text { margin-top: 10px; font-size: 15px; }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > main {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 24px 15px 35px !important;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section {
+        max-width: 560px;
+        padding: 28px 24px 52px !important;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > footer {
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
+@media (max-width: 480px) {
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .discover-text { font-size: 37px; }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .malaysia-text { font-size: 47px; }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section h2 { font-size: 25px !important; }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) #login-section > p { font-size: 14px !important; }
+}
+
+
+/* ======================================================
+   FINAL LOGIN TITLE BANNER — SELECTED GLASS DEMO
+   Normal Mode, before login ONLY. No dashboard changes.
+   ====================================================== */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container {
+    grid-template-rows: auto minmax(480px, 1fr) auto;
+}
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+    width: min(1320px, calc(100% - 52px)) !important;
+    justify-self: center;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin: 23px auto 0 !important;
+    padding: 17px 25px 15px !important;
+    background: rgba(3, 34, 82, .75) !important;
+    background-image: none !important;
+    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(13px);
+    border: 2px solid rgba(224, 240, 255, .58) !important;
+    border-radius: 29px !important;
+    box-shadow: 0 15px 36px rgba(1, 23, 54, .24) !important;
+}
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff !important;
+    font-size: clamp(21px, 2.48vw, 39px) !important;
+    font-weight: 850;
+    line-height: 1.18;
+    white-space: nowrap;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .36);
+}
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header .hero-highlight {
+    color: #ffda54 !important;
+    -webkit-text-fill-color: #ffda54;
+}
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header h1::after {
+    width: min(600px, 60%);
+    height: 3px;
+    margin: 11px auto 8px;
+    background: linear-gradient(90deg, transparent, #d7edff 15%, #ffffff 50%, #d7edff 85%, transparent);
+    transform: none;
+}
+
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header p {
+    display: block !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    color: #f9fdff !important;
+    font-size: clamp(12px, 1vw, 16px) !important;
+    font-weight: 500;
+    line-height: 1.4;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+}
+
+/* Guard against the previous 30/70 login layout on tablets */
+@media (max-width: 960px) {
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container {
+        grid-template-rows: auto auto 1fr auto;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+        width: calc(100% - 30px) !important;
+        margin-top: 15px !important;
+        padding: 18px 15px !important;
+        border-radius: 20px !important;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header h1 {
+        font-size: clamp(18px, 3.2vw, 28px) !important;
+        white-space: normal !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+        width: calc(100% - 20px) !important;
+        margin-top: 10px !important;
+        padding: 15px 10px !important;
+    }
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header h1 {
+        font-size: 18px !important;
+    }
+}
+
+
+/* LOGIN PAGE: LOWER GLASS TITLE + REBALANCED SPACING */
+/* Only affects Normal Mode before login. */
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+    margin-top: 54px !important;
+    padding-top: 18px !important;
+    padding-bottom: 17px !important;
+}
+body:not(.festival-mode):has(#login-section:not(.hidden)) .container::before {
+    background-position: center center;
+}
+@media (max-width: 960px) {
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+        margin-top: 26px !important;
+    }
+}
+@media (max-width: 480px) {
+    body:not(.festival-mode):has(#login-section:not(.hidden)) .container > header {
+        margin-top: 18px !important;
+    }
+}
+
+/* ==========================================
+   SLIMMER WELCOME TRAVELLER LOGIN BOX
+   Normal Mode login page only
+   ========================================== */
+
+body:not(.festival-mode):has(#login-section:not(.hidden))
+#login-section {
+    width: 100%;
+    max-width: 520px;
+    padding: 30px 38px 44px !important;
+}
+
+/* Slightly smaller mountain icon */
+body:not(.festival-mode):has(#login-section:not(.hidden))
+.login-mark {
+    width: 105px;
+    height: 52px;
+    margin: 0 auto 8px;
+}
+
+/* Compact Welcome Traveller heading */
+body:not(.festival-mode):has(#login-section:not(.hidden))
+#login-section h2 {
+    font-size: clamp(26px, 2.4vw, 38px) !important;
+    margin-bottom: 12px !important;
+}
+
+/* Less space below description */
+body:not(.festival-mode):has(#login-section:not(.hidden))
+#login-section > p {
+    margin-bottom: 18px !important;
+}
+
+/* Less space between input and button */
+body:not(.festival-mode):has(#login-section:not(.hidden))
+#user-id {
+    margin-bottom: 16px !important;
+}
+
+@media (max-width: 600px) {
+    body:not(.festival-mode):has(#login-section:not(.hidden))
+    #login-section {
+        padding: 28px 22px 44px !important;
+    }
+}
+
+/* ==========================================
+   AIRPLANE WITH CURVED DASHED FLIGHT TRAIL
+   ========================================== */
+
+body:not(.festival-mode):has(#login-section:not(.hidden))
+.travel-plane {
+    position: relative;
+    display: block;
+    width: 110px;
+    height: 70px;
+    margin: 0 auto 5px;
+
+    font-size: 50px;
+    line-height: 1;
+    text-align: right;
+    color: white;
+
+    transform: rotate(-12deg);
+    overflow: visible;
+}
+
+/* Curved dashed trail behind airplane */
+body:not(.festival-mode):has(#login-section:not(.hidden))
+.travel-plane::before {
+    content: "";
+    position: absolute;
+
+    width: 105px;
+    height: 46px;
+
+    right: 45px;
+    top: 30px;
+
+    border-top: 3px dashed rgba(255, 255, 255, 0.95);
+    border-radius: 70% 60% 0 0;
+
+    transform: rotate(-25deg);
+    pointer-events: none;
+}
+
+
+/* === TEAMMATE FEATURE: RATINGS AND REVIEWS === */
+/* Rating and Review System */
+
+
+.review-modal {
+
+
+    position: fixed;
+
+
+    inset: 0;
+
+
+    background: rgba(0, 0, 0, 0.6);
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+    align-items: center;
+
+
+    z-index: 1000;
+
+
+    padding: 20px;
+
+
+}
+
+
+.review-modal.hidden {
+
+
+    display: none;
+
+
+}
+
+
+.review-modal-content {
+
+
+    background: white;
+
+
+    padding: 25px;
+
+
+    border-radius: 12px;
+
+
+    width: 100%;
+
+
+    max-width: 550px;
+
+
+    max-height: 85vh;
+
+
+    overflow-y: auto;
+
+
+    position: relative;
+
+
+}
+
+
+.close-review-btn {
+
+
+    position: absolute;
+
+
+    top: 10px;
+
+
+    right: 15px;
+
+
+    background: none;
+
+
+    border: none;
+
+
+    font-size: 28px;
+
+
+    cursor: pointer;
+
+
+}
+
+
+.review-item {
+
+
+    background: #f5f7fa;
+
+
+    padding: 12px;
+
+
+    margin: 10px 0;
+
+
+    border-radius: 8px;
+
+
+}
+
+
+.review-item p {
+
+
+    margin: 6px 0;
+
+
+}
+
+
+#review-form {
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    gap: 10px;
+
+
+}
+
+
+#review-form select,
+
+
+#review-form textarea {
+
+
+    padding: 10px;
+
+
+    border: 1px solid #ccc;
+
+
+    border-radius: 6px;
+
+
+    font: inherit;
+
+
+}
+
+
+#review-form textarea {
+
+
+    min-height: 90px;
+
+
+    resize: vertical;
+
+
+}
+
+
+.btn-review {
+
+
+    padding: 10px 15px;
+
+
+    background: #f4b942;
+
+
+    color: #222;
+
+
+    border: none;
+
+
+    border-radius: 8px;
+
+
+    cursor: pointer;
+
+
+}
+
+
+.btn-review:hover {
+
+
+    background: #e5a72d;
+
+
+}
+
+
+/* ==========================================
+
+
+   DESTINATION RATINGS & REVIEWS DESIGN
+
+
+   ========================================== */
+
+
+/* Main review section */
+
+
+#ratings-reviews-tab {
+
+
+    padding: 25px;
+
+
+    background: #f5f9f8;
+
+
+    border-radius: 16px;
+
+
+}
+
+
+#ratings-reviews-tab > h2 {
+
+
+    font-size: 28px;
+
+
+    font-weight: 750;
+
+
+    color: #173b35;
+
+
+    margin-bottom: 8px;
+
+
+}
+
+
+#ratings-reviews-tab > p {
+
+
+    color: #64748b;
+
+
+    font-size: 15px;
+
+
+    margin-bottom: 28px;
+
+
+    line-height: 1.6;
+
+
+}
+
+
+/* Destination review cards */
+
+
+#ratings-reviews-list {
+
+
+    display: grid;
+
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+    gap: 25px;
+
+
+}
+
+
+.ratings-review-card {
+
+
+    background: #ffffff;
+
+
+    padding: 28px;
+
+
+    border-radius: 18px;
+
+
+    border: 1px solid #e2ebe8;
+
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+
+    transition: transform 0.2s ease,
+
+
+                box-shadow 0.2s ease;
+
+
+}
+
+
+.ratings-review-card:hover {
+
+
+    transform: translateY(-3px);
+
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+
+
+}
+
+
+/* Destination name */
+
+
+.ratings-review-card > h3 {
+
+
+    font-size: 23px;
+
+
+    font-weight: 750;
+
+
+    color: #183e37;
+
+
+    margin-bottom: 8px;
+
+
+}
+
+
+/* State */
+
+
+.ratings-review-card > p:not(.ratings-review-average) {
+
+
+    color: #64748b;
+
+
+    font-size: 14px;
+
+
+    margin-bottom: 14px;
+
+
+}
+
+
+/* Average star rating */
+
+
+.ratings-review-average {
+
+
+    display: inline-block;
+
+
+    background: #fff8e6;
+
+
+    color: #b7791f;
+
+
+    border: 1px solid #f7e3a5;
+
+
+    border-radius: 12px;
+
+
+    padding: 11px 16px;
+
+
+    font-size: 17px;
+
+
+    font-weight: 700;
+
+
+    margin: 5px 0 24px;
+
+
+}
+
+
+/* Traveller Reviews heading */
+
+
+.ratings-review-card > h4 {
+
+
+    font-size: 18px;
+
+
+    color: #173b35;
+
+
+    font-weight: 700;
+
+
+    margin: 4px 0 18px;
+
+
+    padding-bottom: 12px;
+
+
+    border-bottom: 1px solid #e5ecea;
+
+
+}
+
+
+/* Individual traveller review */
+
+
+.ratings-review-card .review-item {
+
+
+    background: #f8faf9;
+
+
+    border: 1px solid #e5ecea;
+
+
+    border-radius: 14px;
+
+
+    padding: 20px;
+
+
+    margin-bottom: 14px;
+
+
+    transition: background 0.2s ease;
+
+
+}
+
+
+.ratings-review-card .review-item:hover {
+
+
+    background: #eff8f5;
+
+
+}
+
+
+/* Username */
+
+
+.ratings-review-card .review-item strong {
+
+
+    display: block;
+
+
+    font-size: 15px;
+
+
+    font-weight: 700;
+
+
+    color: #173b35;
+
+
+    margin-bottom: 9px;
+
+
+}
+
+
+/* Individual star ratings */
+
+
+.ratings-review-card .review-item p:first-of-type {
+
+
+    color: #e4a11b;
+
+
+    font-size: 20px;
+
+
+    letter-spacing: 3px;
+
+
+    margin: 0 0 10px;
+
+
+    line-height: 1.4;
+
+
+}
+
+
+/* Written review */
+
+
+.ratings-review-card .review-item p:not(:first-of-type) {
+
+
+    color: #475569;
+
+
+    font-size: 15px;
+
+
+    line-height: 1.7;
+
+
+    margin: 0;
+
+
+    overflow-wrap: anywhere;
+
+
+}
+
+
+/* Rating displayed on Explore Destination cards */
+
+
+.destination-card .average-rating {
+
+
+    background: #fff8e6;
+
+
+    color: #a86c0d;
+
+
+    border-radius: 9px;
+
+
+    padding: 10px 13px;
+
+
+    margin: 14px 0;
+
+
+    font-size: 14px;
+
+
+    font-weight: 650;
+
+
+    border: 1px solid #f5e6bc;
+
+
+}
+
+
+/* Mobile responsiveness */
+
+
+@media (max-width: 768px) {
+
+
+    #ratings-reviews-tab {
+
+
+        padding: 15px;
+
+
+    }
+
+
+    #ratings-reviews-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    #ratings-reviews-tab > h2 {
+
+
+        font-size: 23px;
+
+
+    }
+
+
+    .ratings-review-card {
+
+
+        padding: 18px;
+
+
+        border-radius: 14px;
+
+
+    }
+
+
+    .ratings-review-card > h3 {
+
+
+        font-size: 20px;
+
+
+    }
+
+
+    .ratings-review-card .review-item {
+
+
+        padding: 15px;
+
+
+    }
+
+
+    .ratings-review-average {
+
+
+        font-size: 15px;
+
+
+    }
+
+
+}
+
+
+/* ==========================================
+
+
+   RATINGS & REVIEWS SEARCH BAR
+
+
+   ========================================== */
+
+
+.reviews-search-container {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 12px;
+
+
+    background: #ffffff;
+
+
+    border: 1px solid #dbe7e3;
+
+
+    border-radius: 14px;
+
+
+    padding: 8px 16px;
+
+
+    margin: 20px 0 10px;
+
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+
+    transition: border-color 0.2s ease,
+
+
+                box-shadow 0.2s ease;
+
+
+}
+
+
+.reviews-search-container:focus-within {
+
+
+    border-color: #0b8f7a;
+
+
+    box-shadow: 0 0 0 3px rgba(11, 143, 122, 0.12);
+
+
+}
+
+
+.reviews-search-icon {
+
+
+    font-size: 19px;
+
+
+    flex-shrink: 0;
+
+
+}
+
+
+#reviews-search {
+
+
+    flex: 1;
+
+
+    min-width: 0;
+
+
+    width: 100%;
+
+
+    padding: 11px 0;
+
+
+    border: none;
+
+
+    outline: none;
+
+
+    background: transparent;
+
+
+    color: #173b35;
+
+
+    font-size: 15px;
+
+
+    font-family: inherit;
+
+
+    box-shadow: none;
+
+
+}
+
+
+#reviews-search::placeholder {
+
+
+    color: #94a3b8;
+
+
+}
+
+
+.reviews-clear-btn {
+
+
+    border: none;
+
+
+    background: #eef5f2;
+
+
+    color: #64748b;
+
+
+    width: 32px;
+
+
+    height: 32px;
+
+
+    border-radius: 50%;
+
+
+    font-size: 22px;
+
+
+    cursor: pointer;
+
+
+    flex-shrink: 0;
+
+
+}
+
+
+.reviews-clear-btn:hover {
+
+
+    background: #dcece6;
+
+
+    color: #0b8f7a;
+
+
+}
+
+
+.reviews-search-count {
+
+
+    color: #64748b;
+
+
+    font-size: 13px;
+
+
+    margin: 0 0 20px;
+
+
+}
+
+
+.reviews-search-empty {
+
+
+    text-align: center;
+
+
+    padding: 35px 20px;
+
+
+    color: #64748b;
+
+
+    background: white;
+
+
+    border-radius: 14px;
+
+
+    border: 1px dashed #dbe7e3;
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    .reviews-search-container {
+
+
+        padding: 6px 12px;
+
+
+        gap: 8px;
+
+
+    }
+
+
+    #reviews-search {
+
+
+        font-size: 14px;
+
+
+    }
+
+
+}
+
+
+    /* ===== Compact Ratings & Reviews Layout ===== */
+
+
+    /* Make the whole section narrower */
+
+
+    #ratings-reviews-tab {
+
+
+        max-width: 1400px;
+
+
+        margin: 0 auto;
+
+
+        width: 100%;
+
+
+    }
+
+
+    /* Destination review container */
+
+
+    #ratings-reviews-list {
+
+
+        width: 100%;
+
+
+    }
+
+
+    /* Each destination card */
+
+
+    .ratings-review-card {
+
+
+        padding: 20px;
+
+
+        margin-bottom: 0;
+
+
+        border-radius: 12px;
+
+
+    }
+
+
+    /* Reduce spacing between reviews */
+
+
+    .review-item {
+
+
+        padding: 12px 15px;
+
+
+        margin-bottom: 8px;
+
+
+        border-radius: 10px;
+
+
+    }
+
+
+    /* Username */
+
+
+    .review-item strong {
+
+
+        display: block;
+
+
+        margin-bottom: 4px;
+
+
+    }
+
+
+    /* Star ratings */
+
+
+    .review-item .review-stars {
+
+
+        margin: 3px 0;
+
+
+        line-height: 1.3;
+
+
+    }
+
+
+    /* Review comments */
+
+
+    .review-item p {
+
+
+        margin: 5px 0 0;
+
+
+        line-height: 1.4;
+
+
+    }
+
+
+    /* Reduce spacing around headings */
+
+
+    .ratings-review-card h3 {
+
+
+        margin-bottom: 5px;
+
+
+    }
+
+
+    /* Mobile screen */
+
+
+    @media (max-width: 768px) {
+
+
+        #ratings-reviews-tab {
+
+
+            max-width: 100%;
+
+
+        }
+
+
+        .ratings-review-card {
+
+
+            padding: 14px;
+
+
+        }
+
+
+        .review-item {
+
+
+            padding: 10px 12px;
+
+
+        }
+
+
+       
+}
+
+    /* Ranking number */
+    .rank-number {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+
+    /* Ranking movement arrow */
+    .rank-change {
+        display: block;
+        margin-top: 4px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
+    /* Green arrow - ranking increased */
+    .rank-change.rank-up {
+        color: #16a34a !important;
+    }
+
+
+    /* Red arrow - ranking decreased */
+    .rank-change.rank-down {
+        color: #dc2626 !important;
+    }
+
+
+    /* Grey dash - no change */
+    .rank-change.rank-same {
+        color: #94a3b8 !important;
+    }
+
+
+    .rank-change.rank-up {
+    color: #16a34a;
+    }
+
+
+    .rank-change.rank-down {
+        color: #dc2626;
+    }
+
+
+    .rank-change.rank-same {
+        color: #94a3b8;
+    }
+
+
+
+
+    /* Destination ranking header and search */
+
+/* Hide ratings panel when dashboard is hidden; keep it responsive. */
+#ratings-reviews-tab.hidden, #review-modal.hidden {display:none !important;}
+#ratings-reviews-tab {width:100%;min-width:0;}
+#review-list {max-height:190px;overflow-y:auto;margin:12px 0;}
+#review-list .review-item {margin-bottom:8px;}
+.average-rating {margin:12px 0;color:#bb850a;font-weight:650;}
+@media (max-width:700px) {#ratings-reviews-list{grid-template-columns:1fr;}}
+
+
+/* Minimal inline rating beside Match % */
+
+.destination-meta {
+    align-items: center;
+}
+
+.destination-meta-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-width: 0;
+}
+
+.destination-rating-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.destination-rating-inline .rating-star {
+    color: #E7A31C;
+    font-size: 1.05rem;
+}
+
+.destination-rating-inline .rating-value {
+    color: #253d38;
+    font-weight: 750;
+}
+
+.destination-rating-inline .rating-count,
+.destination-rating-inline .rating-empty {
+    color: #637773;
+    font-weight: 450;
+    font-size: 0.78rem;
+}
+
+/* Hide old yellow rating box */
+.destination-card .average-rating {
+    display: none !important;
+}
+
+@media (max-width: 650px) {
+    .destination-meta {
+        align-items: flex-start;
+    }
+
+    .destination-meta-left {
+        gap: 7px;
+    }
+}
+
+/* =========================================
+   COMPACT PROFESSIONAL RATINGS DASHBOARD
+   ========================================= */
+
+#ratings-reviews-tab {
+    max-width: 100%;
+}
+
+/* Search and filter toolbar */
+#ratings-reviews-tab .reviews-dashboard-toolbar {
+    display: grid;
+    grid-template-columns:
+        minmax(230px, 2.1fr)
+        repeat(3, minmax(145px, 1fr));
+    align-items: end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#ratings-reviews-tab .reviews-dashboard-toolbar
+.reviews-search-container {
+    margin: 0 !important;
+    min-width: 0;
+    width: 100%;
+    min-height: 46px;
+    height: 46px;
+}
+
+#ratings-reviews-tab .reviews-dashboard-toolbar
+.reviews-search-container input {
+    height: 100%;
+}
+
+#ratings-reviews-tab .reviews-toolbar-field {
+    min-width: 0;
+}
+
+#ratings-reviews-tab .reviews-toolbar-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #4d6662;
+}
+
+#ratings-reviews-tab .reviews-toolbar-field select {
+    width: 100%;
+    height: 46px;
+    min-width: 0;
+    padding: 9px 10px;
+    background: #ffffff;
+    border: 1px solid #dce8e3;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #23443d;
+}
+
+#ratings-reviews-tab .reviews-toolbar-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 0 4px;
+}
+
+#ratings-reviews-tab #reviews-clear-filters {
+    padding: 5px 8px;
+    border: none;
+    background: transparent;
+    color: #286e64;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+#ratings-reviews-tab #reviews-search-count {
+    margin-bottom: 15px;
+}
+
+/* Three compact destination cards per row */
+#ratings-reviews-list {
+    display: grid !important;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+    align-items: start !important;
+    gap: 16px !important;
+}
+
+#ratings-reviews-list .compact-rating-card {
+    min-width: 0;
+    margin: 0 !important;
+    padding: 17px !important;
+    border: 1px solid #dce8e3;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(20, 60, 49, 0.05);
+    display: flex !important;
+    flex-direction: column;
+    gap: 11px;
+}
+
+/* Destination title and rating */
+#ratings-reviews-list .compact-rating-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 8px;
+}
+
+#ratings-reviews-list .compact-rating-place {
+    flex: 1;
+    min-width: 0;
+}
+
+#ratings-reviews-list .compact-rating-place h3 {
+    font-size: 16px !important;
+    line-height: 1.3;
+    margin: 0 0 5px !important;
+    color: #183c34;
+    overflow-wrap: anywhere;
+}
+
+#ratings-reviews-list .compact-rating-place p {
+    margin: 0 !important;
+    font-size: 12px;
+    color: #667b76;
+}
+
+#ratings-reviews-list .compact-rating-score {
+    flex: none;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 105px;
+    column-gap: 3px;
+}
+
+#ratings-reviews-list .compact-rating-score strong {
+    color: #193d35;
+    font-size: 25px;
+    line-height: 1;
+}
+
+#ratings-reviews-list .compact-rating-score-star {
+    font-size: 16px;
+    color: #e6a221;
+}
+
+#ratings-reviews-list .compact-rating-score small {
+    flex: 0 0 100%;
+    text-align: right;
+    font-size: 11px;
+    color: #758780;
+}
+
+/* Activity and interest tags */
+#ratings-reviews-list .compact-rating-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#ratings-reviews-list .compact-rating-tags span {
+    font-size: 10px;
+    color: #326b5e;
+    background: #eef6f2;
+    border-radius: 20px;
+    padding: 3px 7px;
+}
+
+/* 5-star distribution */
+#ratings-reviews-list .compact-rating-distribution {
+    display: grid;
+    gap: 5px;
+    padding: 3px 0;
+}
+
+#ratings-reviews-list .rating-distribution-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#ratings-reviews-list .rating-distribution-label {
+    width: 26px;
+    flex: none;
+    font-size: 11px;
+    color: #846019;
+}
+
+#ratings-reviews-list .rating-distribution-track {
+    flex: 1;
+    min-width: 0;
+    height: 6px;
+    border-radius: 10px;
+    background: #e8eeeb;
+    overflow: hidden;
+}
+
+#ratings-reviews-list .rating-distribution-track > span {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: #e6a221;
+}
+
+#ratings-reviews-list .rating-distribution-count {
+    width: 18px;
+    text-align: right;
+    font-size: 11px;
+    color: #70827c;
+}
+
+/* Traveller reviews */
+#ratings-reviews-list .compact-review-heading {
+    border-top: 1px solid #e7eeea;
+    padding-top: 11px;
+    font-weight: 750;
+    font-size: 12px;
+    color: #25453f;
+}
+
+#ratings-reviews-list .compact-review-list {
+    display: grid;
+    gap: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#ratings-reviews-list .compact-review-item {
+    padding: 10px !important;
+    border: 1px solid #e7eeea;
+    border-radius: 9px;
+    background: #f8fbfa;
+    font-size: 12px;
+}
+
+#ratings-reviews-list .compact-review-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#ratings-reviews-list .compact-review-head strong {
+    color: #21433b;
+    font-size: 12px;
+}
+
+#ratings-reviews-list .compact-review-stars {
+    color: #d89a19;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+#ratings-reviews-list .compact-review-item p {
+    margin: 6px 0 0 !important;
+    color: #4e625e;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+#ratings-reviews-list .review-no-comment {
+    color: #899992 !important;
+    font-style: italic;
+}
+
+/* Expand all reviews button */
+#ratings-reviews-list .compact-toggle-reviews {
+    align-self: stretch;
+    width: 100%;
+    padding: 9px 12px;
+    border-radius: 9px;
+    background: #edf6f1;
+    color: #096e58;
+    border: 1px solid #d5e6dc;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+#ratings-reviews-list .compact-toggle-reviews:hover {
+    background: #dff1e8;
+}
+
+#ratings-reviews-list .reviews-dashboard-empty {
+    grid-column: 1 / -1;
+}
+
+/* Responsive layout */
+@media (max-width: 1150px) {
+    #ratings-reviews-tab .reviews-dashboard-toolbar {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    #ratings-reviews-tab .reviews-dashboard-toolbar
+    .reviews-search-container {
+        grid-column: 1 / -1;
+    }
+
+    #ratings-reviews-list {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 700px) {
+    #ratings-reviews-tab .reviews-dashboard-toolbar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #ratings-reviews-tab .reviews-dashboard-toolbar
+    .reviews-search-container {
+        grid-column: 1 / -1;
+    }
+
+    #ratings-reviews-list {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 440px) {
+    #ratings-reviews-tab .reviews-dashboard-toolbar {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   LOGIN INTRO VISIBILITY FIX
+   Show only on the login page
+   ========================================== */
+
+/* Hide the large welcome text after login */
+body:has(#dashboard-section:not(.hidden)) .login-intro {
+    display: none !important;
+}
+
+/* Show the large welcome text before login */
+body:not(.festival-mode):has(#login-section:not(.hidden))
+.login-intro {
+    display: flex !important;
+}
+
+/* =========================================
+   NORMAL MODE - SWAP PRICE AND MATCH/RATING
+   Festival Mode remains unchanged
+   ========================================= */
+
+body:not(.festival-mode) .destination-card .destination-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Price and estimated total on LEFT */
+body:not(.festival-mode) .destination-card .destination-price {
+    order: 1;
+    text-align: left;
+    margin-right: auto;
+}
+
+body:not(.festival-mode) .destination-card
+.destination-price .price-caption {
+    text-align: left;
+    display: block;
+}
+
+/* Match percentage and rating on RIGHT */
+body:not(.festival-mode) .destination-card .destination-meta-left {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: auto;
+    text-align: right;
+}
+
+/* Keep the rating compact */
+body:not(.festival-mode) .destination-card
+.destination-rating-inline {
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    body:not(.festival-mode) .destination-card .destination-meta {
+        align-items: flex-start;
+    }
+
+    body:not(.festival-mode) .destination-card
+    .destination-meta-left {
+        gap: 6px;
+    }
+}
+
+/* =========================================
+   NORMAL MODE: PRICE LEFT, MATCH + RATING RIGHT
+   ========================================= */
+
+body:not(.festival-mode) .destination-card .destination-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+/* LEFT: Price and estimated total */
+body:not(.festival-mode) .destination-card .destination-price {
+    order: 1;
+    margin-right: auto;
+    text-align: left;
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+body:not(.festival-mode) .destination-card .destination-price .price-caption {
+    display: block;
+    text-align: left;
+}
+
+/* RIGHT: Match percentage above traveller rating */
+body:not(.festival-mode) .destination-card .destination-meta-left {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 7px;
+    margin-left: auto;
+    text-align: right;
+    flex: 0 0 auto;
+}
+
+/* Keep percentage and rating on separate lines */
+body:not(.festival-mode) .destination-card .match-score {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+body:not(.festival-mode) .destination-card .destination-rating-inline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    white-space: nowrap;
+    font-size: 0.85rem;
+}
+
+/* Small-screen adjustment */
+@media (max-width: 480px) {
+    body:not(.festival-mode) .destination-card .destination-meta {
+        gap: 8px;
+    }
+
+    body:not(.festival-mode) .destination-card .destination-meta-left {
+        gap: 5px;
+    }
+}
+
+/* POSITION CHANGES ONLY — KEEP ORIGINAL DESIGN */
+
+.recommendation-summary-row,
+.explore-results-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Recommendations: existing status on left, chips on right */
+.recommendation-summary-row #recommendation-status {
+    margin: 0;
+    flex: 1 1 300px;
+}
+
+.recommendation-summary-row .saved-trip-summary {
+    margin: 0;
+    justify-content: flex-end;
+}
+
+/* Explore: existing result count on left, checkbox on right */
+.explore-results-row #destination-results-count {
+    width: auto;
+    margin: 0;
+    flex: 1 1 350px;
+}
+
+.explore-results-row .explore-filter-controls {
+    margin: 0;
+}
+
+.explore-results-row .explore-affordable {
+    margin: 0;
+}
+
+@media (max-width: 850px) {
+    .recommendation-summary-row .saved-trip-summary {
+        justify-content: flex-start;
+    }
+}
+
+/* ==========================================
+   RECOMMENDATIONS - ALIGN RESULT WITH EDIT LINK
+   ========================================== */
+
+.recommendation-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+/* Left: recommendation message aligned with bottom link */
+.recommendation-summary-row #recommendation-status {
+    flex: 1;
+    margin: 0 !important;
+    align-self: flex-end;
+}
+
+/* Right: budget, days, category and edit link stacked */
+.recommendation-summary-row #recommendation-trip-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 0 !important;
+    flex-shrink: 0;
+}
+
+/* Keep original badge design */
+.recommendation-summary-row .trip-summary-chip {
+    width: fit-content;
+    white-space: nowrap;
+}
+
+/* Edit link at bottom */
+.recommendation-summary-row .edit-preferences-link {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Smaller screens */
+@media (max-width: 850px) {
+    .recommendation-summary-row {
+        flex-wrap: wrap;
+    }
+}
+
+/* ==========================================
+   RECOMMENDATION PAGE - FINAL POSITION FIX
+   Keep original badges and design
+   ========================================== */
+
+/* Reference area for positioning the badges */
+#recommendations-tab {
+    position: relative;
+}
+
+/* Found message LEFT, Edit link RIGHT */
+#recommendations-tab .recommendation-summary-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin: 16px 0 20px;
+}
+
+#recommendations-tab #recommendation-status {
+    flex: 1;
+    min-width: 0;
+    margin: 0 !important;
+}
+
+/* Allow badges to be positioned separately
+   while keeping Edit Preferences in the bottom row */
+#recommendations-tab #recommendation-trip-summary {
+    display: contents;
+}
+
+/* Position the three badges at the top-right */
+#recommendations-tab #recommendation-trip-summary
+.trip-summary-chip {
+    position: absolute;
+    right: 0;
+    left: auto;
+    width: max-content;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Budget beside the page heading */
+#recommendations-tab #recommendation-trip-summary
+.trip-summary-chip:nth-child(1) {
+    top: 0;
+}
+
+/* Days below Budget */
+#recommendations-tab #recommendation-trip-summary
+.trip-summary-chip:nth-child(2) {
+    top: 50px;
+}
+
+/* Category below Days */
+#recommendations-tab #recommendation-trip-summary
+.trip-summary-chip:nth-child(3) {
+    top: 100px;
+}
+
+/* Edit link stays at bottom-right */
+#recommendations-tab #recommendation-trip-summary
+.edit-preferences-link {
+    margin-left: auto;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Small screens: avoid overlapping content */
+@media (max-width: 800px) {
+
+    #recommendations-tab .recommendation-summary-row {
+        flex-wrap: wrap;
+    }
+
+    #recommendations-tab #recommendation-trip-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #recommendations-tab #recommendation-trip-summary
+    .trip-summary-chip {
+        position: static;
+    }
+
+    #recommendations-tab #recommendation-trip-summary
+    .edit-preferences-link {
+        margin-left: 0;
+    }
+}
+
+/* ==========================================
+   FESTIVAL MODE - PRICE LEFT, RATING RIGHT
+   POSITION CHANGES ONLY
+   ========================================== */
+
+/* Keep price and rating on the same row */
+body.festival-mode .destination-card .destination-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+/* LEFT: Original price, discounted price and total */
+body.festival-mode .destination-card .destination-price {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    min-width: 0;
+    flex: 1 1 auto;
+    margin: 0;
+    text-align: left;
+}
+
+/* Keep the existing original and discounted prices */
+body.festival-mode .destination-card .discount-price-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Keep estimated total below the prices */
+body.festival-mode .destination-card .price-caption {
+    display: block;
+    text-align: left;
+}
+
+/* RIGHT: Discount badge and traveller rating */
+body.festival-mode .destination-card .destination-meta-left {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 7px;
+    width: auto;
+    margin: 0;
+    text-align: right;
+    flex: 0 0 auto;
+}
+
+/* Rating aligned to the right */
+body.festival-mode .destination-card
+.destination-rating-inline {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Mobile adjustment */
+@media (max-width: 480px) {
+    body.festival-mode .destination-card .destination-meta {
+        gap: 8px;
+    }
+}
+
+/* FESTIVAL MODE - SLIGHTLY BIGGER RATINGS */
+
+body.festival-mode .destination-card
+.destination-rating-inline {
+    font-size: 1rem !important;
+    gap: 6px;
+}
+
+body.festival-mode .destination-card
+.destination-rating-inline .rating-star {
+    font-size: 1.2rem !important;
+}
+
+body.festival-mode .destination-card
+.destination-rating-inline .rating-value {
+    font-size: 1rem !important;
+}
+
+body.festival-mode .destination-card
+.destination-rating-inline .rating-count {
+    font-size: 0.9rem !important;
+}
+
+
+/* ==========================================
+   SMART MALAYSIA TRAVEL
+   FONT SIZE AND PINK DISCOUNT IMPROVEMENTS
+   ========================================== */
+
+
+/* ==========================================
+   1. FESTIVAL DEALS CARDS
+   ========================================== */
+
+/* Slightly larger destination names */
+.festival-deal-card .deal-head h4 {
+    font-size: 1.08rem;
+    line-height: 1.4;
+}
+
+/* Price and discount badge on same row */
+.festival-deal-card .festival-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-top: 12px;
+}
+
+/* Original price */
+.festival-deal-card .price-original {
+    font-size: 0.9rem;
+}
+
+/* Discounted price */
+.festival-deal-card .price-discounted {
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+/* Bigger pink discount badge */
+.festival-deal-card .festival-price .discount-badge {
+    position: static !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #FCE1EF !important;
+    color: #A22665 !important;
+    border: 1px solid #F6C7DF;
+    border-radius: 999px;
+    padding: 9px 14px;
+    font-size: 0.95rem !important;
+    font-weight: 800;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+/* Larger estimated total and savings */
+.festival-deal-card .price-caption {
+    display: block;
+    font-size: 0.9rem !important;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* Larger budget status */
+.festival-deal-card .budget-indicator {
+    display: block;
+    font-size: 0.9rem !important;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
+
+/* ==========================================
+   2. FESTIVAL RECOMMENDATION CARDS
+   Pink discount percentage
+   ========================================== */
+
+body.festival-mode
+.destination-card .discount-badge {
+    background: #FCE1EF !important;
+    color: #A22665 !important;
+    border: 1px solid #F6C7DF;
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 0.9rem !important;
+    font-weight: 800;
+}
+
+/* Avoid squashed prices */
+body.festival-mode
+.destination-card .discount-price-line {
+    gap: 7px;
+}
+
+
+/* ==========================================
+   3. NORMAL MODE RECOMMENDATIONS
+   Green match badge to pink
+   ========================================== */
+
+body:not(.festival-mode)
+#recommendations-list .match-score {
+    background: #FCE1EF !important;
+    color: #A22665 !important;
+    border: 1px solid #F6C7DF;
+    padding: 8px 12px;
+    font-size: 0.95rem !important;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* Slightly bigger price in recommendations */
+#recommendations-list .destination-price {
+    font-size: 1.2rem;
+}
+
+#recommendations-list .price-caption {
+    font-size: 0.85rem;
+}
+
+
+/* ==========================================
+   4. NORMAL MODE EXPLORE DESTINATIONS
+   Slightly bigger text, same design
+   ========================================== */
+
+/* Price */
+body:not(.festival-mode)
+#all-destinations-list .destination-price {
+    font-size: 1.2rem !important;
+    font-weight: 750;
+}
+
+/* Estimated total text */
+body:not(.festival-mode)
+#all-destinations-list .price-caption {
+    font-size: 0.88rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Selected days text */
+body:not(.festival-mode)
+#all-destinations-list .destination-duration {
+    font-size: 0.93rem !important;
+    line-height: 1.6;
+}
+
+/* Rating and review display */
+body:not(.festival-mode)
+#all-destinations-list .destination-rating-inline {
+    font-size: 0.98rem !important;
+    gap: 5px;
+}
+
+body:not(.festival-mode)
+#all-destinations-list
+.destination-rating-inline .rating-star {
+    font-size: 1.15rem !important;
+}
+
+body:not(.festival-mode)
+#all-destinations-list
+.destination-rating-inline .rating-value {
+    font-size: 1rem !important;
+    font-weight: 750;
+}
+
+body:not(.festival-mode)
+#all-destinations-list
+.destination-rating-inline .rating-count {
+    font-size: 0.85rem !important;
+}
+
+
+/* ==========================================
+   RESPONSIVE FESTIVAL DEAL PRICING
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .festival-deal-card .festival-price {
+        gap: 6px 8px;
+    }
+
+    .festival-deal-card .festival-price
+    .discount-badge {
+        padding: 7px 10px;
+        font-size: 0.85rem !important;
+    }
+}
+
+
+/* FESTIVAL RECOMMENDATIONS - PRICE IN ONE ROW */
+
+body.festival-mode #recommendations-list
+.discount-price-line {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start;
+    flex-wrap: nowrap !important;
+    gap: 7px;
+    width: max-content;
+    max-width: none;
+}
+
+/* Original price */
+body.festival-mode #recommendations-list
+.price-original {
+    font-size: 0.85rem !important;
+    white-space: nowrap;
+}
+
+/* Discounted price */
+body.festival-mode #recommendations-list
+.price-discounted {
+    font-size: 1.15rem !important;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* Pink discount badge */
+body.festival-mode #recommendations-list
+.discount-price-line .discount-badge {
+    position: static !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #FCE1EF !important;
+    color: #A22665 !important;
+    border: 1px solid #F6C7DF;
+    border-radius: 999px;
+    padding: 8px 12px !important;
+    font-size: 0.85rem !important;
+    font-weight: 800;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin: 0 !important;
+}
+
+/* Estimated total below the price row */
+body.festival-mode #recommendations-list
+.destination-price .price-caption {
+    display: block;
+    text-align: left;
+    margin-top: 6px;
+}
+
+.history-destination-names {
+    margin-top: 6px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+/* ==========================================
+   CHRISTMAS FESTIVAL - GOLD / YELLOW THEME
+   ========================================== */
+
+body.festival-mode.christmas-theme {
+    --primary: #c28c23;
+    --primary-dark: #936517;
+    --primary-light: #fff1c4;
+    --background: #fffaf0;
+    --border: #e8d5a4;
+    --shadow: 0 8px 24px rgba(150, 105, 25, 0.10);
+}
+
+/* Active navigation tabs */
+body.festival-mode.christmas-theme
+.tabs .tab-button.active {
+    background: #e9b93f !important;
+    color: #4b330c !important;
+}
+
+/* Exit Festival Mode button */
+body.festival-mode.christmas-theme
+#exit-festival-button {
+    background: #e9b93f !important;
+    border-color: #d6a42b !important;
+    color: #4b330c !important;
+}
+
+/* Festival Deals heading box */
+body.festival-mode.christmas-theme
+.festival-banner {
+    background: linear-gradient(
+        110deg,
+        #fff9e8,
+        #ffefbc
+    ) !important;
+    border-color: #ead49b !important;
+}
+
+body.festival-mode.christmas-theme
+.festival-banner h3 {
+    color: #80591d !important;
+}
+
+/* Festival selection dropdown */
+body.festival-mode.christmas-theme
+#festival-select {
+    border-color: #d6a42b !important;
+    color: #80591d !important;
+}
+
+/* View Destination buttons */
+body.festival-mode.christmas-theme
+.festival-deal-card .btn-view-festival {
+    background: #e9b93f !important;
+    color: #4b330c !important;
+    border-color: #d6a42b !important;
+}
+
+/* Browse Festival Deals button */
+body.festival-mode.christmas-theme
+#explore-view-deals {
+    background: #e9b93f !important;
+    color: #4b330c !important;
+    border-color: #d6a42b !important;
+}
+
+/* Explore Festival banner */
+body.festival-mode.christmas-theme
+#explore-festival-context {
+    background: linear-gradient(
+        120deg,
+        #fff9eb,
+        #ffefc4
+    ) !important;
+    border-color: #ead49b !important;
+}
+
+body.festival-mode.christmas-theme
+.explore-festival-topline {
+    color: #80591d !important;
+}
+
+body.festival-mode.christmas-theme
+.explore-festival-label {
+    color: #946515 !important;
+    background: #fffdf5 !important;
+}
+
+/* Christmas should use same pink discount badge style */
+body.festival-mode.christmas-theme .discount-badge,
+body.festival-mode.christmas-theme .festival-deal-card .discount-badge,
+body.festival-mode.christmas-theme #destinations-tab .discount-badge {
+    background: #f7d7e6 !important;
+    color: #a13b6d !important;
+    border: 1px solid #e6b7cc !important;
+}
+/* Festival preference summary chips */
+body.festival-mode.christmas-theme
+.trip-summary-chip {
+    background: #fff5d9 !important;
+    border-color: #ebd49c !important;
+    color: #80591d !important;
+}
+
+/* Festival-specific buttons */
+body.festival-mode.christmas-theme
+.btn-festival-back,
+body.festival-mode.christmas-theme
+.btn-exit-festival {
+    background: #e9b93f !important;
+    color: #4b330c !important;
+    border-color: #d6a42b !important;
+}
+
+/* Button hover */
+body.festival-mode.christmas-theme
+.festival-deal-card .btn-view-festival:hover,
+body.festival-mode.christmas-theme
+#explore-view-deals:hover,
+body.festival-mode.christmas-theme
+#exit-festival-button:hover {
+    background: #d9a72e !important;
+}
+
+/* Keyboard accessibility */
+body.festival-mode.christmas-theme
+button:focus-visible,
+body.festival-mode.christmas-theme
+select:focus-visible {
+    outline: 2px solid #946515;
+    outline-offset: 2px;
+}
+/* =========================================================
+   FESTIVAL PRICE LAYOUT - ALL 4 FESTIVALS
+   Make original price + discounted price + % badge same row
+   ========================================================= */
+
+.festival-deal-card .festival-price-row,
+.destination-card.festival-card .festival-price-row,
+.festival-pricing-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.festival-deal-card .price-original,
+.destination-card.festival-card .price-original,
+.festival-pricing-row .price-original {
+    font-size: 1.05rem;
+    color: #8f8f8f;
+    text-decoration: line-through;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.festival-deal-card .price-discounted,
+.destination-card.festival-card .price-discounted,
+.festival-pricing-row .price-discounted {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0a8a5b;
+    line-height: 1;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.festival-deal-card .discount-badge,
+.destination-card.festival-card .discount-badge,
+.festival-pricing-row .discount-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #f7d7e6;
+    color: #a13b6d;
+    border: 1px solid #e6b7cc;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* save amount / estimated total */
+.festival-deal-card .festival-price-note,
+.destination-card.festival-card .festival-price-note,
+.festival-pricing-note {
+    font-size: 1rem;
+    color: #5f6b73;
+    margin-top: 4px;
+}
+
+/* keep within budget text neat */
+.festival-deal-card .budget-status,
+.destination-card.festival-card .budget-status {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0c7a4d;
+    margin-top: 10px;
+}
+
+/* smaller cards / mobile still keep in one clean row */
+@media (max-width: 768px) {
+    .festival-deal-card .festival-price-row,
+    .destination-card.festival-card .festival-price-row,
+    .festival-pricing-row {
+        gap: 8px;
+    }
+
+    .festival-deal-card .price-original,
+    .destination-card.festival-card .price-original,
+    .festival-pricing-row .price-original {
+        font-size: 0.95rem;
+    }
+
+    .festival-deal-card .price-discounted,
+    .destination-card.festival-card .price-discounted,
+    .festival-pricing-row .price-discounted {
+        font-size: 1.7rem;
+    }
+
+    .festival-deal-card .discount-badge,
+    .destination-card.festival-card .discount-badge,
+    .festival-pricing-row .discount-badge {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+}
+
+/* =========================================
+   FESTIVAL PRICE ALIGNMENT - ALL FESTIVALS
+   ========================================= */
+
+/* Festival Deals price row */
+body.festival-mode .festival-deal-card .festival-price {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100%;
+}
+
+/* Explore Destinations and Recommendations */
+body.festival-mode .discount-price-line {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    max-width: 100%;
+}
+
+/* Keep price items together */
+body.festival-mode .price-original,
+body.festival-mode .price-discounted,
+body.festival-mode .discount-badge {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+/* Compact discounted price */
+body.festival-mode .price-discounted {
+    color: #00875a !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+}
+
+/* Pink discount badge for ALL 4 festivals */
+body.festival-mode .discount-badge,
+body.festival-mode.christmas-theme .discount-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #fce5ef !important;
+    color: #b31b65 !important;
+    border: 1px solid #edc9d9 !important;
+    border-radius: 25px !important;
+
+    padding: 7px 12px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+}
+
+/* Let destination pricing use available space */
+body.festival-mode .destination-price {
+    min-width: 0;
+}
+
+/* Keep savings description below the price */
+body.festival-mode .price-caption {
+    display: block !important;
+    margin-top: 7px;
+}
+
+/* Avoid overflowing narrow screens */
+@media (max-width: 480px) {
+    body.festival-mode .discount-price-line,
+    body.festival-mode .festival-deal-card .festival-price {
+        flex-wrap: wrap !important;
+    }
+}
+
+/* Discounted prices ALWAYS green in all festival modes */
+body.festival-mode .festival-deal-card .price-discounted,
+body.festival-mode .destination-card .price-discounted,
+body.festival-mode.christmas-theme .price-discounted {
+    color: #00875a !important;
+}
+
+/* Discount percentage ALWAYS pink */
+body.festival-mode .discount-badge,
+body.festival-mode.christmas-theme .discount-badge {
+    background: #fce5ef !important;
+    color: #b31b65 !important;
+    border-color: #edc9d9 !important;
+}
+
+/* =========================================
+   GREEN PRICES FOR ALL FESTIVALS
+   ========================================= */
+
+/* Festival Deals */
+body.festival-mode .festival-deal-card .price-discounted,
+body.festival-mode.christmas-theme .festival-deal-card .price-discounted {
+    color: #00875a !important;
+}
+
+/* Explore Destinations and Recommendations */
+body.festival-mode .destination-card .price-discounted,
+body.festival-mode.christmas-theme #destinations-tab .price-discounted,
+body.festival-mode.christmas-theme #recommendations-tab .price-discounted {
+    color: #00875a !important;
+}
+
+/* Keep the percentage discount pink */
+body.festival-mode .discount-badge,
+body.festival-mode.christmas-theme .discount-badge {
+    background: #fce5ef !important;
+    color: #b31b65 !important;
+    border-color: #edc9d9 !important;
+}
+
+/* ==========================================
+   FESTIVAL EXPLORE: REVIEWS BESIDE SAVINGS
+   ========================================== */
+
+body.festival-mode #destinations-tab .destination-meta {
+    display: block !important;
+}
+
+body.festival-mode #destinations-tab .destination-meta-left {
+    display: none !important;
+}
+
+body.festival-mode #destinations-tab .destination-price {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+/* Savings left, rating right */
+body.festival-mode #destinations-tab .festival-price-details {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    gap: 8px 14px !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+/* Savings description */
+body.festival-mode #destinations-tab
+.festival-price-details .price-caption {
+    display: inline-block !important;
+    margin: 0 !important;
+    text-align: left !important;
+    white-space: nowrap;
+}
+
+/* Rating */
+body.festival-mode #destinations-tab
+.festival-price-details .destination-rating-inline {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+}
+
+/* Maintain price and discount alignment */
+body.festival-mode #destinations-tab .discount-price-line {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+}
+
+/* Price stays green, badge stays pink */
+body.festival-mode #destinations-tab .price-discounted {
+    color: #00875a !important;
+}
+
+body.festival-mode #destinations-tab .discount-badge {
+    background: #fce5ef !important;
+    color: #b31b65 !important;
+    border-color: #edc9d9 !important;
+}
+
+/* ==========================================
+   NORMAL MODE - GREEN MATCH SCORE
+   ========================================== */
+
+body:not(.festival-mode) .match-score {
+    background: #e0f5e9 !important;
+    color: #00875a !important;
+    border: 1px solid #b8dfc9 !important;
+    border-radius: 25px !important;
+    font-weight: 700 !important;
+}
+
+.rank-change {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    padding: 4px 8px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.rank-change svg {
+    flex-shrink: 0;
+}
+
+.rank-up {
+    color: #168453;
+    background: #e8f8ef;
+}
+
+.rank-down {
+    color: #dc3545;
+    background: #fdecee;
+}
+
+.rank-same {
+    color: #94a3b8;
+    background: transparent;
+    padding-left: 0;
+}

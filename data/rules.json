@@ -1,0 +1,14 @@
+{
+    "weights": {
+        "subject_match": 40,
+        "difficulty_match": 30,
+        "format_preference": 20,
+        "tag_match": 10
+    },
+    "difficulty_progression": {
+        "beginner": ["beginner", "intermediate"],
+        "intermediate": ["intermediate", "advanced"],
+        "advanced": ["advanced"]
+    },
+    "minimum_score_threshold": 30
+}

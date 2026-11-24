@@ -1,0 +1,265 @@
+/* HISTORY PAGE — layout beside heading; colours follow selected festival. */
+#history-tab {
+    --history-accent: #176d60;
+    --history-bg: #eff7f4;
+    --history-border: #d8e8df;
+}
+body.festival-mode #history-tab[data-history-theme="chinese_new_year"] {
+    --history-accent: #ae2635; --history-bg:#fff0f0; --history-border:#ecc3c7;
+}
+body.festival-mode #history-tab[data-history-theme="hari_raya"] {
+    --history-accent: #167348; --history-bg:#eaf7ef; --history-border:#b8dfc5;
+}
+body.festival-mode #history-tab[data-history-theme="deepavali"] {
+    --history-accent: #903573; --history-bg:#fbeef7; --history-border:#e9c2dd;
+}
+body.festival-mode #history-tab[data-history-theme="christmas"] {
+    --history-accent: #9b671c; --history-bg:#fff7e6; --history-border:#ebd6ac;
+}
+#history-tab .history-top-row {
+    display:flex; align-items:center; justify-content:space-between;
+    gap:22px; margin-bottom:20px;
+}
+#history-tab .history-heading { flex:0 1 30%; min-width:225px; }
+#history-tab .history-heading h3 { margin:0 0 8px; }
+#history-tab .history-heading p { margin:0; }
+#history-tab .history-date-filters {
+    display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) auto;
+    align-items:end; gap:12px; flex:1 1 70%; min-width:0;
+    margin:0; padding:16px; border:1px solid var(--history-border);
+    background:var(--history-bg); border-radius:14px;
+}
+#history-tab .history-filter-field { display:flex; flex-direction:column; gap:8px; min-width:0; }
+#history-tab .history-filter-field label {
+    padding-left:9px; font-size:16px; font-weight:700; color:var(--history-accent);
+}
+#history-tab .history-filter-field select,
+#history-tab .history-filter-field input[type="date"] {
+    box-sizing:border-box; width:100%; height:46px;
+    border:1px solid var(--history-border); background:#fff;
+    border-radius:9px; padding:8px 10px; color:#213c35;
+    font-size:14px; cursor:pointer; color-scheme:light;
+}
+#history-tab #clear-history-filters {
+    height:46px; padding:0 12px; background:#fff; border:1px solid var(--history-accent);
+    color:var(--history-accent); border-radius:9px; font-weight:700; cursor:pointer; white-space:nowrap;
+}
+#history-tab .history-festival-options {
+    display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px;
+    margin:10px 0 18px;
+}
+#history-tab .history-festival-options.hidden {display:none !important;}
+#history-tab .history-festival-card {
+    min-height:114px; padding:15px 10px; border-radius:14px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+    cursor:pointer; font-size:14px; font-weight:750;
+}
+#history-tab .history-festival-card small {font-size:12px; font-weight:500;}
+#history-tab .history-festival-card .history-festival-emoji {font-size:25px;}
+#history-tab [data-festival-theme="chinese_new_year"] {background:#fff0f0;color:#a82935;border:1px solid #edbfc4;}
+#history-tab [data-festival-theme="hari_raya"] {background:#eaf7ee;color:#187647;border:1px solid #b4ddc2;}
+#history-tab [data-festival-theme="deepavali"] {background:#fbeef7;color:#903574;border:1px solid #e6bfd8;}
+#history-tab [data-festival-theme="christmas"] {background:#fff6e6;color:#976218;border:1px solid #eed5a5;}
+#history-tab .history-festival-card.selected {outline:2px solid currentColor;outline-offset:1px;}
+#history-tab #history-results-count {margin:0 0 16px;font-size:14px;color:#5f7770;}
+@media(max-width:1100px) {
+    #history-tab .history-top-row {align-items:flex-start;flex-wrap:wrap;}
+    #history-tab .history-heading {flex:1 1 100%;}
+    #history-tab .history-date-filters {flex:1 1 100%;}
+}
+@media(max-width:650px) {
+    #history-tab .history-date-filters {grid-template-columns:repeat(2,minmax(0,1fr));}
+    #history-tab .history-festival-options {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+
+/* ==========================================
+   HISTORY HEADER AND FILTER LAYOUT FIX
+   ========================================== */
+
+#history-tab .history-top-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#history-tab .history-heading {
+    flex: 0 0 30%;
+    min-width: 0;
+}
+
+#history-tab .history-heading h3 {
+    margin: 0 0 12px;
+}
+
+#history-tab .history-heading p {
+    margin: 0;
+}
+
+/* Horizontal filter box */
+#history-tab .history-date-filters {
+    flex: 1 1 70%;
+    min-width: 0;
+
+    display: grid !important;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        auto !important;
+
+    align-items: end;
+    gap: 12px;
+
+    padding: 16px;
+    margin: 0;
+
+    background: #edf6f2;
+    border: 1px solid #d6e7dc;
+    border-radius: 15px;
+}
+
+/* Individual filter fields */
+#history-tab .history-filter-field {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px;
+    min-width: 0;
+}
+
+/* Larger labels, slightly shifted right */
+#history-tab .history-filter-field label {
+    display: block;
+    margin: 0;
+    padding-left: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d5b51;
+}
+
+/* Dropdown and calendar */
+#history-tab .history-filter-field select,
+#history-tab .history-filter-field input[type="date"] {
+    display: block;
+    width: 100% !important;
+    min-width: 0;
+    height: 45px;
+
+    padding: 9px 12px;
+    margin: 0;
+
+    font: inherit;
+    font-size: 14px;
+    color: #243e39;
+
+    background: #fff;
+    border: 1px solid #ccded5;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Clear Filters button */
+#history-tab #clear-history-filters {
+    width: auto !important;
+    min-width: 115px;
+    height: 45px;
+    padding: 0 14px;
+
+    background: #fff;
+    color: #326658;
+    border: 1px solid #b9d3c8;
+    border-radius: 24px;
+
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ==========================================
+   FESTIVAL MODE COLOURS
+   ========================================== */
+
+/* Chinese New Year */
+#history-tab[data-history-theme="chinese_new_year"]
+.history-date-filters {
+    background: #fff0f1;
+    border-color: #efbac0;
+}
+
+#history-tab[data-history-theme="chinese_new_year"]
+.history-filter-field label {
+    color: #b92e3a;
+}
+
+/* Hari Raya */
+#history-tab[data-history-theme="hari_raya"]
+.history-date-filters {
+    background: #ecf8f0;
+    border-color: #b6dfc4;
+}
+
+#history-tab[data-history-theme="hari_raya"]
+.history-filter-field label {
+    color: #168052;
+}
+
+/* Deepavali */
+#history-tab[data-history-theme="deepavali"]
+.history-date-filters {
+    background: #fbeff7;
+    border-color: #ebc5de;
+}
+
+#history-tab[data-history-theme="deepavali"]
+.history-filter-field label {
+    color: #913477;
+}
+
+/* Christmas */
+#history-tab[data-history-theme="christmas"]
+.history-date-filters {
+    background: #fff6e8;
+    border-color: #eed8ae;
+}
+
+#history-tab[data-history-theme="christmas"]
+.history-filter-field label {
+    color: #a2731d;
+}
+
+/* ==========================================
+   RESPONSIVE LAYOUT
+   ========================================== */
+
+@media (max-width: 1050px) {
+    #history-tab .history-top-row {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    #history-tab .history-heading {
+        flex: none;
+    }
+
+    #history-tab .history-date-filters {
+        flex: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #history-tab .history-date-filters {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 400px) {
+    #history-tab .history-date-filters {
+        grid-template-columns: 1fr !important;
+    }
+}

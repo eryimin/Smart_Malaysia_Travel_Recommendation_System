@@ -1,0 +1,3956 @@
+[
+  {
+    "preferences": {
+      "budget_rm": 5000,
+      "duration_days": 5,
+      "destination_category": "Nature",
+      "activities": [
+        "beach",
+        "nature",
+        "food",
+        "adventure",
+        "wildlife",
+        "island_hopping"
+      ],
+      "travel_style": "adventure",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST042",
+      "DEST022",
+      "DEST039",
+      "DEST041",
+      "DEST035",
+      "DEST046",
+      "DEST045",
+      "DEST017",
+      "DEST044",
+      "DEST050"
+    ],
+    "timestamp": "2026-11-11T01:14:25.416637",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 1
+  },
+  {
+    "preferences": {
+      "budget_rm": 788,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T01:16:57.115922",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 2
+  },
+  {
+    "preferences": {
+      "budget_rm": 300,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "food"
+      ],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST020",
+      "DEST021",
+      "DEST009",
+      "DEST012",
+      "DEST031"
+    ],
+    "timestamp": "2026-11-11T01:17:58.755717",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 3
+  },
+  {
+    "preferences": {
+      "budget_rm": 300,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "history",
+        "culture"
+      ],
+      "travel_style": "culture",
+      "companion": "family",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST031"
+    ],
+    "timestamp": "2026-11-11T01:30:28.509165",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 4
+  },
+  {
+    "preferences": {
+      "budget_rm": 300,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "history",
+        "culture"
+      ],
+      "travel_style": "culture",
+      "companion": "family",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST031"
+    ],
+    "timestamp": "2026-11-11T11:30:28.358913",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 5
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T11:32:12.636101",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 6
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T11:38:05.946933",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 7
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T14:51:20.422120",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 8
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T21:04:40.821047",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 9
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T21:20:54.871284",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 10
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T23:00:31.340113",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 11
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T23:03:14.106951",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 12
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-11T23:13:04.907880",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 13
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-12T00:13:16.076529",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 14
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 3,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history"
+      ],
+      "travel_style": "culture",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST018",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST047"
+    ],
+    "timestamp": "2026-11-12T10:23:07.526865",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 15
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 3,
+      "destination_category": "Beach",
+      "activities": [
+        "food",
+        "shopping",
+        "culture"
+      ],
+      "travel_style": "city",
+      "companion": "friends",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-12T10:25:58.775200",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 16
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "food",
+        "shopping",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST009",
+      "DEST004",
+      "DEST003"
+    ],
+    "timestamp": "2026-11-12T10:26:16.255604",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 17
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "food",
+        "shopping",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST009",
+      "DEST004",
+      "DEST003"
+    ],
+    "timestamp": "2026-11-12T10:35:37.448859",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 18
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "food",
+        "shopping",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST009",
+      "DEST004",
+      "DEST003"
+    ],
+    "timestamp": "2026-11-14T09:37:42.117545",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 19
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "food",
+        "shopping",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST009",
+      "DEST004",
+      "DEST003"
+    ],
+    "timestamp": "2026-11-14T10:54:50.336680",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 20
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 9,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "wildlife"
+      ],
+      "travel_style": "luxury",
+      "companion": "family",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST003",
+      "DEST029",
+      "DEST019",
+      "DEST020",
+      "DEST021",
+      "DEST009",
+      "DEST012",
+      "DEST031",
+      "DEST018",
+      "DEST004"
+    ],
+    "timestamp": "2026-11-14T10:59:02.371933",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 21
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 9,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "wildlife"
+      ],
+      "travel_style": "luxury",
+      "companion": "family",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST003",
+      "DEST029",
+      "DEST019",
+      "DEST020",
+      "DEST021",
+      "DEST009",
+      "DEST012",
+      "DEST031",
+      "DEST004",
+      "DEST011"
+    ],
+    "timestamp": "2026-11-14T11:00:24.226192",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 22
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 9,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "wildlife"
+      ],
+      "travel_style": "luxury",
+      "companion": "family",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST003",
+      "DEST029",
+      "DEST019",
+      "DEST020",
+      "DEST021",
+      "DEST009",
+      "DEST012",
+      "DEST031",
+      "DEST004",
+      "DEST011"
+    ],
+    "timestamp": "2026-11-14T11:02:53.413136",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 23
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-14T11:09:03.877047",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 24
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-14T11:09:20.495928",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 25
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-14T11:09:21.360857",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 26
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-14T11:09:21.567964",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 27
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST006",
+      "DEST005"
+    ],
+    "timestamp": "2026-11-14T11:16:26.483289",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 28
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST006",
+      "DEST048",
+      "DEST005"
+    ],
+    "timestamp": "2026-11-14T14:17:55.678318",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 29
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST006",
+      "DEST048",
+      "DEST005"
+    ],
+    "timestamp": "2026-11-14T14:19:45.624633",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 30
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST006",
+      "DEST048",
+      "DEST042",
+      "DEST005"
+    ],
+    "timestamp": "2026-11-14T14:36:34.283793",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 31
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 9,
+      "destination_category": "Beach",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST006",
+      "DEST048",
+      "DEST005"
+    ],
+    "timestamp": "2026-11-14T15:18:02.696706",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 32
+  },
+  {
+    "preferences": {
+      "budget_rm": 2009,
+      "duration_days": 9,
+      "destination_category": "Adventure",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "family",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST043",
+      "DEST044",
+      "DEST049"
+    ],
+    "timestamp": "2026-11-14T15:18:44.854476",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 33
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 9,
+      "destination_category": "Adventure",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "relaxation"
+      ],
+      "travel_style": "budget",
+      "companion": "couple",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-14T15:20:37.105757",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 34
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 5,
+      "destination_category": "Adventure",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "relaxation"
+      ],
+      "travel_style": "budget",
+      "companion": "couple",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST043"
+    ],
+    "timestamp": "2026-11-14T15:36:58.663488",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 35
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 5,
+      "destination_category": "Historical",
+      "activities": [
+        "beach",
+        "history",
+        "wildlife"
+      ],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST029",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST011",
+      "DEST012"
+    ],
+    "timestamp": "2026-11-14T15:38:04.412251",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 36
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 5,
+      "destination_category": "Historical",
+      "activities": [
+        "beach",
+        "history",
+        "wildlife"
+      ],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST029",
+      "DEST028",
+      "DEST034",
+      "DEST005",
+      "DEST025",
+      "DEST023",
+      "DEST032",
+      "DEST013",
+      "DEST011",
+      "DEST012"
+    ],
+    "timestamp": "2026-11-14T21:04:22.411305",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 37
+  },
+  {
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 5,
+      "destination_category": "Nature",
+      "activities": [],
+      "travel_style": "budget",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST028",
+      "DEST047",
+      "DEST048",
+      "DEST044",
+      "DEST042",
+      "DEST022",
+      "DEST039",
+      "DEST041",
+      "DEST035",
+      "DEST046"
+    ],
+    "timestamp": "2026-11-14T21:07:12.496644",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 38
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST003"
+    ],
+    "timestamp": "2026-11-14T21:10:31.860554",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 39
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T10:38:05.906258",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 40
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T10:54:56.788412",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 41
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T11:07:57.346601",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 42
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T11:21:32.147086",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 43
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T11:23:06.021433",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 44
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T11:23:52.444305",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 45
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T12:28:27.387688",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 46
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 8,
+      "destination_category": "Any",
+      "activities": [],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [],
+    "timestamp": "2026-11-15T13:55:14.674915",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 47
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T13:55:38.436832",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 48
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T16:11:40.398837",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 49
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T16:16:10.047618",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 50
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T16:29:02.875802",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 51
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T16:29:48.439859",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 52
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T16:49:18.652788",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 53
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T16:52:57.504583",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 54
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-15T21:35:29.979475",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 55
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-17T15:29:14.389436",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 56
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-17T15:30:02.870329",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 57
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-17T15:33:03.578944",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 58
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-17T15:54:35.549762",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 59
+  },
+  {
+    "preferences": {
+      "budget_rm": 1000,
+      "duration_days": 3,
+      "destination_category": "Any",
+      "activities": [
+        "nature",
+        "relaxation"
+      ],
+      "travel_style": "city",
+      "companion": "solo",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST003",
+      "DEST008"
+    ],
+    "timestamp": "2026-11-17T17:00:44.001873",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 60
+  },
+  {
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "nature",
+        "history",
+        "adventure",
+        "wildlife"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST037",
+      "DEST044",
+      "DEST033",
+      "DEST017",
+      "DEST049",
+      "DEST029",
+      "DEST039",
+      "DEST046",
+      "DEST003",
+      "DEST019"
+    ],
+    "timestamp": "2026-11-17T20:46:17.060917",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 61
+  },
+  {
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "nature",
+        "history",
+        "adventure",
+        "wildlife"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST037",
+      "DEST044",
+      "DEST033",
+      "DEST017",
+      "DEST049",
+      "DEST029",
+      "DEST039",
+      "DEST046",
+      "DEST003",
+      "DEST019"
+    ],
+    "timestamp": "2026-11-18T10:39:40.756160",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 62
+  },
+  {
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "nature",
+        "history",
+        "adventure",
+        "wildlife"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST037",
+      "DEST044",
+      "DEST033",
+      "DEST017",
+      "DEST049",
+      "DEST029",
+      "DEST039",
+      "DEST046",
+      "DEST003",
+      "DEST019"
+    ],
+    "timestamp": "2026-11-18T11:14:47.385348",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 63
+  },
+  {
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "nature",
+        "history",
+        "adventure",
+        "wildlife"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST037",
+      "DEST044",
+      "DEST033",
+      "DEST017",
+      "DEST049",
+      "DEST029",
+      "DEST039",
+      "DEST046",
+      "DEST003",
+      "DEST019"
+    ],
+    "timestamp": "2026-11-18T11:54:56.443159",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 64
+  },
+  {
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "nature",
+        "history",
+        "adventure",
+        "wildlife"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST037",
+      "DEST044",
+      "DEST033",
+      "DEST017",
+      "DEST049",
+      "DEST029",
+      "DEST039",
+      "DEST046",
+      "DEST003",
+      "DEST019"
+    ],
+    "timestamp": "2026-11-18T11:56:15.987443",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 65
+  },
+  {
+    "preferences": {
+      "budget_rm": 2600,
+      "duration_days": 5,
+      "destination_category": "Nature",
+      "activities": [
+        "beach",
+        "food",
+        "culture"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST042",
+      "DEST047",
+      "DEST048",
+      "DEST022",
+      "DEST041",
+      "DEST035",
+      "DEST045",
+      "DEST017",
+      "DEST030",
+      "DEST044"
+    ],
+    "timestamp": "2026-11-18T12:01:59.331033",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 66
+  },
+  {
+    "preferences": {
+      "budget_rm": 2600,
+      "duration_days": 5,
+      "destination_category": "Nature",
+      "activities": [
+        "beach",
+        "food"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Northern"
+    },
+    "destination_ids": [
+      "DEST022",
+      "DEST030",
+      "DEST028",
+      "DEST027",
+      "DEST024",
+      "DEST029"
+    ],
+    "timestamp": "2026-11-18T13:08:08.508418",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 67
+  },
+  {
+    "preferences": {
+      "budget_rm": 2600,
+      "duration_days": 5,
+      "destination_category": "Nature",
+      "activities": [
+        "beach",
+        "food"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Northern"
+    },
+    "destination_ids": [
+      "DEST022",
+      "DEST030",
+      "DEST028",
+      "DEST027",
+      "DEST024",
+      "DEST029"
+    ],
+    "timestamp": "2026-11-18T13:16:57.541314",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 68
+  },
+  {
+    "preferences": {
+      "budget_rm": 2600,
+      "duration_days": 5,
+      "destination_category": "Nature",
+      "activities": [
+        "beach",
+        "food"
+      ],
+      "travel_style": "adventure",
+      "companion": "solo",
+      "region": "Northern"
+    },
+    "destination_ids": [
+      "DEST022",
+      "DEST030",
+      "DEST028",
+      "DEST027",
+      "DEST024",
+      "DEST029"
+    ],
+    "timestamp": "2026-11-18T13:19:38.530735",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 69
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:22:11.052916",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 70
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:22:15.228046",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 71
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:22:27.621955",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 72
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:26:25.036181",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 73
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:27:30.823750",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 74
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:28:17.828845",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 75
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:28:53.444887",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 76
+  },
+  {
+    "preferences": {
+      "budget_rm": 2650,
+      "duration_days": 5,
+      "destination_category": "Any",
+      "activities": [
+        "shopping",
+        "culture",
+        "relaxation"
+      ],
+      "travel_style": "adventure",
+      "companion": "couple",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST011",
+      "DEST017",
+      "DEST015",
+      "DEST016",
+      "DEST012",
+      "DEST018",
+      "DEST019",
+      "DEST010",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T13:30:05.009789",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 77
+  },
+  {
+    "preferences": {
+      "budget_rm": 1460,
+      "duration_days": 6,
+      "destination_category": "Historical",
+      "activities": [
+        "history"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST012",
+      "DEST018",
+      "DEST013"
+    ],
+    "timestamp": "2026-11-18T13:55:25.734848",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 78
+  },
+  {
+    "preferences": {
+      "budget_rm": 1460,
+      "duration_days": 6,
+      "destination_category": "Historical",
+      "activities": [
+        "history"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST012",
+      "DEST018",
+      "DEST013"
+    ],
+    "timestamp": "2026-11-18T14:05:05.294657",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 79
+  },
+  {
+    "preferences": {
+      "budget_rm": 1460,
+      "duration_days": 6,
+      "destination_category": "Historical",
+      "activities": [
+        "history"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST012",
+      "DEST018",
+      "DEST013"
+    ],
+    "timestamp": "2026-11-18T14:08:22.449947",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 80
+  },
+  {
+    "preferences": {
+      "budget_rm": 1460,
+      "duration_days": 6,
+      "destination_category": "Historical",
+      "activities": [
+        "history"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST012",
+      "DEST018",
+      "DEST013"
+    ],
+    "timestamp": "2026-11-18T14:09:00.091839",
+    "mode": "legacy",
+    "history_number": 81
+  },
+  {
+    "preferences": {
+      "budget_rm": 1460,
+      "duration_days": 6,
+      "destination_category": "Historical",
+      "activities": [
+        "history"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST012",
+      "DEST018",
+      "DEST013"
+    ],
+    "timestamp": "2026-11-18T14:10:45.594456",
+    "mode": "legacy",
+    "history_number": 82
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 6,
+      "destination_category": "Any",
+      "activities": [
+        "beach",
+        "food",
+        "shopping",
+        "sightseeing",
+        "history",
+        "culture",
+        "adventure"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST013",
+      "DEST012",
+      "DEST018",
+      "DEST015",
+      "DEST010",
+      "DEST017",
+      "DEST019",
+      "DEST016",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T14:12:04.079887",
+    "mode": "legacy",
+    "history_number": 83
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 6,
+      "destination_category": "Any",
+      "activities": [
+        "beach",
+        "food",
+        "shopping",
+        "sightseeing",
+        "history",
+        "culture",
+        "adventure"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST013",
+      "DEST012",
+      "DEST018",
+      "DEST015",
+      "DEST010",
+      "DEST017",
+      "DEST019",
+      "DEST016",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T14:17:36.283689",
+    "mode": "legacy",
+    "history_number": 84
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 6,
+      "destination_category": "Any",
+      "activities": [
+        "beach",
+        "food",
+        "shopping",
+        "sightseeing",
+        "history",
+        "culture",
+        "adventure"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST013",
+      "DEST012",
+      "DEST018",
+      "DEST015",
+      "DEST010",
+      "DEST017",
+      "DEST019",
+      "DEST016",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T14:23:06.872312",
+    "mode": "legacy",
+    "history_number": 85
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 6,
+      "destination_category": "Any",
+      "activities": [
+        "beach",
+        "food",
+        "shopping",
+        "sightseeing",
+        "history",
+        "culture",
+        "adventure"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST011",
+      "DEST013",
+      "DEST012",
+      "DEST018",
+      "DEST015",
+      "DEST010",
+      "DEST017",
+      "DEST019",
+      "DEST016",
+      "DEST014"
+    ],
+    "timestamp": "2026-11-18T21:32:41.691339",
+    "mode": "legacy",
+    "history_number": 86
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:12:38.123917",
+    "mode": "legacy",
+    "history_number": 87
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:16:41.202201",
+    "mode": "legacy",
+    "history_number": 88
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:30:28.564589",
+    "mode": "legacy",
+    "history_number": 89
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:34:18.270391",
+    "mode": "legacy",
+    "history_number": 90
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:35:41.815864",
+    "mode": "legacy",
+    "history_number": 91
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:44:40.359500",
+    "mode": "legacy",
+    "history_number": 92
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:46:05.652517",
+    "mode": "legacy",
+    "history_number": 93
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:58:27.733173",
+    "mode": "legacy",
+    "history_number": 94
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T22:59:51.448535",
+    "mode": "legacy",
+    "history_number": 95
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T23:02:00.915352",
+    "mode": "legacy",
+    "history_number": 96
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T23:13:41.856723",
+    "mode": "legacy",
+    "history_number": 97
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T23:16:25.379311",
+    "mode": "legacy",
+    "history_number": 98
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T23:17:46.347276",
+    "mode": "legacy",
+    "history_number": 99
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-18T23:26:04.354330",
+    "mode": "legacy",
+    "history_number": 100
+  },
+  {
+    "timestamp": "2026-11-19T00:36:17.634528+08:00",
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 101
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-19T01:47:36.678313",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 102
+  },
+  {
+    "timestamp": "2026-11-19T01:47:36.698717+08:00",
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "mode": "festival",
+    "festival_id": "deepavali",
+    "history_number": 103
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "timestamp": "2026-11-19T01:47:47.574357",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 104
+  },
+  {
+    "timestamp": "2026-11-19T01:47:47.592378+08:00",
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "Any",
+      "activities": [
+        "hiking",
+        "sightseeing",
+        "history",
+        "culture",
+        "island_hopping"
+      ],
+      "travel_style": "budget",
+      "companion": "family",
+      "region": "Southern"
+    },
+    "destination_ids": [
+      "DEST012",
+      "DEST011",
+      "DEST018",
+      "DEST013",
+      "DEST019",
+      "DEST010",
+      "DEST017",
+      "DEST015",
+      "DEST014",
+      "DEST016"
+    ],
+    "mode": "festival",
+    "festival_id": "deepavali",
+    "history_number": 105
+  },
+  {
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "hiking",
+        "wildlife",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "friends",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST008",
+      "DEST003"
+    ],
+    "timestamp": "2026-11-19T01:48:51.277006",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 106
+  },
+  {
+    "timestamp": "2026-11-19T01:48:51.306776+08:00",
+    "preferences": {
+      "budget_rm": 1500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "hiking",
+        "wildlife",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "friends",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST004",
+      "DEST009",
+      "DEST008",
+      "DEST003"
+    ],
+    "mode": "festival",
+    "festival_id": "chinese_new_year",
+    "history_number": 107
+  },
+  {
+    "preferences": {
+      "budget_rm": 8000,
+      "duration_days": 14,
+      "destination_category": "Nature",
+      "activities": [
+        "photography",
+        "wildlife",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "solo",
+      "region": "Northern"
+    },
+    "destination_ids": [
+      "DEST027",
+      "DEST029",
+      "DEST024",
+      "DEST030",
+      "DEST022",
+      "DEST028"
+    ],
+    "timestamp": "2026-11-19T01:51:30.745950",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 108
+  },
+  {
+    "timestamp": "2026-11-19T01:51:30.773276+08:00",
+    "preferences": {
+      "budget_rm": 8000,
+      "duration_days": 14,
+      "destination_category": "Nature",
+      "activities": [
+        "photography",
+        "wildlife",
+        "relaxation"
+      ],
+      "travel_style": "relaxation",
+      "companion": "solo",
+      "region": "Northern"
+    },
+    "destination_ids": [
+      "DEST027",
+      "DEST029",
+      "DEST024",
+      "DEST030",
+      "DEST022",
+      "DEST028"
+    ],
+    "mode": "festival",
+    "festival_id": "hari_raya",
+    "history_number": 109
+  },
+  {
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "nature"
+      ],
+      "travel_style": "nature",
+      "companion": "couple",
+      "region": "East Coast"
+    },
+    "destination_ids": [
+      "DEST033",
+      "DEST038",
+      "DEST037",
+      "DEST041",
+      "DEST039",
+      "DEST035"
+    ],
+    "timestamp": "2026-11-19T01:52:29.019490",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 110
+  },
+  {
+    "timestamp": "2026-11-19T01:52:29.044343+08:00",
+    "preferences": {
+      "budget_rm": 500,
+      "duration_days": 2,
+      "destination_category": "Nature",
+      "activities": [
+        "nature"
+      ],
+      "travel_style": "nature",
+      "companion": "couple",
+      "region": "East Coast"
+    },
+    "destination_ids": [
+      "DEST033",
+      "DEST038",
+      "DEST037",
+      "DEST041",
+      "DEST039",
+      "DEST035"
+    ],
+    "mode": "festival",
+    "festival_id": "christmas",
+    "history_number": 111
+  },
+  {
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 6,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history",
+        "culture"
+      ],
+      "travel_style": "family",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST025",
+      "DEST047",
+      "DEST011",
+      "DEST018",
+      "DEST032",
+      "DEST023",
+      "DEST034",
+      "DEST029",
+      "DEST012"
+    ],
+    "timestamp": "2026-11-19T01:54:28.134369",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 112
+  },
+  {
+    "timestamp": "2026-11-19T01:54:28.160322+08:00",
+    "preferences": {
+      "budget_rm": 2000,
+      "duration_days": 6,
+      "destination_category": "Historical",
+      "activities": [
+        "food",
+        "history",
+        "culture"
+      ],
+      "travel_style": "family",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST013",
+      "DEST025",
+      "DEST047",
+      "DEST011",
+      "DEST018",
+      "DEST032",
+      "DEST023",
+      "DEST034",
+      "DEST029",
+      "DEST012"
+    ],
+    "mode": "festival",
+    "festival_id": "deepavali",
+    "history_number": 113
+  },
+  {
+    "preferences": {
+      "budget_rm": 680,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "food",
+        "culture",
+        "photography"
+      ],
+      "travel_style": "budget",
+      "companion": "couple",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST001",
+      "DEST004",
+      "DEST002"
+    ],
+    "timestamp": "2026-11-19T02:13:52.447422",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 114
+  },
+  {
+    "timestamp": "2026-11-19T02:13:52.478529+08:00",
+    "preferences": {
+      "budget_rm": 680,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "food",
+        "culture",
+        "photography"
+      ],
+      "travel_style": "budget",
+      "companion": "couple",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST001",
+      "DEST004",
+      "DEST002"
+    ],
+    "mode": "festival",
+    "festival_id": "christmas",
+    "history_number": 115
+  },
+  {
+    "preferences": {
+      "budget_rm": 680,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "food",
+        "culture",
+        "photography"
+      ],
+      "travel_style": "budget",
+      "companion": "couple",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST001",
+      "DEST004",
+      "DEST002"
+    ],
+    "timestamp": "2026-11-19T02:25:08.627734",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 116
+  },
+  {
+    "timestamp": "2026-11-19T02:25:08.654741+08:00",
+    "preferences": {
+      "budget_rm": 680,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "food",
+        "culture",
+        "photography"
+      ],
+      "travel_style": "budget",
+      "companion": "couple",
+      "region": "Central"
+    },
+    "destination_ids": [
+      "DEST007",
+      "DEST001",
+      "DEST004",
+      "DEST002"
+    ],
+    "mode": "festival",
+    "festival_id": "chinese_new_year",
+    "history_number": 117
+  },
+  {
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "timestamp": "2026-11-19T03:01:22.716912",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 118
+  },
+  {
+    "timestamp": "2026-11-19T03:01:22.742803+08:00",
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 119
+  },
+  {
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST025"
+    ],
+    "timestamp": "2026-11-19T03:02:18.183233",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 120
+  },
+  {
+    "timestamp": "2026-11-19T03:02:18.205305+08:00",
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST025"
+    ],
+    "mode": "festival",
+    "festival_id": "deepavali",
+    "history_number": 121
+  },
+  {
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "timestamp": "2026-11-19T03:02:35.177646",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 122
+  },
+  {
+    "timestamp": "2026-11-19T03:02:35.208424+08:00",
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 123
+  },
+  {
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST025"
+    ],
+    "timestamp": "2026-11-19T03:02:52.063447",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 124
+  },
+  {
+    "timestamp": "2026-11-19T03:02:52.092231+08:00",
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST025"
+    ],
+    "mode": "festival",
+    "festival_id": "deepavali",
+    "history_number": 125
+  },
+  {
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "timestamp": "2026-11-19T03:03:43.212526",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 126
+  },
+  {
+    "timestamp": "2026-11-19T03:03:43.238492+08:00",
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 127
+  },
+  {
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "timestamp": "2026-11-19T03:08:03.524745",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 128
+  },
+  {
+    "timestamp": "2026-11-19T03:08:03.547763+08:00",
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 129
+  },
+  {
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "timestamp": "2026-11-19T03:09:34.297239",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 130
+  },
+  {
+    "timestamp": "2026-11-19T03:09:34.320810+08:00",
+    "preferences": {
+      "budget_rm": 6800,
+      "duration_days": 8,
+      "destination_category": "City",
+      "activities": [
+        "nature",
+        "sightseeing",
+        "culture"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST047",
+      "DEST042",
+      "DEST011",
+      "DEST013",
+      "DEST028",
+      "DEST002",
+      "DEST001"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 131
+  },
+  {
+    "preferences": {
+      "budget_rm": 750,
+      "duration_days": 3,
+      "destination_category": "Beach",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "East Coast"
+    },
+    "destination_ids": [
+      "DEST034",
+      "DEST041",
+      "DEST035",
+      "DEST036"
+    ],
+    "timestamp": "2026-11-19T03:11:18.105251",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 132
+  },
+  {
+    "timestamp": "2026-11-19T03:11:18.136995+08:00",
+    "preferences": {
+      "budget_rm": 750,
+      "duration_days": 3,
+      "destination_category": "Beach",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "East Coast"
+    },
+    "destination_ids": [
+      "DEST034",
+      "DEST041",
+      "DEST035",
+      "DEST036"
+    ],
+    "mode": "festival",
+    "festival_id": "chinese_new_year",
+    "history_number": 133
+  },
+  {
+    "preferences": {
+      "budget_rm": 750,
+      "duration_days": 3,
+      "destination_category": "Beach",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "East Coast"
+    },
+    "destination_ids": [
+      "DEST034"
+    ],
+    "timestamp": "2026-11-19T03:13:58.251575",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 134
+  },
+  {
+    "timestamp": "2026-11-19T03:13:58.282448+08:00",
+    "preferences": {
+      "budget_rm": 750,
+      "duration_days": 3,
+      "destination_category": "Beach",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "East Coast"
+    },
+    "destination_ids": [
+      "DEST034"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 135
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "City",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST015",
+      "DEST040",
+      "DEST042",
+      "DEST047",
+      "DEST011"
+    ],
+    "timestamp": "2026-11-19T03:14:21.200751",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 136
+  },
+  {
+    "timestamp": "2026-11-19T03:14:21.223145+08:00",
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "City",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST015",
+      "DEST040",
+      "DEST042",
+      "DEST047",
+      "DEST011"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 137
+  },
+  {
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "City",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST015",
+      "DEST040",
+      "DEST042",
+      "DEST047",
+      "DEST011"
+    ],
+    "timestamp": "2026-11-19T03:18:45.260482",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 138
+  },
+  {
+    "timestamp": "2026-11-19T03:18:45.301817+08:00",
+    "preferences": {
+      "budget_rm": 800,
+      "duration_days": 2,
+      "destination_category": "City",
+      "activities": [
+        "sightseeing"
+      ],
+      "travel_style": "nature",
+      "companion": "friends",
+      "region": "Any"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST004",
+      "DEST007",
+      "DEST002",
+      "DEST001",
+      "DEST015",
+      "DEST040",
+      "DEST042",
+      "DEST047",
+      "DEST011"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 139
+  },
+  {
+    "preferences": {
+      "budget_rm": 1400,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "beach",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "solo",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST047",
+      "DEST042"
+    ],
+    "timestamp": "2026-11-19T03:42:52.577690",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 140
+  },
+  {
+    "timestamp": "2026-11-19T03:42:52.610086+08:00",
+    "preferences": {
+      "budget_rm": 1400,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "beach",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "solo",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST048",
+      "DEST047",
+      "DEST042"
+    ],
+    "mode": "festival",
+    "festival_id": "christmas",
+    "history_number": 141
+  },
+  {
+    "preferences": {
+      "budget_rm": 1400,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "beach",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "solo",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST047",
+      "DEST048",
+      "DEST042"
+    ],
+    "timestamp": "2026-11-19T03:50:55.789349",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 142
+  },
+  {
+    "timestamp": "2026-11-19T03:50:55.836600+08:00",
+    "preferences": {
+      "budget_rm": 1400,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "beach",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "solo",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST047",
+      "DEST048",
+      "DEST042"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 143
+  },
+  {
+    "preferences": {
+      "budget_rm": 1400,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "beach",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "solo",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST047",
+      "DEST048",
+      "DEST042"
+    ],
+    "timestamp": "2026-11-23T19:24:35.635795",
+    "mode": "legacy",
+    "festival_id": null,
+    "history_number": 144
+  },
+  {
+    "timestamp": "2026-11-23T19:24:35.688125+08:00",
+    "preferences": {
+      "budget_rm": 1400,
+      "duration_days": 3,
+      "destination_category": "City",
+      "activities": [
+        "beach",
+        "culture"
+      ],
+      "travel_style": "budget",
+      "companion": "solo",
+      "region": "East Malaysia"
+    },
+    "destination_ids": [
+      "DEST047",
+      "DEST048",
+      "DEST042"
+    ],
+    "mode": "normal",
+    "festival_id": null,
+    "history_number": 145
+  }
+]

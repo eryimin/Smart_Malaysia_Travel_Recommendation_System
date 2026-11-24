@@ -1,0 +1,1302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Malaysia Travel Recommendation System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/festival_design.css') }}">
+</head>
+
+<body>
+<div class="container">
+
+    <!-- Welcome banner -->
+    <div class="welcome-banner">
+        <img src="{{ url_for('static', filename='images/welcome2.jpg') }}"
+             alt="Welcome to Malaysia" loading="eager">
+    </div>
+
+    <!-- Destination slideshow -->
+    <div class="home-slideshow" aria-label="Malaysia destination slideshow">
+        <div class="home-slideshow-track">
+            {% for photo in [
+                'DEST030.jpg', 'DEST035.jpg', 'DEST043.jpg',
+                'DEST006.jpg', 'DEST001.jpg', 'DEST030.jpg'
+            ] %}
+            <img src="{{ url_for('static', filename='images/' ~ photo) }}"
+                 alt="Scenic Malaysia destination" loading="lazy">
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Main website header -->
+    <header>
+        <h1>
+            🌴 Smart Malaysia
+            <span class="hero-highlight">Travel Recommendation</span>
+            System 🏖️
+        </h1>
+        <p>
+            Discover Malaysian destinations that match your budget,
+            interests and travel preferences.
+        </p>
+    </header>
+
+    
+<!-- Large welcome text on the left side of the login page -->
+<div class="login-intro">
+    <div class="login-intro-content">
+
+        <div class="travel-plane">✈</div>
+
+        <h2>
+            <span class="discover-text">Discover</span>
+            <span class="malaysia-text">Malaysia</span>
+        </h2>
+
+        <p class="adventure-text">
+            Your Next Adventure Starts Here
+        </p>
+
+    </div>
+</div>
+
+<main>
+
+
+        <!-- TRAVELLER LOGIN -->
+        <section id="login-section" class="section">
+
+            <span class="login-mark" aria-hidden="true">
+                <svg viewBox="0 0 140 70" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M102 19a16 16 0 0 1 16 16"
+                          stroke="#F6BE26" stroke-width="7"
+                          stroke-linecap="round"/>
+                    <path d="M5 57 35 28 53 45 77 9 128 57"
+                          stroke="#168FDE" stroke-width="6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M57 32 77 9 94 31 104 22"
+                          stroke="#1973C3" stroke-width="4"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </span>
+
+            <h2>Welcome, Traveller!</h2>
+
+            <p>
+                Start exploring Malaysia with personalised
+                travel recommendations.
+            </p>
+
+            <div class="form-group">
+                <label for="user-id">Enter Your User ID:</label>
+
+                <input type="text"
+                       id="user-id"
+                       placeholder="e.g., traveller1"
+                       value="traveller1">
+
+                <button id="login-button"
+                        class="btn-primary" type="button">
+                    Login / Create Profile
+                </button>
+            </div>
+
+        </section>
+
+        <!-- USER DASHBOARD -->
+        <section id="dashboard-section" class="section hidden">
+
+            <div class="dashboard-header">
+                <h2>Welcome, <span id="username"></span>!</h2>
+
+                <div class="dashboard-actions">
+
+                    <button id="admin-dashboard-button"
+                            class="btn-logout" type="button">
+                        Admin Dashboard
+                    </button>
+
+                    <button id="festival-mode-button"
+                            class="btn-festival" type="button">
+                        🎁 Festival Deals
+                    </button>
+
+                    <button id="exit-festival-button"
+                            class="btn-exit-festival hidden"
+                            type="button">
+                        ← Exit Festival Mode
+                    </button>
+
+                    <button id="logout-button"
+                            class="btn-logout" type="button">
+                        Logout
+                    </button>
+                </div>
+            </div>
+
+            <!-- FESTIVAL BANNER -->
+            <div id="festival-banner" class="festival-banner hidden">
+                <h3>🎉 Festival Travel Experiences</h3>
+                <p>
+                    Discover festive getaways, compare trip costs
+                    and find destinations that fit your budget.
+                </p>
+                <span class="festival-insight">
+                    Explore more destinations through seasonal travel offers
+                </span>
+            </div>
+
+            <!-- FESTIVAL NAVIGATION -->
+            <div id="festival-navigation"
+                 class="tabs festival-navigation hidden">
+
+                <button class="tab-button" type="button"
+                        data-tab="festival">
+                    🎁 Festival Deals
+                </button>
+
+                <button class="tab-button" type="button"
+                        data-tab="recommendations">
+                    Recommendations
+                </button>
+
+                <button class="tab-button" type="button"
+                        data-tab="preferences">
+                    Travel Preferences
+                </button>
+
+                <button class="tab-button" type="button"
+                        data-tab="favourites">
+                    Favourites
+                </button>
+
+                <button class="tab-button" type="button"
+                        data-tab="history">
+                    History
+                </button>
+
+                <button class="tab-button" type="button"
+                        data-tab="destinations">
+                    Explore Destinations
+                </button>
+
+                <button class="tab-button" type="button"
+                        data-tab="ratings-reviews">
+                    ⭐ Ratings &amp; Reviews
+                </button>
+            </div>
+
+            <!-- NORMAL NAVIGATION -->
+            <div id="normal-navigation" class="tabs">
+
+                <button class="tab-button active"
+                        data-tab="recommendations" type="button">
+                    Recommendations
+                </button>
+
+                <button class="tab-button"
+                        data-tab="preferences" type="button">
+                    Travel Preferences
+                </button>
+
+                <button class="tab-button"
+                        data-tab="favourites" type="button">
+                    Favourites
+                </button>
+
+                <button class="tab-button"
+                        data-tab="history" type="button">
+                    History
+                </button>
+
+                <button class="tab-button"
+                        data-tab="destinations" type="button">
+                    Explore Destinations
+                </button>
+
+                <button class="tab-button"
+                        data-tab="ratings-reviews" type="button">
+                    ⭐ Ratings &amp; Reviews
+                </button>
+            </div>
+
+            <!-- FESTIVAL DEALS TAB -->
+            <div id="festival-tab" class="tab-content hidden">
+
+                <div class="festival-toolbar">
+                    <div>
+                        <h3>🎉 Festival Travel Deals</h3>
+                        <p>
+                            Explore festival-themed travel offers across
+                            Malaysia and compare your estimated trip costs.
+                        </p>
+                    </div>
+
+                    <div class="form-group festival-selector">
+                        <label for="festival-select">
+                            Choose Festival
+                        </label>
+                        <select id="festival-select"
+                                aria-label="Choose festival">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="saved-trip-summary"
+                     id="festival-trip-summary"
+                     aria-live="polite"></div>
+
+                <div class="festival-trip-controls festival-filter-controls">
+
+                    <div class="form-group festival-sort">
+                        <label for="festival-sort">Sort Deals</label>
+                        <select id="festival-sort">
+                            <option value="biggest">Biggest discount</option>
+                            <option value="lowest">Lowest estimated total</option>
+                            <option value="savings">Highest RM savings</option>
+                            <option value="name">Destination name</option>
+                        </select>
+                    </div>
+
+                    <label class="festival-affordable">
+                        <input id="festival-affordable" type="checkbox">
+                        Within my budget only
+                    </label>
+                </div>
+
+                <p class="pricing-context">
+                    Trip prices are planning estimates per person,
+                    excluding transport. Offers are not confirmed
+                    booking rates.
+                </p>
+
+                <p id="festival-status" role="status"></p>
+
+                <div id="festival-deals-list"
+                     class="resources-grid"></div>
+            </div>
+
+            <!-- BACK TO FESTIVAL DEALS -->
+            <div id="festival-back-bar"
+                 class="festival-back-bar hidden">
+
+                <button id="back-to-festival-button"
+                        class="btn-festival-back" type="button">
+                    ← Back to Festival Deals
+                </button>
+
+                <span id="festival-back-hint">
+                    Showing the selected destination in Explore Destinations
+                </span>
+            </div>
+
+            <!-- RECOMMENDATIONS TAB -->
+            <div id="recommendations-tab"
+                 class="tab-content active">
+
+                <h3>Your AI Travel Recommendations</h3>
+
+                <p>
+                    Find suitable Malaysian destinations based on
+                    your saved travel preferences.
+                </p>
+
+                <button id="recommend-button"
+                        class="btn-primary" type="button">
+                    Find My Destinations
+                </button>
+
+                <div class="recommendation-summary-row">
+                    <p id="recommendation-status" role="status"></p>
+
+                    <div class="saved-trip-summary"
+                        id="recommendation-trip-summary"
+                        aria-live="polite"></div>
+                </div>
+
+                <div id="recommendations-list"
+                     class="resources-grid"></div>
+            </div>
+
+            <!-- TRAVEL PREFERENCES TAB -->
+            <div id="preferences-tab"
+                 class="tab-content hidden">
+
+                <h3>Plan Your Malaysia Trip</h3>
+                <p>Tell us what you're looking for!</p>
+
+                <form id="travel-preferences-form">
+
+                    <div class="preferences-main-row">
+
+                        <div class="form-group">
+                            <label for="budget-input">
+                                Total Travel Budget (RM):
+                            </label>
+
+                            <input type="number"
+                                   id="budget-input"
+                                   min="1" step="1"
+                                   value="800" required>
+
+                            <small>
+                                Estimated budget per person.
+                                Travel to the destination is excluded.
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="duration-input">
+                                Travel Duration (Days):
+                            </label>
+
+                            <input type="number"
+                                   id="duration-input"
+                                   min="1" max="14"
+                                   value="3" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category-select">
+                                Preferred Destination Category:
+                            </label>
+
+                            <select id="category-select">
+                                <option value="Any">Any Category</option>
+                                <option value="Beach">Beach</option>
+                                <option value="Nature">Nature</option>
+                                <option value="City">City</option>
+                                <option value="Historical">Historical</option>
+                                <option value="Adventure">Adventure</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- SMART AVAILABILITY -->
+                    <section class="smart-availability"
+                             aria-live="polite"
+                             aria-label="Destination availability">
+
+                        <div class="smart-availability-top">
+                            <div>
+                                <strong>Smart Destination Availability</strong>
+
+                                <p id="smart-budget-guide">
+                                    Adjust your budget or trip duration
+                                    to see which options are available.
+                                </p>
+                            </div>
+
+                            <span id="smart-match-counter"
+                                  class="smart-match-counter">
+                                Checking destinations…
+                            </span>
+                        </div>
+
+                        <p id="smart-selection-tip"
+                           class="smart-selection-tip"></p>
+                    </section>
+
+                    <div class="preferences-details-layout">
+
+                        <!-- PREFERRED ACTIVITIES -->
+                        <div class="form-group">
+                            <label>Preferred Travel Activities:</label>
+
+                            <div id="activities-options"
+                                 class="checkbox-group">
+
+                                <label>
+                                    <input type="checkbox" value="beach">
+                                    Beach
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="hiking">
+                                    Hiking
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="nature">
+                                    Nature
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="food">
+                                    Food Exploration
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="shopping">
+                                    Shopping
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="sightseeing">
+                                    Sightseeing
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="history">
+                                    History
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="culture">
+                                    Culture
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="adventure">
+                                    Adventure
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="photography">
+                                    Photography
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="wildlife">
+                                    Wildlife
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="relaxation">
+                                    Relaxation
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="diving">
+                                    Diving
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="island_hopping">
+                                    Island Hopping
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" value="theme_parks">
+                                    Theme Parks
+                                </label>
+
+                            </div>
+                        </div>
+
+                        <!-- TRAVEL STYLE, COMPANION, REGION -->
+                        <div class="preferences-side-fields">
+
+                            <div class="form-group">
+                                <label for="style-select">
+                                    Preferred Travel Style:
+                                </label>
+
+                                <select id="style-select">
+                                    <option value="budget">Budget</option>
+                                    <option value="relaxation">Relaxation</option>
+                                    <option value="adventure">Adventure</option>
+                                    <option value="nature">Nature</option>
+                                    <option value="culture">Culture</option>
+                                    <option value="city">City</option>
+                                    <option value="family">Family</option>
+                                    <option value="luxury">Luxury</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companion-select">
+                                    Travelling With:
+                                </label>
+
+                                <select id="companion-select">
+                                    <option value="solo">Solo</option>
+                                    <option value="couple">Couple</option>
+                                    <option value="friends">Friends</option>
+                                    <option value="family">Family</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="region-select">
+                                    Preferred Malaysia Region:
+                                </label>
+
+                                <select id="region-select">
+                                    <option value="Any">Anywhere in Malaysia</option>
+                                    <option value="Northern">Northern</option>
+                                    <option value="Central">Central</option>
+                                    <option value="Southern">Southern</option>
+                                    <option value="East Coast">East Coast</option>
+                                    <option value="East Malaysia">East Malaysia</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Save Preferences
+                    </button>
+
+                    <p id="preferences-status" role="status"></p>
+                </form>
+            </div>
+
+            <!-- FAVOURITES TAB -->
+            <div id="favourites-tab"
+                 class="tab-content hidden">
+
+                <h3>My Favourite Destinations</h3>
+                <p>View the destinations you have saved.</p>
+
+                <div id="favourites-list"
+                     class="resources-grid"></div>
+            </div>
+
+            
+            
+<!-- ==========================================
+     HISTORY TAB
+========================================== -->
+
+<style>
+/* Header and filters side by side */
+#history-tab .history-top-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#history-tab .history-heading {
+    flex: 0 0 30%;
+    min-width: 0;
+}
+
+#history-tab .history-heading h3 {
+    margin: 0 0 16px;
+}
+
+#history-tab .history-heading p {
+    margin: 0;
+}
+
+/* Four filters in one horizontal row */
+#history-tab .history-date-filters {
+    flex: 1 1 70% !important;
+    display: grid !important;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        minmax(0, 1fr)
+        auto !important;
+    align-items: end !important;
+    gap: 12px !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 16px !important;
+    background: #edf6f2;
+    border: 1px solid #d6e7dc;
+    border-radius: 15px;
+}
+
+#history-tab .history-filter-field {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px;
+    min-width: 0;
+}
+
+#history-tab .history-filter-field label {
+    display: block;
+    padding-left: 8px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #2d5b51;
+}
+
+/* Dropdown and calendar */
+#history-tab .history-filter-field select,
+#history-tab .history-filter-field input[type="date"] {
+    display: block !important;
+    width: 100% !important;
+    height: 45px !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 9px 12px !important;
+    font-size: 14px;
+    background: white;
+    border: 1px solid #ccded5;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#history-tab #clear-history-filters {
+    width: auto !important;
+    height: 45px !important;
+    min-width: 115px;
+    margin: 0 !important;
+    padding: 0 14px !important;
+    background: white;
+    border: 1px solid #b9d3c8;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #326658;
+    cursor: pointer;
+}
+
+/* Festival-specific filter box colours */
+#history-tab[data-history-theme="chinese_new_year"]
+.history-date-filters {
+    background: #fff0f1;
+    border-color: #efbac0;
+}
+
+#history-tab[data-history-theme="hari_raya"]
+.history-date-filters {
+    background: #ecf8f0;
+    border-color: #b6dfc4;
+}
+
+#history-tab[data-history-theme="deepavali"]
+.history-date-filters {
+    background: #fbeff7;
+    border-color: #ebc5de;
+}
+
+#history-tab[data-history-theme="christmas"]
+.history-date-filters {
+    background: #fff6e8;
+    border-color: #eed8ae;
+}
+
+/* Festival label colours */
+#history-tab[data-history-theme="chinese_new_year"]
+.history-filter-field label { color: #b92e3a; }
+
+#history-tab[data-history-theme="hari_raya"]
+.history-filter-field label { color: #168052; }
+
+#history-tab[data-history-theme="deepavali"]
+.history-filter-field label { color: #913477; }
+
+#history-tab[data-history-theme="christmas"]
+.history-filter-field label { color: #a2731d; }
+
+/* Smaller screens */
+@media (max-width: 1050px) {
+    #history-tab .history-top-row {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    #history-tab .history-heading {
+        flex: none;
+    }
+
+    #history-tab .history-date-filters {
+        flex: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #history-tab .history-date-filters {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 400px) {
+    #history-tab .history-date-filters {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+
+<div id="history-tab"
+     class="tab-content hidden"
+     data-history-theme="normal">
+
+    <div class="history-top-row">
+
+        <!-- LEFT SIDE -->
+        <div class="history-heading">
+
+            <h3>My Recommendation History</h3>
+
+            <p>
+                Review your previous travel recommendations.
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="history-date-filters">
+
+            <div class="history-filter-field">
+                <label for="history-year">Year</label>
+                <select id="history-year">
+                    <option value="">All Years</option>
+                </select>
+            </div>
+
+            <div class="history-filter-field">
+                <label for="history-month">Month</label>
+                <select id="history-month">
+                    <option value="">All Months</option>
+                </select>
+            </div>
+
+            <div class="history-filter-field">
+                <label for="history-date">Date</label>
+                <input type="date" id="history-date">
+            </div>
+
+            <button
+                type="button"
+                id="clear-history-filters">
+                Clear Filters
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Festival Mode only -->
+    <div id="history-festival-options"
+         class="history-festival-options hidden">
+    </div>
+
+    <!-- History result count -->
+    <p id="history-results-count" role="status"></p>
+
+    <!-- Saved recommendation cards -->
+    <div id="history-list" class="history-list"></div>
+
+</div>
+
+
+
+            <!-- EXPLORE DESTINATIONS TAB -->
+            <div id="destinations-tab"
+                 class="tab-content hidden">
+
+                <h3 id="explore-heading">Explore Malaysia</h3>
+
+                <p id="explore-description">
+                    Discover beautiful destinations across Malaysia.
+                    Search and filter places based on your interests.
+                </p>
+
+                <div id="explore-festival-context"
+                     class="explore-festival-context hidden">
+
+                    <div class="explore-festival-topline">
+                        <strong id="explore-festival-name">
+                            Festival Travel Offers
+                        </strong>
+
+                        <span class="explore-festival-label">
+                            Festival prices active
+                        </span>
+                    </div>
+
+                    <p>
+                        Browse destinations with seasonal discounts.
+                        Original and promotional prices appear together.
+                    </p>
+
+                    <button id="explore-view-deals"
+                            class="btn-festival-back" type="button">
+                        Browse Festival Deals
+                    </button>
+                </div>
+
+
+                <!-- SEARCH FILTERS -->
+                <div class="destination-filters">
+
+                    <div class="form-group">
+                        <label for="destination-search">
+                            Search Destination:
+                        </label>
+
+                        <input type="text"
+                               id="destination-search"
+                               placeholder="Search destinations, states, activities or attractions...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state-filter">
+                            Filter by State:
+                        </label>
+
+                        <select id="state-filter">
+                            <option value="Any">All States</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="region-filter">
+                            Filter by Region:
+                        </label>
+
+                        <select id="region-filter">
+                            <option value="Any">All Regions</option>
+                            <option value="Northern">Northern</option>
+                            <option value="Central">Central</option>
+                            <option value="Southern">Southern</option>
+                            <option value="East Coast">East Coast</option>
+                            <option value="East Malaysia">East Malaysia</option>
+                        </select>
+                    </div>
+
+                    <button id="clear-filters-button"
+                            type="button" class="btn-primary">
+                        Clear Filters
+                    </button>
+                </div>
+
+                
+                <!-- RESULTS COUNT ON LEFT, BUDGET CHECKBOX ON RIGHT -->
+                <div class="explore-results-row">
+
+                    <p id="destination-results-count" role="status">
+                        Explore Malaysian destinations below.
+                    </p>
+
+                    <div class="explore-filter-controls">
+                        <label class="explore-affordable">
+                            <input id="explore-affordable" type="checkbox">
+                            Show destinations within my budget only
+                        </label>
+                    </div>
+
+                </div>
+
+
+                <div id="all-destinations-list"
+                     class="resources-grid"></div>
+            </div>
+
+            
+<!-- RATINGS AND REVIEWS TAB -->
+<div id="ratings-reviews-tab" class="tab-content hidden">
+
+    <h2>Destination Ratings &amp; Reviews</h2>
+
+    <p>
+        Discover Malaysia's top destinations through real
+        traveller ratings and experiences.
+    </p>
+
+    <!-- SEARCH AND FILTERS -->
+    <div class="reviews-dashboard-toolbar">
+
+        <div class="reviews-search-container">
+            <span class="reviews-search-icon" aria-hidden="true">
+                🔍
+            </span>
+
+            <input
+                type="text"
+                id="reviews-search"
+                placeholder="Search destination or state..."
+                autocomplete="off"
+                aria-label="Search destination reviews"
+            >
+
+            <button
+                type="button"
+                id="clear-reviews-search"
+                class="reviews-clear-btn"
+                aria-label="Clear search">
+                &times;
+            </button>
+        </div>
+
+        <!-- INTEREST FILTER -->
+        <div class="reviews-toolbar-field">
+            <label for="reviews-interest-filter">
+                Interests
+            </label>
+
+            <select id="reviews-interest-filter">
+                <option value="all">All interests</option>
+            </select>
+        </div>
+
+        <!-- RATING SORTING -->
+        <div class="reviews-toolbar-field">
+            <label for="reviews-sort-filter">
+                Sort by
+            </label>
+
+            <select id="reviews-sort-filter">
+                <option value="highest">Highest rated</option>
+                <option value="most">Most reviewed</option>
+                <option value="lowest">Lowest rated</option>
+                <option value="name">Destination name</option>
+            </select>
+        </div>
+
+        <!-- MINIMUM RATING -->
+        <div class="reviews-toolbar-field">
+            <label for="reviews-minimum-rating">
+                Minimum rating
+            </label>
+
+            <select id="reviews-minimum-rating">
+                <option value="0">Any rating</option>
+                <option value="3">3+ stars</option>
+                <option value="4">4+ stars</option>
+                <option value="4.5">4.5+ stars</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="reviews-toolbar-bottom">
+        <button id="reviews-clear-filters" type="button">
+            Reset filters
+        </button>
+    </div>
+
+    <p id="reviews-search-count"
+       class="reviews-search-count"></p>
+
+    <!-- RATING DASHBOARD CARDS -->
+    <div id="ratings-reviews-list">
+        <p>Loading destination ratings...</p>
+    </div>
+
+</div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Smart Malaysia Travel Recommendation System
+            | DCS2114 Intelligent Systems
+        </p>
+    </footer>
+
+</div>
+
+<!-- RATING AND REVIEW MODAL -->
+<div id="review-modal"
+     class="review-modal hidden"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="review-destination-name">
+
+    <div class="review-modal-content">
+
+        <button id="close-review"
+                type="button"
+                class="close-review-btn"
+                aria-label="Close rating panel">
+            &times;
+        </button>
+
+        <h2 id="review-destination-name"></h2>
+
+        <div id="review-average"
+             class="average-rating"></div>
+
+        <div id="review-list"
+             class="review-list"></div>
+
+        <h3>Rate This Destination</h3>
+
+        <form id="review-form">
+
+            <label for="review-rating">
+                Your Rating (Required):
+            </label>
+
+            <select id="review-rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">★★★★★ (5 Stars)</option>
+                <option value="4">★★★★☆ (4 Stars)</option>
+                <option value="3">★★★☆☆ (3 Stars)</option>
+                <option value="2">★★☆☆☆ (2 Stars)</option>
+                <option value="1">★☆☆☆☆ (1 Star)</option>
+            </select>
+
+            <label for="review-comment">
+                Your Review (Optional):
+            </label>
+
+            <textarea id="review-comment"
+                      placeholder="Share your travel experience (optional)..."
+                      maxlength="1000"></textarea>
+
+            <button type="submit" class="btn-primary">
+                Submit Rating
+            </button>
+        </form>
+
+        <p id="review-message" role="status"></p>
+    </div>
+</div>
+
+<!-- DESTINATION IMAGE MAPPING -->
+<script src="{{ url_for('static', filename='js/destination_images.js') }}"></script>
+
+<!-- MAIN JAVASCRIPT -->
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<script src="{{ url_for('static', filename='js/history_dashboard.js') }}"></script>
+<!-- FESTIVAL DESIGN JAVASCRIPT -->
+<script src="{{ url_for('static', filename='js/festival_design.js') }}"></script>
+
+<style>
+/* ============================================
+   HISTORY FILTER BOX - ALWAYS LIGHT GREEN
+   ============================================ */
+
+#history-tab .history-date-filters,
+#history-tab[data-history-theme="normal"] .history-date-filters,
+#history-tab[data-history-theme="chinese_new_year"] .history-date-filters,
+#history-tab[data-history-theme="hari_raya"] .history-date-filters,
+#history-tab[data-history-theme="deepavali"] .history-date-filters,
+#history-tab[data-history-theme="christmas"] .history-date-filters {
+    background: #eaf7ef !important;
+    border: 1px solid #b8dec8 !important;
+    border-radius: 16px !important;
+}
+
+/* Green labels for every mode */
+#history-tab .history-filter-field label,
+#history-tab[data-history-theme] .history-filter-field label {
+    color: #18734e !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding-left: 8px !important;
+}
+
+/* Green outline for inputs */
+#history-tab .history-filter-field select,
+#history-tab .history-filter-field input[type="date"] {
+    border: 1px solid #c2dacb !important;
+    border-radius: 10px !important;
+    background: #ffffff !important;
+}
+
+/* Green Clear Filters button */
+#history-tab #clear-history-filters {
+    color: #18734e !important;
+    background: #ffffff !important;
+    border: 1px solid #b8dec8 !important;
+    border-radius: 25px !important;
+}
+
+
+/* ============================================
+   FESTIVAL HISTORY - FOUR LARGE CARDS
+   ============================================ */
+
+#history-tab #history-festival-options:not(.hidden) {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    width: 100% !important;
+    margin: 22px 0 18px !important;
+}
+
+/* Hide festival cards in Normal Mode */
+#history-tab #history-festival-options.hidden {
+    display: none !important;
+}
+
+/* Reset default button appearance */
+#history-tab #history-festival-options .history-festival-card {
+    --card-color: #555555;
+    --card-bg: #ffffff;
+    --card-border: #dddddd;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 10px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 145px !important;
+
+    margin: 0 !important;
+    padding: 18px 12px !important;
+
+    background: var(--card-bg) !important;
+    color: var(--card-color) !important;
+
+    border: 1px solid var(--card-border) !important;
+    border-radius: 16px !important;
+
+    box-shadow: none !important;
+
+    font-family: inherit !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+
+    cursor: pointer !important;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+/* Large festival emoji */
+#history-tab #history-festival-options
+.history-festival-emoji {
+    display: block !important;
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+}
+
+/* Festival name */
+#history-tab #history-festival-options
+.history-festival-card > span:not(.history-festival-emoji) {
+    display: block !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--card-color) !important;
+}
+
+/* Record count as a small pill */
+#history-tab #history-festival-options
+.history-festival-card small {
+    display: inline-block !important;
+
+    padding: 6px 14px !important;
+    margin: 0 !important;
+
+    background: #ffffff !important;
+    color: var(--card-color) !important;
+
+    border: none !important;
+    border-radius: 30px !important;
+
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+/* Hover */
+#history-tab #history-festival-options
+.history-festival-card:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 7px 18px rgba(0,0,0,0.08) !important;
+}
+
+/* Selected festival */
+#history-tab #history-festival-options
+.history-festival-card.selected {
+    border: 2px solid var(--card-color) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.09) !important;
+}
+
+/* Selected checkmark */
+#history-tab #history-festival-options
+.history-festival-card.selected::after {
+    content: "✓" !important;
+
+    position: absolute !important;
+    top: 12px !important;
+    right: 12px !important;
+
+    display: grid !important;
+    place-items: center !important;
+
+    width: 24px !important;
+    height: 24px !important;
+
+    background: var(--card-color) !important;
+    color: #ffffff !important;
+
+    border-radius: 50% !important;
+    font-size: 14px !important;
+}
+
+
+/* ============================================
+   INDIVIDUAL FESTIVAL COLOURS
+   ============================================ */
+
+/* Chinese New Year - Red */
+#history-tab #history-festival-options
+[data-festival-theme="chinese_new_year"] {
+    --card-color: #b72c3a;
+    --card-bg: #fff0f1;
+    --card-border: #efbac1;
+}
+
+/* Hari Raya - Green */
+#history-tab #history-festival-options
+[data-festival-theme="hari_raya"] {
+    --card-color: #18794e;
+    --card-bg: #ecf8f0;
+    --card-border: #b6ddc5;
+}
+
+/* Deepavali - Purple */
+#history-tab #history-festival-options
+[data-festival-theme="deepavali"] {
+    --card-color: #913477;
+    --card-bg: #fbeff7;
+    --card-border: #eac2dd;
+}
+
+/* Christmas - Gold */
+#history-tab #history-festival-options
+[data-festival-theme="christmas"] {
+    --card-color: #a4751e;
+    --card-bg: #fff5e8;
+    --card-border: #eed8b3;
+}
+
+
+/* ============================================
+   RESPONSIVE FESTIVAL CARDS
+   ============================================ */
+
+@media (max-width: 800px) {
+    #history-tab #history-festival-options:not(.hidden) {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #history-tab #history-festival-options:not(.hidden) {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+
+</body>
+</html>

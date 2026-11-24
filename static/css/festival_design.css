@@ -1,0 +1,131 @@
+/* Festival design matching the selected screenshot — add-on stylesheet.
+   Only active in Festival Mode; Normal Mode remains unchanged. */
+body.festival-mode {
+  --festival-accent: #b31f24;
+  --festival-dark: #90191c;
+  --festival-cream: #fff2e4;
+  --festival-border: #f1d1c4;
+  --primary: var(--festival-accent);
+  --primary-dark: var(--festival-dark);
+  --primary-light: var(--festival-cream);
+  --border: #eeded6;
+  background: #f7e9e1;
+  background-image: linear-gradient(rgba(35, 20, 18, .08),rgba(35, 20, 18, .08)), var(--festival-background-image, none);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.festival-mode[data-festival-theme="deepavali"] {
+  --festival-accent:#8b3979; --festival-dark:#622653;
+  --festival-cream:#fff3e2; --festival-border:#ecd6bd;
+}
+body.festival-mode[data-festival-theme="raya"] {
+  --festival-accent:#17865e; --festival-dark:#0c684b;
+  --festival-cream:#f0fbef; --festival-border:#cee6d6;
+}
+body.festival-mode[data-festival-theme="christmas"] {
+  --festival-accent:#b72f36; --festival-dark:#7d242c;
+  --festival-cream:#fff4ee; --festival-border:#ead8d3;
+}
+/* Keep the green travel brand header seen in the selected picture */
+body.festival-mode header {
+  width: min(1320px, calc(100% - 36px));
+  margin: 28px auto 0;
+  padding: 22px 24px;
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(115deg,#075c55 0%,#127e76 75%,#0b625e 100%) !important;
+  box-shadow:0 12px 38px rgba(48,32,25,.18);
+}
+body.festival-mode header h1{font-size:clamp(1.35rem,2.2vw,2.15rem);margin-bottom:4px}
+body.festival-mode header p{font-size:.91rem}
+/* White central panel reveals festival image on both margins */
+body.festival-mode main {
+  width:min(1320px, calc(100% - 36px)); max-width:1320px;
+  margin:0 auto 48px; padding:0;
+}
+body.festival-mode #dashboard-section {
+  border:1px solid rgba(228,211,199,.8);
+  border-radius:18px;
+  box-shadow:0 20px 55px rgba(49,28,18,.20);
+  padding:24px 24px 35px;
+  background:#fff;
+}
+body.festival-mode #dashboard-section .tab-content {
+  width:100%;max-width:none;margin-inline:auto;
+}
+body.festival-mode .dashboard-header {
+  margin-bottom:14px;padding-bottom:18px;border-bottom-color:#e7e5e1;
+}
+body.festival-mode .dashboard-header h2 {color:#202d2b}
+body.festival-mode .tabs {border-bottom-color:#e7e5e1;margin-bottom:18px;gap:5px}
+body.festival-mode .tabs .tab-button.active {background:var(--festival-accent);color:#fff}
+body.festival-mode .tabs .tab-button:hover {background:var(--festival-cream);color:var(--festival-dark)}
+/* The screenshot has one decorative deal banner, not two repeated festival announcements. */
+body.festival-mode #festival-banner {display:none !important}
+body.festival-mode #festival-tab .festival-toolbar {
+  background:linear-gradient(110deg, var(--festival-cream) 0%, #fffaf5 72%, #fff0de 100%);
+  border:1px solid var(--festival-border);
+  border-radius:14px;
+  padding:20px 24px;
+  margin-bottom:16px;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+body.festival-mode #festival-tab .festival-toolbar::after {
+  content:"";position:absolute;pointer-events:none;
+  width:185px;height:145px;right:2%;bottom:-67px;opacity:.15;
+  border:2px solid var(--festival-accent);border-radius:50%;
+  box-shadow:0 0 0 15px var(--festival-cream),0 0 0 17px var(--festival-accent),
+      0 0 0 32px var(--festival-cream),0 0 0 34px var(--festival-accent);
+}
+body.festival-mode #festival-tab .festival-toolbar h3 {
+  font-size:clamp(1.5rem,2.35vw,2.15rem);
+  color:var(--festival-dark); margin-bottom:3px;
+  letter-spacing:-.015em;
+}
+body.festival-mode #festival-tab .festival-toolbar p {font-size:.93rem;margin:0;color:#5b5c59}
+body.festival-mode #festival-tab .festival-selector {position:relative;z-index:1}
+body.festival-mode #festival-select {border:1px solid var(--festival-accent);color:var(--festival-dark);background:#fff;font-weight:700}
+body.festival-mode #festival-tab .trip-summary-chip {
+  color:var(--festival-dark);background:#fff7f4;border-color:var(--festival-border);
+}
+body.festival-mode #festival-tab .edit-preferences-link {color:var(--festival-dark)}
+body.festival-mode .festival-trip-controls {
+  background:#fbfafa;border:1px solid #ebdfdc;border-radius:12px;
+}
+body.festival-mode #festival-tab #festival-status {color:#097369}
+body.festival-mode .festival-deal-card {
+  background:white;border:1px solid var(--festival-border);border-radius:13px;
+  box-shadow:0 6px 16px rgba(36,21,18,.09);overflow:hidden;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+body.festival-mode .festival-deal-card:hover {transform:translateY(-3px);box-shadow:0 12px 25px rgba(36,21,18,.13)}
+body.festival-mode .festival-deal-card .deal-content {padding:15px;gap:10px}
+body.festival-mode .festival-deal-card .btn-view-festival {
+  background:var(--festival-accent);border-radius:7px;font-weight:700;
+}
+body.festival-mode .festival-deal-card .btn-view-festival:hover {background:var(--festival-dark)}
+body.festival-mode #festival-tab .discount-badge {
+  background:#e5f5e8;color:#14764d;
+  font-weight:800;border:1px solid #d1e9d7;
+}
+body.festival-mode .festival-deal-card .price-discounted {color:#08784b}
+body.festival-mode .btn-festival,body.festival-mode .btn-exit-festival {background:var(--festival-accent);color:white}
+body.festival-mode .btn-festival-back {background:var(--festival-accent);color:white}
+/* Keep content usable when screen is narrow */
+@media(max-width:900px){
+  body.festival-mode header,body.festival-mode main{width:calc(100% - 24px)}
+  body.festival-mode #dashboard-section{padding:18px 14px 28px}
+}
+@media(max-width:650px){
+  body.festival-mode{background-attachment:scroll}
+  body.festival-mode header,body.festival-mode main{width:100%}
+  body.festival-mode header{margin-top:0;border-radius:0}
+  body.festival-mode #dashboard-section{border-radius:0}
+  body.festival-mode #festival-tab .festival-toolbar{padding:15px}
+}
+@media(prefers-reduced-motion:reduce){
+  body.festival-mode .festival-deal-card{transition:none}
+}

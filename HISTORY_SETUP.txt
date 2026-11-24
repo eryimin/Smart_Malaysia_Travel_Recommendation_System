@@ -1,0 +1,28 @@
+SMART MALAYSIA TRAVEL — COMPLETE HISTORY UPDATE
+
+1. Create src/history_store.py using the included file.
+2. Create static/js/history_dashboard.js using included file.
+3. Replace ONLY the entire old <div id="history-tab" ...> ... </div> section in templates/index.html with history_section.html contents.
+4. After existing app.js script tag, before festival_design.js, add:
+   <script src="{{ url_for('static', filename='js/history_dashboard.js') }}"></script>
+5. Append history_dashboard.css to end of static/css/style.css.
+6. In src/app.py near existing imports add:
+   from history_store import get_history, append_history
+7. In get_recommendations(), inside 'if user:', directly BEFORE user.add_to_recommendation_history(...), add:
+   get_history(user.user_id, user.get_recommendation_history())
+   (This seeds archive with the records that have survived the existing 20 limit.)
+8. Directly AFTER the existing user.add_to_recommendation_history(...) call, add:
+   append_history(user.user_id, user.get_preferences(),
+       [item['destination']['id'] for item in recommendations],
+       festival_id if festival_mode else None)
+9. In travel_history(), replace ONLY return jsonify(user.get_recommendation_history()) with:
+   return jsonify(get_history(user.user_id, user.get_recommendation_history()))
+10. Restart Flask and Ctrl+Shift+R.
+
+IMPORTANT:
+* Existing data/profiles records are not modified or deleted.
+* The archive lives at data/history_archive/<hashed-user-id>.json.
+* History before the initial archive's first use cannot be recovered if the 20-entry cap already discarded it.
+* Old history had no festival metadata, so it is shown as Legacy in Normal Mode.
+* All new history records include mode/festival_id and are stored without a 20-item cap.
+* This implementation uses simple JSON files, intended for a single local Flask instance, not a high-concurrency deployed server.

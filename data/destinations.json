@@ -1,0 +1,1611 @@
+[
+  {
+    "id": "DEST001",
+    "name": "Kuala Lumpur City Centre",
+    "state": "Kuala Lumpur",
+    "region": "Central",
+    "recommended_days_min": 1,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 180,
+    "activities": [
+      "sightseeing",
+      "shopping",
+      "food",
+      "photography"
+    ],
+    "travel_styles": [
+      "city",
+      "culture",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Petronas Twin Towers",
+      "KLCC Park",
+      "Suria KLCC"
+    ],
+    "weather_sensitive": false,
+    "description": "Modern city landmarks, shopping and urban experiences."
+  },
+  {
+    "id": "DEST002",
+    "name": "Bukit Bintang",
+    "state": "Kuala Lumpur",
+    "region": "Central",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 170,
+    "activities": [
+      "shopping",
+      "food",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "city",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "highlights": [
+      "Jalan Alor",
+      "Pavilion Kuala Lumpur",
+      "Bukit Bintang"
+    ],
+    "weather_sensitive": false,
+    "description": "Bustling district for dining, shopping and city exploration."
+  },
+  {
+    "id": "DEST003",
+    "name": "KL Forest Eco Park",
+    "state": "Kuala Lumpur",
+    "region": "Central",
+    "recommended_days_min": 1,
+    "recommended_days_max": 2,
+    "estimated_daily_budget_rm": 160,
+    "activities": [
+      "nature",
+      "hiking",
+      "photography",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Urban rainforest",
+      "Nature trails",
+      "City skyline"
+    ],
+    "weather_sensitive": true,
+    "description": "Urban nature escape within Kuala Lumpur."
+  },
+  {
+    "id": "DEST004",
+    "name": "Putrajaya",
+    "state": "Putrajaya",
+    "region": "Central",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 140,
+    "activities": [
+      "sightseeing",
+      "photography",
+      "nature",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "city",
+      "relaxation",
+      "family"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Putra Mosque",
+      "Putrajaya Lake",
+      "Botanical Garden"
+    ],
+    "weather_sensitive": false,
+    "description": "Lakeside architecture, parks and scenic city views."
+  },
+  {
+    "id": "DEST005",
+    "name": "Labuan Town",
+    "state": "Labuan",
+    "region": "East Malaysia",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 190,
+    "activities": [
+      "history",
+      "food",
+      "beach",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "culture",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Labuan Museum",
+      "Peace Park",
+      "Waterfront"
+    ],
+    "weather_sensitive": true,
+    "description": "Island city with historical sites and coastal scenery."
+  },
+  {
+    "id": "DEST006",
+    "name": "Layangan Beach, Labuan",
+    "state": "Labuan",
+    "region": "East Malaysia",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 180,
+    "activities": [
+      "beach",
+      "photography",
+      "relaxation",
+      "nature"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "nature"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Layangan Beach",
+      "Sunset views",
+      "Coastal scenery"
+    ],
+    "weather_sensitive": true,
+    "description": "Relaxed beach experience on Labuan island."
+  },
+  {
+    "id": "DEST007",
+    "name": "Shah Alam",
+    "state": "Selangor",
+    "region": "Central",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 150,
+    "activities": [
+      "sightseeing",
+      "culture",
+      "shopping",
+      "food"
+    ],
+    "travel_styles": [
+      "city",
+      "culture",
+      "family"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Sultan Salahuddin Abdul Aziz Mosque",
+      "i-City",
+      "Shah Alam Lake Gardens"
+    ],
+    "weather_sensitive": false,
+    "description": "Urban attractions, cultural landmarks and family outings."
+  },
+  {
+    "id": "DEST008",
+    "name": "Kuala Selangor",
+    "state": "Selangor",
+    "region": "Central",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 170,
+    "activities": [
+      "nature",
+      "wildlife",
+      "photography",
+      "food"
+    ],
+    "travel_styles": [
+      "nature",
+      "relaxation",
+      "family"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Kuala Selangor Nature Park",
+      "Bukit Melawati",
+      "Firefly viewing"
+    ],
+    "weather_sensitive": true,
+    "description": "Coastal nature, wildlife and evening excursions."
+  },
+  {
+    "id": "DEST009",
+    "name": "Sekinchan",
+    "state": "Selangor",
+    "region": "Central",
+    "recommended_days_min": 1,
+    "recommended_days_max": 2,
+    "estimated_daily_budget_rm": 140,
+    "activities": [
+      "nature",
+      "photography",
+      "food",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "nature",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Paddy fields",
+      "Fishing village",
+      "Local seafood"
+    ],
+    "weather_sensitive": true,
+    "description": "Rural landscapes, seasonal paddy views and seafood."
+  },
+  {
+    "id": "DEST010",
+    "name": "Port Dickson",
+    "state": "Negeri Sembilan",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 170,
+    "activities": [
+      "beach",
+      "relaxation",
+      "theme_parks",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "family"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Teluk Kemang",
+      "Cape Rachado",
+      "Coastal beaches"
+    ],
+    "weather_sensitive": true,
+    "description": "Convenient seaside escape with beaches and family activities."
+  },
+  {
+    "id": "DEST011",
+    "name": "Seremban",
+    "state": "Negeri Sembilan",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 140,
+    "activities": [
+      "food",
+      "history",
+      "culture",
+      "shopping"
+    ],
+    "travel_styles": [
+      "culture",
+      "city"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Seremban town",
+      "Local food",
+      "Heritage streets"
+    ],
+    "weather_sensitive": false,
+    "description": "Local cuisine and heritage in Negeri Sembilan."
+  },
+  {
+    "id": "DEST012",
+    "name": "Seri Menanti",
+    "state": "Negeri Sembilan",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 2,
+    "estimated_daily_budget_rm": 140,
+    "activities": [
+      "history",
+      "culture",
+      "photography",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "culture",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Seri Menanti Royal Museum",
+      "Minangkabau architecture",
+      "Heritage landmarks"
+    ],
+    "weather_sensitive": false,
+    "description": "Traditional royal heritage and distinctive architecture."
+  },
+  {
+    "id": "DEST013",
+    "name": "Melaka City",
+    "state": "Melaka",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 160,
+    "activities": [
+      "history",
+      "food",
+      "culture",
+      "shopping",
+      "photography"
+    ],
+    "travel_styles": [
+      "culture",
+      "city",
+      "family"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Jonker Street",
+      "Dutch Square",
+      "A Famosa"
+    ],
+    "weather_sensitive": false,
+    "description": "Historic streets, cultural sites and traditional food."
+  },
+  {
+    "id": "DEST014",
+    "name": "Ayer Keroh",
+    "state": "Melaka",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 170,
+    "activities": [
+      "nature",
+      "theme_parks",
+      "wildlife"
+    ],
+    "travel_styles": [
+      "family",
+      "nature"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Melaka Zoo",
+      "Botanical Garden",
+      "Recreational parks"
+    ],
+    "weather_sensitive": true,
+    "description": "Green spaces and family-friendly attractions."
+  },
+  {
+    "id": "DEST015",
+    "name": "Johor Bahru",
+    "state": "Johor",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 190,
+    "activities": [
+      "shopping",
+      "food",
+      "theme_parks",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "city",
+      "family"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "LEGOLAND Malaysia",
+      "City Centre",
+      "Johor Zoo"
+    ],
+    "weather_sensitive": false,
+    "description": "Urban shopping, family entertainment and food."
+  },
+  {
+    "id": "DEST016",
+    "name": "Desaru Coast",
+    "state": "Johor",
+    "region": "Southern",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 260,
+    "activities": [
+      "beach",
+      "relaxation",
+      "theme_parks",
+      "nature"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "family",
+      "luxury"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Desaru Beach",
+      "Adventure Waterpark",
+      "Coastal resorts"
+    ],
+    "weather_sensitive": true,
+    "description": "Coastal resorts, beaches and family leisure."
+  },
+  {
+    "id": "DEST017",
+    "name": "Mersing",
+    "state": "Johor",
+    "region": "Southern",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 180,
+    "activities": [
+      "beach",
+      "nature",
+      "island_hopping",
+      "adventure"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Mersing waterfront",
+      "Island departure points",
+      "Coastal scenery"
+    ],
+    "weather_sensitive": true,
+    "description": "Coastal gateway for nearby islands and outdoor exploration."
+  },
+  {
+    "id": "DEST018",
+    "name": "Muar",
+    "state": "Johor",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 140,
+    "activities": [
+      "food",
+      "history",
+      "culture",
+      "photography"
+    ],
+    "travel_styles": [
+      "culture",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Muar River",
+      "Historic town centre",
+      "Local cuisine"
+    ],
+    "weather_sensitive": false,
+    "description": "Riverside town known for heritage and local food."
+  },
+  {
+    "id": "DEST019",
+    "name": "Kluang",
+    "state": "Johor",
+    "region": "Southern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 160,
+    "activities": [
+      "hiking",
+      "nature",
+      "food",
+      "photography"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Gunung Lambak",
+      "Kluang town",
+      "Coffee shops"
+    ],
+    "weather_sensitive": true,
+    "description": "Hillside walks, local food and small-town experiences."
+  },
+  {
+    "id": "DEST020",
+    "name": "Kangar",
+    "state": "Perlis",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 2,
+    "estimated_daily_budget_rm": 120,
+    "activities": [
+      "food",
+      "culture",
+      "sightseeing",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "culture",
+      "budget"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Town centre",
+      "Local cuisine",
+      "Perlis countryside"
+    ],
+    "weather_sensitive": false,
+    "description": "Quiet town for local culture and regional exploration."
+  },
+  {
+    "id": "DEST021",
+    "name": "Kuala Perlis",
+    "state": "Perlis",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 2,
+    "estimated_daily_budget_rm": 130,
+    "activities": [
+      "food",
+      "photography",
+      "relaxation",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "budget"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Waterfront",
+      "Fishing boats",
+      "Local seafood"
+    ],
+    "weather_sensitive": true,
+    "description": "Coastal town with seafood and waterfront views."
+  },
+  {
+    "id": "DEST022",
+    "name": "Langkawi",
+    "state": "Kedah",
+    "region": "Northern",
+    "recommended_days_min": 3,
+    "recommended_days_max": 6,
+    "estimated_daily_budget_rm": 240,
+    "activities": [
+      "beach",
+      "island_hopping",
+      "nature",
+      "adventure",
+      "photography"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "adventure",
+      "luxury"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Pantai Cenang",
+      "Sky Bridge",
+      "Kilim Geoforest Park"
+    ],
+    "weather_sensitive": true,
+    "description": "Island scenery, beaches and outdoor activities."
+  },
+  {
+    "id": "DEST023",
+    "name": "Alor Setar",
+    "state": "Kedah",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 140,
+    "activities": [
+      "history",
+      "culture",
+      "food",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "culture",
+      "budget"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Alor Setar Tower",
+      "Zahir Mosque",
+      "Royal Museum"
+    ],
+    "weather_sensitive": false,
+    "description": "Cultural landmarks and local Kedah food."
+  },
+  {
+    "id": "DEST024",
+    "name": "Gunung Jerai",
+    "state": "Kedah",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 180,
+    "activities": [
+      "nature",
+      "hiking",
+      "photography",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "highlights": [
+      "Mountain viewpoints",
+      "Forest trails",
+      "Highland scenery"
+    ],
+    "weather_sensitive": true,
+    "description": "Elevated landscapes and nature-focused outings."
+  },
+  {
+    "id": "DEST025",
+    "name": "George Town",
+    "state": "Penang",
+    "region": "Northern",
+    "recommended_days_min": 2,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 190,
+    "activities": [
+      "history",
+      "food",
+      "culture",
+      "shopping",
+      "photography"
+    ],
+    "travel_styles": [
+      "culture",
+      "city"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "George Town heritage streets",
+      "Street art",
+      "Penang food"
+    ],
+    "weather_sensitive": false,
+    "description": "Heritage city with diverse cuisine and architecture."
+  },
+  {
+    "id": "DEST026",
+    "name": "Batu Ferringhi",
+    "state": "Penang",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 220,
+    "activities": [
+      "beach",
+      "relaxation",
+      "shopping",
+      "photography"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "family"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Batu Ferringhi Beach",
+      "Night market",
+      "Coastal resorts"
+    ],
+    "weather_sensitive": true,
+    "description": "Beachfront leisure and evening markets."
+  },
+  {
+    "id": "DEST027",
+    "name": "Balik Pulau",
+    "state": "Penang",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 160,
+    "activities": [
+      "nature",
+      "food",
+      "photography",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "nature",
+      "relaxation",
+      "budget"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Rural landscapes",
+      "Local farms",
+      "Traditional food"
+    ],
+    "weather_sensitive": true,
+    "description": "Countryside scenery and quieter Penang experiences."
+  },
+  {
+    "id": "DEST028",
+    "name": "Ipoh",
+    "state": "Perak",
+    "region": "Northern",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 160,
+    "activities": [
+      "food",
+      "history",
+      "nature",
+      "photography"
+    ],
+    "travel_styles": [
+      "culture",
+      "city",
+      "budget"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Ipoh Old Town",
+      "Kek Lok Tong",
+      "Concubine Lane"
+    ],
+    "weather_sensitive": false,
+    "description": "Heritage buildings, cave temples and local cuisine."
+  },
+  {
+    "id": "DEST029",
+    "name": "Taiping",
+    "state": "Perak",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 150,
+    "activities": [
+      "nature",
+      "history",
+      "wildlife",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "nature",
+      "family",
+      "budget"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Taiping Lake Gardens",
+      "Taiping Zoo",
+      "Perak Museum"
+    ],
+    "weather_sensitive": true,
+    "description": "Leafy parks, heritage and wildlife attractions."
+  },
+  {
+    "id": "DEST030",
+    "name": "Pangkor Island",
+    "state": "Perak",
+    "region": "Northern",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 210,
+    "activities": [
+      "beach",
+      "nature",
+      "relaxation",
+      "food"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "nature"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Pangkor beaches",
+      "Fishing villages",
+      "Island scenery"
+    ],
+    "weather_sensitive": true,
+    "description": "Island getaway with beaches and coastal culture."
+  },
+  {
+    "id": "DEST031",
+    "name": "Kuala Kangsar",
+    "state": "Perak",
+    "region": "Northern",
+    "recommended_days_min": 1,
+    "recommended_days_max": 2,
+    "estimated_daily_budget_rm": 150,
+    "activities": [
+      "history",
+      "culture",
+      "photography",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "culture",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Ubudiah Mosque",
+      "Royal Museum",
+      "Riverside views"
+    ],
+    "weather_sensitive": false,
+    "description": "Royal heritage and striking traditional architecture."
+  },
+  {
+    "id": "DEST032",
+    "name": "Kota Bharu",
+    "state": "Kelantan",
+    "region": "East Coast",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 150,
+    "activities": [
+      "culture",
+      "food",
+      "history",
+      "shopping"
+    ],
+    "travel_styles": [
+      "culture",
+      "budget"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Siti Khadijah Market",
+      "Traditional crafts",
+      "Local cuisine"
+    ],
+    "weather_sensitive": false,
+    "description": "Kelantanese markets, food and cultural traditions."
+  },
+  {
+    "id": "DEST033",
+    "name": "Gua Musang",
+    "state": "Kelantan",
+    "region": "East Coast",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 170,
+    "activities": [
+      "nature",
+      "hiking",
+      "adventure",
+      "photography"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "highlights": [
+      "Limestone hills",
+      "Forest scenery",
+      "Outdoor trails"
+    ],
+    "weather_sensitive": true,
+    "description": "Limestone landscapes and outdoor exploration."
+  },
+  {
+    "id": "DEST034",
+    "name": "Kuala Terengganu",
+    "state": "Terengganu",
+    "region": "East Coast",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 170,
+    "activities": [
+      "culture",
+      "food",
+      "history",
+      "beach",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "culture",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Crystal Mosque",
+      "Pasar Payang",
+      "Drawbridge"
+    ],
+    "weather_sensitive": true,
+    "description": "Malay heritage, waterfront sights and local cuisine."
+  },
+  {
+    "id": "DEST035",
+    "name": "Perhentian Islands",
+    "state": "Terengganu",
+    "region": "East Coast",
+    "recommended_days_min": 3,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 280,
+    "activities": [
+      "beach",
+      "diving",
+      "island_hopping",
+      "wildlife",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "adventure",
+      "relaxation",
+      "nature"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Snorkelling",
+      "Beaches",
+      "Marine life"
+    ],
+    "weather_sensitive": true,
+    "description": "Island getaway for snorkelling and marine activities."
+  },
+  {
+    "id": "DEST036",
+    "name": "Redang Island",
+    "state": "Terengganu",
+    "region": "East Coast",
+    "recommended_days_min": 3,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 320,
+    "activities": [
+      "beach",
+      "diving",
+      "island_hopping",
+      "relaxation"
+    ],
+    "travel_styles": [
+      "relaxation",
+      "luxury",
+      "adventure"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Pasir Panjang",
+      "Snorkelling",
+      "Marine park"
+    ],
+    "weather_sensitive": true,
+    "description": "Clear-water island escape with marine experiences."
+  },
+  {
+    "id": "DEST037",
+    "name": "Kenyir Lake",
+    "state": "Terengganu",
+    "region": "East Coast",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 220,
+    "activities": [
+      "nature",
+      "wildlife",
+      "adventure",
+      "photography"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Lake scenery",
+      "Boat excursions",
+      "Forest surroundings"
+    ],
+    "weather_sensitive": true,
+    "description": "Freshwater lake surrounded by tropical forest."
+  },
+  {
+    "id": "DEST038",
+    "name": "Cameron Highlands",
+    "state": "Pahang",
+    "region": "East Coast",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 190,
+    "activities": [
+      "nature",
+      "relaxation",
+      "photography",
+      "food"
+    ],
+    "travel_styles": [
+      "nature",
+      "relaxation",
+      "family"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Tea plantations",
+      "Mossy Forest",
+      "Farms"
+    ],
+    "weather_sensitive": true,
+    "description": "Cool highlands with tea estates and scenic views."
+  },
+  {
+    "id": "DEST039",
+    "name": "Taman Negara",
+    "state": "Pahang",
+    "region": "East Coast",
+    "recommended_days_min": 3,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 250,
+    "activities": [
+      "nature",
+      "hiking",
+      "wildlife",
+      "adventure"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "highlights": [
+      "Rainforest trails",
+      "River activities",
+      "Wildlife observation"
+    ],
+    "weather_sensitive": true,
+    "description": "Tropical rainforest exploration and outdoor adventure."
+  },
+  {
+    "id": "DEST040",
+    "name": "Genting Highlands",
+    "state": "Pahang",
+    "region": "East Coast",
+    "recommended_days_min": 1,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 250,
+    "activities": [
+      "theme_parks",
+      "shopping",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "family",
+      "city",
+      "luxury"
+    ],
+    "suitable_for": [
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Genting SkyWorlds",
+      "Awana SkyWay",
+      "SkyAvenue"
+    ],
+    "weather_sensitive": false,
+    "description": "Highland resort with theme parks and entertainment."
+  },
+  {
+    "id": "DEST041",
+    "name": "Tioman Island",
+    "state": "Pahang",
+    "region": "East Coast",
+    "recommended_days_min": 3,
+    "recommended_days_max": 6,
+    "estimated_daily_budget_rm": 270,
+    "activities": [
+      "beach",
+      "diving",
+      "island_hopping",
+      "nature"
+    ],
+    "travel_styles": [
+      "adventure",
+      "relaxation",
+      "nature"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Beaches",
+      "Diving sites",
+      "Rainforest trails"
+    ],
+    "weather_sensitive": true,
+    "description": "Island destination for marine activities and forest scenery."
+  },
+  {
+    "id": "DEST042",
+    "name": "Kota Kinabalu",
+    "state": "Sabah",
+    "region": "East Malaysia",
+    "recommended_days_min": 3,
+    "recommended_days_max": 6,
+    "estimated_daily_budget_rm": 230,
+    "activities": [
+      "beach",
+      "island_hopping",
+      "food",
+      "nature",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "city",
+      "adventure",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Waterfront",
+      "Tunku Abdul Rahman Marine Park",
+      "Markets"
+    ],
+    "weather_sensitive": true,
+    "description": "Coastal city and gateway to island experiences."
+  },
+  {
+    "id": "DEST043",
+    "name": "Kundasang",
+    "state": "Sabah",
+    "region": "East Malaysia",
+    "recommended_days_min": 2,
+    "recommended_days_max": 4,
+    "estimated_daily_budget_rm": 200,
+    "activities": [
+      "nature",
+      "photography",
+      "relaxation",
+      "hiking"
+    ],
+    "travel_styles": [
+      "nature",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Kinabalu Park",
+      "Desa Dairy Farm",
+      "Mountain views"
+    ],
+    "weather_sensitive": true,
+    "description": "Mountain scenery and cool highland landscapes."
+  },
+  {
+    "id": "DEST044",
+    "name": "Sandakan",
+    "state": "Sabah",
+    "region": "East Malaysia",
+    "recommended_days_min": 2,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 220,
+    "activities": [
+      "wildlife",
+      "nature",
+      "history",
+      "photography"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Sepilok Orangutan Rehabilitation Centre",
+      "Rainforest Discovery Centre",
+      "Heritage sites"
+    ],
+    "weather_sensitive": true,
+    "description": "Wildlife conservation attractions and natural landscapes."
+  },
+  {
+    "id": "DEST045",
+    "name": "Semporna",
+    "state": "Sabah",
+    "region": "East Malaysia",
+    "recommended_days_min": 3,
+    "recommended_days_max": 6,
+    "estimated_daily_budget_rm": 300,
+    "activities": [
+      "diving",
+      "island_hopping",
+      "beach",
+      "wildlife"
+    ],
+    "travel_styles": [
+      "adventure",
+      "nature",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "highlights": [
+      "Island excursions",
+      "Diving",
+      "Marine scenery"
+    ],
+    "weather_sensitive": true,
+    "description": "Gateway to Sabah island and diving excursions."
+  },
+  {
+    "id": "DEST046",
+    "name": "Kinabatangan River",
+    "state": "Sabah",
+    "region": "East Malaysia",
+    "recommended_days_min": 3,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 290,
+    "activities": [
+      "wildlife",
+      "nature",
+      "photography",
+      "adventure"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "River cruises",
+      "Wildlife watching",
+      "Rainforest"
+    ],
+    "weather_sensitive": true,
+    "description": "River-based wildlife watching and rainforest experiences."
+  },
+  {
+    "id": "DEST047",
+    "name": "Kuching",
+    "state": "Sarawak",
+    "region": "East Malaysia",
+    "recommended_days_min": 2,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 210,
+    "activities": [
+      "culture",
+      "food",
+      "history",
+      "wildlife"
+    ],
+    "travel_styles": [
+      "culture",
+      "city",
+      "nature"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Kuching Waterfront",
+      "Sarawak Cultural Village",
+      "Semenggoh Wildlife Centre"
+    ],
+    "weather_sensitive": false,
+    "description": "Cultural city with food, heritage and wildlife experiences."
+  },
+  {
+    "id": "DEST048",
+    "name": "Miri",
+    "state": "Sarawak",
+    "region": "East Malaysia",
+    "recommended_days_min": 2,
+    "recommended_days_max": 5,
+    "estimated_daily_budget_rm": 210,
+    "activities": [
+      "nature",
+      "food",
+      "beach",
+      "sightseeing"
+    ],
+    "travel_styles": [
+      "nature",
+      "city",
+      "relaxation"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends",
+      "family"
+    ],
+    "highlights": [
+      "Miri waterfront",
+      "Local markets",
+      "Nearby nature sites"
+    ],
+    "weather_sensitive": true,
+    "description": "Coastal city with local food and nature excursions."
+  },
+  {
+    "id": "DEST049",
+    "name": "Bako National Park",
+    "state": "Sarawak",
+    "region": "East Malaysia",
+    "recommended_days_min": 2,
+    "recommended_days_max": 3,
+    "estimated_daily_budget_rm": 220,
+    "activities": [
+      "nature",
+      "hiking",
+      "wildlife",
+      "photography"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "highlights": [
+      "Nature trails",
+      "Coastal scenery",
+      "Proboscis monkeys"
+    ],
+    "weather_sensitive": true,
+    "description": "Coastal national park known for wildlife and trekking."
+  },
+  {
+    "id": "DEST050",
+    "name": "Gunung Mulu National Park",
+    "state": "Sarawak",
+    "region": "East Malaysia",
+    "recommended_days_min": 3,
+    "recommended_days_max": 6,
+    "estimated_daily_budget_rm": 360,
+    "activities": [
+      "nature",
+      "hiking",
+      "adventure",
+      "photography"
+    ],
+    "travel_styles": [
+      "nature",
+      "adventure"
+    ],
+    "suitable_for": [
+      "solo",
+      "couple",
+      "friends"
+    ],
+    "highlights": [
+      "Show caves",
+      "Limestone pinnacles",
+      "Rainforest"
+    ],
+    "weather_sensitive": true,
+    "description": "National park featuring caves, limestone formations and rainforest."
+  }
+]

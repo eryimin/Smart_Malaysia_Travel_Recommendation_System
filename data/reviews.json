@@ -1,0 +1,2528 @@
+[
+    {
+        "destination_id": "DEST001",
+        "user_id": "traveller1",
+        "rating": 2,
+        "review": "",
+        "created_at": "2026-11-13T22:35:55"
+    },
+    {
+        "destination_id": "DEST001",
+        "user_id": "joanne",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-13T22:04:49"
+    },
+    {
+        "destination_id": "DEST001",
+        "user_id": "yimin",
+        "rating": 5,
+        "review": "goooooood",
+        "created_at": "2026-11-13T22:09:29"
+    },
+    {
+        "destination_id": "DEST001",
+        "user_id": "JiaYi",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-08-09T16:08:06",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST001",
+        "user_id": "cookie",
+        "rating": 3,
+        "review": "",
+        "created_at": "2026-08-15T17:19:01",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST001",
+        "user_id": "Haziq",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-10-26T19:55:43",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST001",
+        "user_id": "Adam",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-09-03T20:03:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST001",
+        "user_id": "sora",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-08-18T20:10:57",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST002",
+        "user_id": "Bella",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-09-10T16:03:33",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST002",
+        "user_id": "Ryan",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-10-09T15:06:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST002",
+        "user_id": "milktea",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-03T10:44:10",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST002",
+        "user_id": "rainyday",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-08-10T15:23:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "Bryan",
+        "rating": 3,
+        "review": "An okay experience overall.",
+        "created_at": "2026-10-06T10:52:38",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "potato",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-10-31T19:39:47",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "Marcus",
+        "rating": 3,
+        "review": "",
+        "created_at": "2026-08-03T20:45:39",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "Aisyah",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-11-06T10:56:26",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "Nicole",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-11-05T16:13:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "Siti",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-10-09T12:00:45",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "Zack",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-09-15T20:32:23",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST003",
+        "user_id": "luna",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-08-14T14:14:49",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST004",
+        "user_id": "Haziq",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-08-10T13:44:13",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST004",
+        "user_id": "Shawn",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-17T14:10:41",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST004",
+        "user_id": "JunHao",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-09-20T11:01:56",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST004",
+        "user_id": "Hakim",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-08-27T21:18:41",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST004",
+        "user_id": "mint",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-08-30T16:56:33",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST005",
+        "user_id": "Lucas",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-08-21T16:06:40",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST005",
+        "user_id": "Elly",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-09-14T09:10:38",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST005",
+        "user_id": "coco",
+        "rating": 2,
+        "review": "Some attractions were nice, but the overall experience was average.",
+        "created_at": "2026-10-30T15:03:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST005",
+        "user_id": "Daniel",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-28T10:16:11",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST005",
+        "user_id": "peach",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-10T10:21:39",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST006",
+        "user_id": "Aina",
+        "rating": 2,
+        "review": "The place has potential, but it could be maintained better.",
+        "created_at": "2026-08-26T16:38:14",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST006",
+        "user_id": "Sarah",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-09-18T17:16:11",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST006",
+        "user_id": "Amir",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-10-29T15:58:53",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST006",
+        "user_id": "hazelnut",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-14T14:57:59",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST007",
+        "user_id": "Jason",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-08-14T17:04:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST007",
+        "user_id": "Iman",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-10-24T14:21:38",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST007",
+        "user_id": "Celine",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-09-14T17:48:39",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST007",
+        "user_id": "sleepy",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-09-21T14:21:12",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST007",
+        "user_id": "lowkey",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-09-25T08:50:37",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST007",
+        "user_id": "AhLim",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-11-07T21:42:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST008",
+        "user_id": "rainyday",
+        "rating": 3,
+        "review": "",
+        "created_at": "2026-08-25T20:22:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST008",
+        "user_id": "Yong",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-08-04T19:44:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST008",
+        "user_id": "Siti",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-09-11T21:35:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST008",
+        "user_id": "JiaEn",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-08-30T09:59:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST008",
+        "user_id": "Darren",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-08-19T19:57:37",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST009",
+        "user_id": "tofu",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-08-31T12:50:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST009",
+        "user_id": "ShuMin",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-09-10T14:27:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST009",
+        "user_id": "Sofia",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-11-05T08:41:43",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST009",
+        "user_id": "Grace",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-08-02T13:56:02",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST009",
+        "user_id": "Jin",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-02T21:25:44",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST010",
+        "user_id": "Sofia",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-09-16T11:12:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST010",
+        "user_id": "blu",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-08-01T09:22:29",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST010",
+        "user_id": "mint",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-10-08T18:21:29",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST010",
+        "user_id": "nobody",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-10-20T12:01:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST010",
+        "user_id": "Adam",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-10-07T19:18:01",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST010",
+        "user_id": "Darren",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-09-14T12:50:34",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST011",
+        "user_id": "Zack",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-09-27T13:30:48",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST011",
+        "user_id": "JunHao",
+        "rating": 2,
+        "review": "Quite crowded during my visit.",
+        "created_at": "2026-08-20T19:57:14",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST011",
+        "user_id": "WeiHan",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-10-28T11:44:24",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST011",
+        "user_id": "Nazmi",
+        "rating": 3,
+        "review": "An okay experience overall.",
+        "created_at": "2026-10-19T12:01:01",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST011",
+        "user_id": "Hakim",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-09-09T12:14:25",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST011",
+        "user_id": "casper",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-11-10T11:45:52",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST011",
+        "user_id": "daydream",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-09-20T13:08:45",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST012",
+        "user_id": "Ethan",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-09-06T21:10:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST012",
+        "user_id": "JunHao",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-11-11T19:57:02",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST012",
+        "user_id": "matcha",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-10-05T15:50:16",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST012",
+        "user_id": "AhLim",
+        "rating": 3,
+        "review": "Nice scenery, though the facilities could improve.",
+        "created_at": "2026-08-13T16:03:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "Vivian",
+        "rating": 3,
+        "review": "An okay experience overall.",
+        "created_at": "2026-08-01T14:50:36",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "Hazel",
+        "rating": 3,
+        "review": "Not bad, but some areas need better maintenance.",
+        "created_at": "2026-08-19T14:38:24",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "Jayden",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-24T17:51:02",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "mint",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-08-07T14:21:10",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "AhTan",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-09-22T19:50:55",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "daydream",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-08-30T16:39:23",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "Aiman",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-09-23T14:53:17",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "luna",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-11-05T18:03:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST014",
+        "user_id": "Zack",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-23T20:17:37",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST014",
+        "user_id": "sleepy",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-11-05T17:13:49",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST014",
+        "user_id": "Nazmi",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-11-12T17:02:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST014",
+        "user_id": "Ryan",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-10-16T13:26:06",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST014",
+        "user_id": "Tiffany",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-08-19T20:29:06",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST014",
+        "user_id": "daydream",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-11-04T12:57:44",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "Sarah",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-11-09T11:32:24",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "Tiffany",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-08-28T08:54:52",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "chillguy",
+        "rating": 3,
+        "review": "Some interesting spots, but it was crowded.",
+        "created_at": "2026-10-28T08:30:20",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "Yong",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-08-10T11:52:33",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "Grace",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-10-26T08:57:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "Zara",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-10-23T20:25:04",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "Iman",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-04T15:50:44",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST015",
+        "user_id": "Hakim",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-09-08T21:04:28",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST016",
+        "user_id": "nobody",
+        "rating": 3,
+        "review": "Enjoyed parts of the trip, but expected more.",
+        "created_at": "2026-09-10T08:14:16",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST016",
+        "user_id": "Alicia",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-09-01T18:30:20",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST016",
+        "user_id": "AhTan",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-01T09:31:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST016",
+        "user_id": "Irfan",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-12T17:51:58",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST016",
+        "user_id": "Celine",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-08-09T14:34:52",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST017",
+        "user_id": "ash",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-08-18T11:46:27",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST017",
+        "user_id": "kiki",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-10-18T15:39:57",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST017",
+        "user_id": "Kelvin",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-10-28T13:36:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST017",
+        "user_id": "Jason",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-08-18T09:42:29",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST017",
+        "user_id": "JunHao",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-08-16T14:33:59",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "Yong",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-10-14T12:10:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "Ryan",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-10-04T20:36:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "JunHao",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-01T12:32:04",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "Kevin",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-08-01T08:45:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "JiaEn",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-11-11T16:17:27",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "sora",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-08-06T19:21:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "miso",
+        "rating": 2,
+        "review": "The place has potential, but it could be maintained better.",
+        "created_at": "2026-08-06T17:36:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST019",
+        "user_id": "Shawn",
+        "rating": 2,
+        "review": "Quite crowded during my visit.",
+        "created_at": "2026-10-07T20:29:59",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST019",
+        "user_id": "kopi",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-10-02T12:52:27",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST019",
+        "user_id": "hazelnut",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-11-05T19:27:53",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST019",
+        "user_id": "Grace",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-09-24T08:51:39",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST019",
+        "user_id": "sky",
+        "rating": 3,
+        "review": "",
+        "created_at": "2026-08-02T18:36:12",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST019",
+        "user_id": "ash",
+        "rating": 2,
+        "review": "The place has potential, but it could be maintained better.",
+        "created_at": "2026-08-21T19:35:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST019",
+        "user_id": "Daniel",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-10-07T20:49:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "Shawn",
+        "rating": 3,
+        "review": "Some interesting spots, but it was crowded.",
+        "created_at": "2026-08-13T17:18:28",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "PeiLing",
+        "rating": 3,
+        "review": "Not bad, but some areas need better maintenance.",
+        "created_at": "2026-11-03T17:48:32",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "WeiLing",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-10-29T12:45:37",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "sora",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-08-15T20:13:17",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "miso",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-11-07T15:08:56",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "Haikal",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-11-05T11:46:48",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "Amir",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-09-25T09:43:48",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST021",
+        "user_id": "daydream",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-08-07T10:28:00",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST021",
+        "user_id": "momo",
+        "rating": 2,
+        "review": "Quite crowded during my visit.",
+        "created_at": "2026-09-09T17:01:34",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST021",
+        "user_id": "anonymous",
+        "rating": 2,
+        "review": "Some attractions were nice, but the overall experience was average.",
+        "created_at": "2026-11-08T12:27:25",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST021",
+        "user_id": "chillguy",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-09-01T10:47:14",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST021",
+        "user_id": "JiaHui",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-11-02T17:39:17",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST021",
+        "user_id": "peach",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-08-13T21:41:43",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST021",
+        "user_id": "JiaEn",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-09-12T20:04:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST022",
+        "user_id": "JunWei",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-08-29T11:08:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST022",
+        "user_id": "Celine",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-08-22T14:34:55",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST022",
+        "user_id": "Kelvin",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-11-06T08:02:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST022",
+        "user_id": "AhLim",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-08-30T21:57:36",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST022",
+        "user_id": "Elly",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-09-03T20:14:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "randomhuman",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-08-03T20:40:14",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "noone",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-09-15T18:05:58",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "Zara",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-08-09T14:58:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "Darren",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-10-11T19:40:25",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "momo",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-09-02T12:11:15",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "Rachel",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-10-07T19:02:51",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "cookie",
+        "rating": 3,
+        "review": "Enjoyed parts of the trip, but expected more.",
+        "created_at": "2026-09-12T21:51:26",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST023",
+        "user_id": "AhLim",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-10-15T12:23:59",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST024",
+        "user_id": "tofu",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-09-16T16:54:47",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST024",
+        "user_id": "kiki",
+        "rating": 2,
+        "review": "The place has potential, but it could be maintained better.",
+        "created_at": "2026-10-16T12:22:29",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST024",
+        "user_id": "Marcus",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-09-15T11:37:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST024",
+        "user_id": "sunny",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-08-03T09:14:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST024",
+        "user_id": "luna",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-07T19:30:55",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST024",
+        "user_id": "Shawn",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-09-23T18:23:47",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST024",
+        "user_id": "Farah",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-10-08T10:52:38",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST025",
+        "user_id": "coco",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-11-08T18:54:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST025",
+        "user_id": "tofu",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-10-22T11:07:12",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST025",
+        "user_id": "stargazer",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-11-10T18:55:12",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST025",
+        "user_id": "Kelvin",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-08-07T15:03:11",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST025",
+        "user_id": "Bella",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-09-11T13:41:55",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST025",
+        "user_id": "Alicia",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-09-12T14:02:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST026",
+        "user_id": "Kelvin",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-09-30T11:48:16",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST026",
+        "user_id": "kiwi",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-11-11T20:36:10",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST026",
+        "user_id": "JiaYi",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-09-18T08:03:07",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST026",
+        "user_id": "mimi",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-08-07T11:47:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST026",
+        "user_id": "potato",
+        "rating": 3,
+        "review": "",
+        "created_at": "2026-09-19T12:49:27",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST026",
+        "user_id": "WeiHan",
+        "rating": 3,
+        "review": "Not bad, but some areas need better maintenance.",
+        "created_at": "2026-08-19T14:41:47",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST026",
+        "user_id": "boba",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-09-24T13:39:57",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST027",
+        "user_id": "Hannah",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-09-11T12:44:19",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST027",
+        "user_id": "Adam",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-08-22T14:59:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST027",
+        "user_id": "KaiWen",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-08-12T14:03:57",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST027",
+        "user_id": "Syafiq",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-10-29T16:09:14",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST027",
+        "user_id": "Bryan",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-09-14T11:34:37",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST027",
+        "user_id": "WeiLing",
+        "rating": 3,
+        "review": "Not bad, but some areas need better maintenance.",
+        "created_at": "2026-08-22T13:27:51",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST028",
+        "user_id": "boba",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-09-18T15:39:10",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST028",
+        "user_id": "Aiman",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-17T11:47:24",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST028",
+        "user_id": "matcha",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-10-24T08:56:40",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST028",
+        "user_id": "Ryan",
+        "rating": 3,
+        "review": "Nice scenery, though the facilities could improve.",
+        "created_at": "2026-09-09T17:21:47",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST028",
+        "user_id": "Alia",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-09-19T11:04:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST028",
+        "user_id": "kiwi",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-08-28T18:25:02",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST029",
+        "user_id": "Evelyn",
+        "rating": 3,
+        "review": "An okay experience overall.",
+        "created_at": "2026-10-30T16:59:24",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST029",
+        "user_id": "Irfan",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-09-10T09:24:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST029",
+        "user_id": "XinYi",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-10-07T10:10:16",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST029",
+        "user_id": "sunny",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-10-15T15:58:51",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST029",
+        "user_id": "sora",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-09-11T10:52:20",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST030",
+        "user_id": "Aina",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-29T10:45:14",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST030",
+        "user_id": "hazelnut",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-28T18:57:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST030",
+        "user_id": "WeiLing",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-09-10T21:03:37",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST030",
+        "user_id": "Sabrina",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-09-17T08:19:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST030",
+        "user_id": "mimi",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-09-19T12:29:38",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST030",
+        "user_id": "yuki",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-10-22T17:54:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST031",
+        "user_id": "Syafiqa",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-09-01T09:11:58",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST031",
+        "user_id": "Siti",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-09-09T18:12:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST031",
+        "user_id": "blu",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-12T11:01:48",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST031",
+        "user_id": "Nicole",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-08-19T19:47:58",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST032",
+        "user_id": "ash",
+        "rating": 2,
+        "review": "The place has potential, but it could be maintained better.",
+        "created_at": "2026-11-05T10:02:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST032",
+        "user_id": "cookie",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-09-16T18:03:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST032",
+        "user_id": "Marcus",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-10-20T19:02:47",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST032",
+        "user_id": "Syafiq",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-10-12T15:32:07",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST033",
+        "user_id": "boba",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-03T11:38:57",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST033",
+        "user_id": "Farah",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-21T11:35:17",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST033",
+        "user_id": "Syafiq",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-10-25T20:58:56",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST033",
+        "user_id": "mochi",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-08-12T09:39:35",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "Bryan",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-09-24T15:48:57",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "Ethan",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-08-20T16:16:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "casper",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-10-14T09:23:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "kiki",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-10-24T17:52:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "Izzah",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-08-16T15:42:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "Zack",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-11-04T16:58:56",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "sora",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-09-15T08:50:12",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST034",
+        "user_id": "littlebean",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-11-09T16:05:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST035",
+        "user_id": "daydream",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-08-12T12:39:16",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST035",
+        "user_id": "Hannah",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-08-28T16:57:06",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST035",
+        "user_id": "ZiXuan",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-08-16T20:16:58",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST035",
+        "user_id": "Celine",
+        "rating": 3,
+        "review": "Not bad, but some areas need better maintenance.",
+        "created_at": "2026-10-07T19:39:00",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST035",
+        "user_id": "sunny",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-09-19T09:59:25",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST036",
+        "user_id": "Nicholas",
+        "rating": 3,
+        "review": "An okay experience overall.",
+        "created_at": "2026-09-29T13:38:55",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST036",
+        "user_id": "PeiXin",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-08-06T18:39:26",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST036",
+        "user_id": "Zara",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-08-14T09:18:43",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST036",
+        "user_id": "Aqil",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-09-17T20:29:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST036",
+        "user_id": "Sarah",
+        "rating": 2,
+        "review": "Quite crowded during my visit.",
+        "created_at": "2026-10-26T15:08:33",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST036",
+        "user_id": "Farah",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-08-01T12:20:41",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST036",
+        "user_id": "littlebean",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-10-15T15:17:00",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST037",
+        "user_id": "kiwi",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-09-01T10:09:48",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST037",
+        "user_id": "JunWei",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-10-09T19:52:10",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST037",
+        "user_id": "Joanne",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-24T13:10:16",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST037",
+        "user_id": "Siti",
+        "rating": 3,
+        "review": "Good for a short visit.",
+        "created_at": "2026-08-23T15:54:53",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST037",
+        "user_id": "Aina",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-08-30T16:30:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST037",
+        "user_id": "anonymous",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-04T18:32:52",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "Siti",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-10-30T13:31:20",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "milktea",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-11T18:10:30",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "Daniel",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-08-22T16:31:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "Amir",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-09-16T08:14:49",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "panda",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-09-07T09:10:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "Celine",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-08-24T17:27:25",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "WeiJie",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-08-28T20:01:13",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "Ryan",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-19T18:31:29",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST039",
+        "user_id": "mochi",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-09-05T12:03:58",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST039",
+        "user_id": "matcha",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-20T12:11:43",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST039",
+        "user_id": "AhTan",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-10-03T14:11:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST039",
+        "user_id": "Nazmi",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-11-12T12:39:30",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST039",
+        "user_id": "coco",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-11-12T14:10:28",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST040",
+        "user_id": "maple",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-08-29T18:05:40",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST040",
+        "user_id": "Izzah",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-09-11T15:59:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST040",
+        "user_id": "miso",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-11-09T20:20:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST040",
+        "user_id": "cookie",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-08-25T09:21:57",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST040",
+        "user_id": "Ryan",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-01T10:14:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "Bella",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-11-05T18:51:55",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "kiki",
+        "rating": 2,
+        "review": "Some attractions were nice, but the overall experience was average.",
+        "created_at": "2026-10-20T21:45:09",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "daydream",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-11-07T12:27:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "JiaEn",
+        "rating": 2,
+        "review": "The place has potential, but it could be maintained better.",
+        "created_at": "2026-10-23T11:09:41",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "Tiffany",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-11-04T19:53:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "sora",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-10-30T12:23:05",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "Alia",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-09-19T14:06:00",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "Bryan",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-09-15T17:11:39",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "yuki",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-08-21T13:58:26",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "Nicole",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-09T19:40:25",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "Celine",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-08-30T12:19:02",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "casper",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-08-25T14:28:48",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "Jasmine",
+        "rating": 5,
+        "review": "Beautiful scenery and a lovely atmosphere.",
+        "created_at": "2026-09-19T09:18:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "AhTan",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-10-28T08:32:32",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "sunny",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-09-14T15:32:12",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "Nicole",
+        "rating": 3,
+        "review": "Nice scenery, though the facilities could improve.",
+        "created_at": "2026-08-25T10:46:53",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "milktea",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-10-09T20:39:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "tofu",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-17T15:24:29",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "randomhuman",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-10-15T09:47:03",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "sleepy",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-10-24T11:20:55",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "peach",
+        "rating": 3,
+        "review": "An okay experience overall.",
+        "created_at": "2026-10-21T20:05:28",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "JiaYi",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-09-23T16:12:38",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST043",
+        "user_id": "maple",
+        "rating": 4,
+        "review": "Lovely surroundings, but parking could be better.",
+        "created_at": "2026-08-27T16:02:42",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST044",
+        "user_id": "icedlatte",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-11-05T21:49:47",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST044",
+        "user_id": "Ethan",
+        "rating": 2,
+        "review": "Some attractions were nice, but the overall experience was average.",
+        "created_at": "2026-10-04T16:26:41",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST044",
+        "user_id": "matcha",
+        "rating": 3,
+        "review": "Some interesting spots, but it was crowded.",
+        "created_at": "2026-09-10T09:52:21",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST044",
+        "user_id": "luna",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-09-29T20:56:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST044",
+        "user_id": "Evelyn",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-08-21T16:49:52",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST044",
+        "user_id": "JiaHui",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-09-15T17:57:38",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST044",
+        "user_id": "kiwi",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-09-01T21:38:52",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST045",
+        "user_id": "WeiHan",
+        "rating": 5,
+        "review": "Very enjoyable visit with plenty to explore.",
+        "created_at": "2026-10-20T14:08:10",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST045",
+        "user_id": "ShuMin",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-10-24T09:38:44",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST045",
+        "user_id": "JunHao",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-08-21T19:57:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST045",
+        "user_id": "Nadia",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-11-01T21:33:56",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST045",
+        "user_id": "Yong",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-11-12T19:57:31",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST045",
+        "user_id": "Kenny",
+        "rating": 2,
+        "review": "The place has potential, but it could be maintained better.",
+        "created_at": "2026-11-01T10:17:04",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST046",
+        "user_id": "matcha",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-08-31T20:34:25",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST046",
+        "user_id": "potato",
+        "rating": 4,
+        "review": "Worth visiting if you are in the area.",
+        "created_at": "2026-10-06T08:43:36",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST046",
+        "user_id": "tofu",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-08-19T21:28:26",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST046",
+        "user_id": "sora",
+        "rating": 3,
+        "review": "An okay experience overall.",
+        "created_at": "2026-09-02T08:09:07",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST046",
+        "user_id": "ZiXuan",
+        "rating": 3,
+        "review": "Enjoyed parts of the trip, but expected more.",
+        "created_at": "2026-10-20T18:31:24",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST046",
+        "user_id": "Izzah",
+        "rating": 5,
+        "review": "Lots of interesting things to see and do.",
+        "created_at": "2026-10-23T19:28:13",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST047",
+        "user_id": "peach",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-09-10T18:24:53",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST047",
+        "user_id": "Fatin",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-10-13T09:36:27",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST047",
+        "user_id": "Grace",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-08-01T10:09:51",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST047",
+        "user_id": "daydream",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-31T15:12:53",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST047",
+        "user_id": "mint",
+        "rating": 5,
+        "review": "A wonderful place to explore with friends.",
+        "created_at": "2026-11-09T13:30:34",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST047",
+        "user_id": "matcha",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-10-08T12:01:04",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST048",
+        "user_id": "Sofia",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-10-21T20:07:45",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST048",
+        "user_id": "ShuMin",
+        "rating": 4,
+        "review": "Had a good time exploring the area.",
+        "created_at": "2026-11-03T20:32:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST048",
+        "user_id": "Irfan",
+        "rating": 5,
+        "review": "The views were amazing. Would recommend visiting.",
+        "created_at": "2026-10-26T14:10:34",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST048",
+        "user_id": "JiaEn",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-09-16T15:27:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST048",
+        "user_id": "yuki",
+        "rating": 4,
+        "review": "A fun experience with family and friends.",
+        "created_at": "2026-09-10T21:27:28",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST049",
+        "user_id": "hazelnut",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-10-12T19:08:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST049",
+        "user_id": "stargazer",
+        "rating": 4,
+        "review": "Enjoyed the trip, although it was a little busy.",
+        "created_at": "2026-11-08T15:47:43",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST049",
+        "user_id": "Bryan",
+        "rating": 5,
+        "review": "Really enjoyed the visit and the attractions.",
+        "created_at": "2026-11-09T14:55:16",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST049",
+        "user_id": "potato",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-08-06T17:40:08",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST049",
+        "user_id": "WeiJie",
+        "rating": 2,
+        "review": "Quite crowded during my visit.",
+        "created_at": "2026-09-20T20:26:39",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST049",
+        "user_id": "Amir",
+        "rating": 4,
+        "review": "Nice place to visit and spend the day.",
+        "created_at": "2026-08-22T12:19:18",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST049",
+        "user_id": "Vivian",
+        "rating": 4,
+        "review": "Good attractions and a pleasant atmosphere.",
+        "created_at": "2026-10-04T16:13:02",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST050",
+        "user_id": "Fatin",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-10-23T08:54:54",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST050",
+        "user_id": "Joanne",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-11-09T14:54:07",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST050",
+        "user_id": "Nicole",
+        "rating": 5,
+        "review": "Great destination for a weekend trip.",
+        "created_at": "2026-10-24T10:47:40",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST050",
+        "user_id": "justme",
+        "rating": 5,
+        "review": "A relaxing and memorable experience.",
+        "created_at": "2026-08-02T21:22:23",
+        "is_demo": true
+    },
+    {
+        "destination_id": "DEST009",
+        "user_id": "traveller1",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-11-14T00:05:17"
+    },
+    {
+        "destination_id": "DEST002",
+        "user_id": "traveller1",
+        "rating": 3,
+        "review": "",
+        "created_at": "2026-11-19T03:12:13"
+    },
+    {
+        "destination_id": "DEST022",
+        "user_id": "traveller1",
+        "rating": 2,
+        "review": "",
+        "created_at": "2026-11-15T16:51:02"
+    },
+    {
+        "destination_id": "DEST012",
+        "user_id": "traveller1",
+        "rating": 2,
+        "review": "Hot weather",
+        "created_at": "2026-11-15T16:51:55"
+    },
+    {
+        "destination_id": "DEST042",
+        "user_id": "traveller1",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-11-15T18:59:25"
+    },
+    {
+        "destination_id": "DEST050",
+        "user_id": "traveller1",
+        "rating": 5,
+        "review": "Nice!",
+        "created_at": "2026-11-15T19:30:09"
+    },
+    {
+        "destination_id": "DEST038",
+        "user_id": "traveller1",
+        "rating": 4,
+        "review": "Niceeee",
+        "created_at": "2026-11-24T00:09:44"
+    },
+    {
+        "destination_id": "DEST030",
+        "user_id": "traveller1",
+        "rating": 1,
+        "review": "",
+        "created_at": "2026-11-15T19:31:17"
+    },
+    {
+        "destination_id": "DEST014",
+        "user_id": "traveller1",
+        "rating": 5,
+        "review": "",
+        "created_at": "2026-11-15T19:44:24"
+    },
+    {
+        "destination_id": "DEST013",
+        "user_id": "traveller1",
+        "rating": 5,
+        "review": "nice food and views",
+        "created_at": "2026-11-18T21:33:01"
+    },
+    {
+        "destination_id": "DEST020",
+        "user_id": "traveller1",
+        "rating": 3,
+        "review": "",
+        "created_at": "2026-11-19T02:48:05"
+    },
+    {
+        "destination_id": "DEST039",
+        "user_id": "traveller1",
+        "rating": 2,
+        "review": "",
+        "created_at": "2026-11-19T04:02:17"
+    },
+    {
+        "destination_id": "DEST016",
+        "user_id": "traveller1",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-11-19T04:04:12"
+    },
+    {
+        "destination_id": "DEST018",
+        "user_id": "traveller1",
+        "rating": 4,
+        "review": "",
+        "created_at": "2026-11-19T04:03:05"
+    },
+    {
+        "destination_id": "DEST041",
+        "user_id": "traveller1",
+        "rating": 4,
+        "review": "Nice place to visit",
+        "created_at": "2026-11-24T00:30:59"
+    }
+]

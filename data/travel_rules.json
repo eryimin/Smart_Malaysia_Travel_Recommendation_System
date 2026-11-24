@@ -1,0 +1,25 @@
+
+{
+    "system_name": "Smart Malaysia Travel Recommendation System",
+    "recommendation_method": "Weighted Rule-Based Scoring",
+
+    "weights": {
+        "budget_match": 30,
+        "activity_match": 30,
+        "duration_match": 20,
+        "travel_style_match": 10,
+        "companion_match": 10
+    },
+
+    "minimum_score_threshold": 35,
+    "maximum_recommendations": 10,
+
+    "budget_tolerance_percent": 20,
+    "duration_tolerance_days": 1,
+
+    "recommendation_levels": {
+        "excellent": 85,
+        "good": 70,
+        "fair": 50
+    }
+}

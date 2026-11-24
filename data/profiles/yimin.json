@@ -1,0 +1,169 @@
+{
+    "user_id": "yimin",
+    "created_at": "2026-11-23T19:25:48.116520",
+    "preferences": {
+        "budget_rm": 1400,
+        "duration_days": 3,
+        "destination_category": "City",
+        "activities": [
+            "beach",
+            "culture"
+        ],
+        "travel_style": "budget",
+        "companion": "solo",
+        "region": "East Malaysia"
+    },
+    "recommendation_history": [
+        {
+            "preferences": {
+                "budget_rm": 500,
+                "duration_days": 3,
+                "destination_category": "Any",
+                "activities": [],
+                "travel_style": "budget",
+                "companion": "friends",
+                "region": "Any"
+            },
+            "destination_ids": [
+                "DEST023",
+                "DEST029",
+                "DEST032",
+                "DEST027",
+                "DEST028",
+                "DEST020",
+                "DEST021",
+                "DEST004",
+                "DEST011",
+                "DEST018"
+            ],
+            "timestamp": "2026-11-23T19:25:48.143907"
+        },
+        {
+            "preferences": {
+                "budget_rm": 500,
+                "duration_days": 3,
+                "destination_category": "Any",
+                "activities": [],
+                "travel_style": "budget",
+                "companion": "friends",
+                "region": "Any"
+            },
+            "destination_ids": [
+                "DEST023",
+                "DEST029",
+                "DEST032",
+                "DEST027",
+                "DEST028",
+                "DEST020",
+                "DEST021",
+                "DEST004",
+                "DEST011",
+                "DEST018"
+            ],
+            "timestamp": "2026-11-23T19:25:56.255420"
+        },
+        {
+            "preferences": {
+                "budget_rm": 1400,
+                "duration_days": 3,
+                "destination_category": "Any",
+                "activities": [],
+                "travel_style": "budget",
+                "companion": "friends",
+                "region": "Any"
+            },
+            "destination_ids": [
+                "DEST023",
+                "DEST029",
+                "DEST032",
+                "DEST027",
+                "DEST028",
+                "DEST020",
+                "DEST021",
+                "DEST004",
+                "DEST011",
+                "DEST018"
+            ],
+            "timestamp": "2026-11-23T19:26:14.708477"
+        },
+        {
+            "preferences": {
+                "budget_rm": 1400,
+                "duration_days": 3,
+                "destination_category": "Any",
+                "activities": [
+                    "beach",
+                    "food",
+                    "shopping",
+                    "culture",
+                    "adventure",
+                    "relaxation"
+                ],
+                "travel_style": "budget",
+                "companion": "friends",
+                "region": "Any"
+            },
+            "destination_ids": [
+                "DEST032",
+                "DEST023",
+                "DEST027",
+                "DEST020",
+                "DEST011",
+                "DEST007",
+                "DEST029",
+                "DEST013",
+                "DEST028",
+                "DEST034"
+            ],
+            "timestamp": "2026-11-23T19:26:35.487493"
+        },
+        {
+            "preferences": {
+                "budget_rm": 1400,
+                "duration_days": 3,
+                "destination_category": "City",
+                "activities": [
+                    "beach",
+                    "culture"
+                ],
+                "travel_style": "budget",
+                "companion": "friends",
+                "region": "Any"
+            },
+            "destination_ids": [
+                "DEST011",
+                "DEST007",
+                "DEST013",
+                "DEST025",
+                "DEST047",
+                "DEST048",
+                "DEST042",
+                "DEST028",
+                "DEST004",
+                "DEST002"
+            ],
+            "timestamp": "2026-11-23T19:27:23.085817"
+        },
+        {
+            "preferences": {
+                "budget_rm": 1400,
+                "duration_days": 3,
+                "destination_category": "City",
+                "activities": [
+                    "beach",
+                    "culture"
+                ],
+                "travel_style": "budget",
+                "companion": "solo",
+                "region": "East Malaysia"
+            },
+            "destination_ids": [
+                "DEST047",
+                "DEST048",
+                "DEST042"
+            ],
+            "timestamp": "2026-11-23T19:28:02.294410"
+        }
+    ],
+    "favourites": []
+}

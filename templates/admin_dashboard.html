@@ -1,0 +1,1248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Smart Malaysia Travel</title>
+
+<style>
+:root {
+    --navy: #172b44;
+    --blue: #2563eb;
+    --green: #00875a;
+    --muted: #64748b;
+    --border: #e4eaf2;
+    --background: #f3f6fa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--navy);
+}
+
+.header {
+    background: var(--navy);
+    color: white;
+    padding: 22px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.logout-btn {
+    background: white;
+    color: #bd3e4e;
+    border: 1px solid #f3c9ce;
+    padding: 11px 18px;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #fff0f2;
+}
+
+.container {
+    max-width: 1330px;
+    margin: 35px auto;
+    padding: 0 24px;
+}
+
+.page-title {
+    margin-bottom: 22px;
+}
+
+.page-title h2 {
+    margin: 0 0 7px;
+    font-size: 24px;
+}
+
+.page-title p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* OVERVIEW CARDS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 23px;
+    box-shadow: 0 3px 14px rgba(23,43,68,.04);
+    min-width: 0;
+}
+
+.stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-icon {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 23px;
+}
+
+.stat-card:nth-child(1) .stat-icon {
+    background: #eaf3ff;
+    color: #2563eb;
+}
+
+.stat-card:nth-child(2) .stat-icon {
+    background: #eaf8ef;
+    color: #198456;
+}
+
+.stat-card:nth-child(3) .stat-icon {
+    background: #fff6e4;
+    color: #af761d;
+}
+
+.stat-card:nth-child(4) .stat-icon {
+    background: #f7eeff;
+    color: #9259ac;
+}
+
+.stat-value {
+    margin: 18px 0 7px;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+.stat-label {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* DASHBOARD SECTIONS */
+
+.section {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 24px;
+    box-shadow: 0 3px 14px rgba(23,43,68,.04);
+}
+
+.section h2 {
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.section-description {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* RATINGS DISTRIBUTION */
+
+.rating-dist-row {
+    display: grid;
+    grid-template-columns: 65px minmax(0,1fr) 60px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.rating-dist-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #384d66;
+}
+
+.rating-dist-track {
+    height: 15px;
+    background: #edf2f7;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.rating-dist-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #d7a14a, #efc264);
+    border-radius: inherit;
+}
+
+.rating-dist-count {
+    text-align: right;
+    font-size: 14px;
+    color: #526579;
+    font-weight: 700;
+}
+
+#ratings-distribution-note {
+    margin: 20px 0 0;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* TABLE HEADER AND SEARCH */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.section-heading .section-description {
+    margin-bottom: 0;
+}
+
+.search-box {
+    width: 310px;
+    max-width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d9e3ee;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    background: #fbfcfe;
+}
+
+.search-box:focus {
+    border-color: #6b9aff;
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+}
+
+/* TABLES */
+
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #e7edf4;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 16px;
+    background: #f7f9fc;
+    color: #597086;
+    font-size: 12px;
+    font-weight: 750;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    white-space: nowrap;
+}
+
+td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #eef2f6;
+    color: #334155;
+    font-size: 14px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f7faff;
+}
+
+.destination-name {
+    font-weight: 650;
+    color: var(--navy);
+}
+
+.rating-value {
+    font-weight: 750;
+    color: #a66e15;
+}
+
+.rank-number {
+    font-weight: 750;
+    color: var(--navy);
+}
+
+.rank-change {
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.rank-up {
+    color: #16a34a;
+}
+
+.rank-down {
+    color: #dc2626;
+}
+
+.rank-same {
+    color: #94a3b8;
+}
+
+.show-button {
+    display: none;
+    width: 100%;
+    margin-top: 16px;
+    padding: 13px;
+    background: #f8fbff;
+    color: var(--blue);
+    border: 1px solid #dce8fb;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.show-button:hover {
+    background: #eef5ff;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        padding: 18px;
+    }
+
+    .header h2 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 0 13px;
+        margin: 22px auto;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 17px;
+    }
+
+    .rating-dist-row {
+        grid-template-columns: 45px minmax(0,1fr) 38px;
+        gap: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+    <div>
+        <h2>Admin Dashboard</h2>
+        <p>Smart Malaysia Travel Recommendation System</p>
+    </div>
+
+    <button id="admin-logout" class="logout-btn">
+        Logout
+    </button>
+</header>
+
+<main class="container">
+
+    <!-- SYSTEM OVERVIEW -->
+
+    <div class="page-title">
+        <h2>System Overview</h2>
+        <p>Monitor users, destinations and traveller feedback.</p>
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <div class="stat-icon">♙</div>
+            </div>
+            <p class="stat-value" id="total-users">—</p>
+            <p class="stat-label">Total Users</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <div class="stat-icon">⌖</div>
+            </div>
+            <p class="stat-value" id="total-destinations">—</p>
+            <p class="stat-label">Total Destinations</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <div class="stat-icon">★</div>
+            </div>
+            <p class="stat-value" id="total-ratings">—</p>
+            <p class="stat-label">Total Ratings</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-top">
+                <div class="stat-icon">◉</div>
+            </div>
+            <p class="stat-value" id="average-rating">—</p>
+            <p class="stat-label">Average Rating</p>
+        </div>
+
+    </div>
+
+    <!-- RATINGS DISTRIBUTION -->
+
+    <section class="section">
+
+        <h2>Ratings Distribution</h2>
+
+        <p class="section-description">
+            Overview of traveller ratings from 1 to 5 stars.
+        </p>
+
+        <div id="ratings-distribution">
+            Loading ratings distribution...
+        </div>
+
+        <p id="ratings-distribution-note"></p>
+
+    </section>
+
+    <!-- DESTINATION RATINGS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>Destination Ratings and Reviews</h2>
+                <p class="section-description"
+                   id="ranking-description">
+                    Top 10 destinations based on average user ratings.
+                </p>
+            </div>
+
+            <input
+                type="text"
+                id="destination-ranking-search"
+                class="search-box"
+                placeholder="Search destination or state..."
+                autocomplete="off"
+            >
+
+        </div>
+
+        <div class="table-wrapper">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Destination</th>
+                        <th>State</th>
+                        <th>Average Rating</th>
+                        <th>Total Ratings</th>
+                    </tr>
+                </thead>
+
+                <tbody id="ratings-table">
+                    <tr>
+                        <td colspan="5">
+                            Loading destinations...
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <button
+            id="toggle-destinations"
+            class="show-button"
+            type="button">
+            Show All Destinations
+        </button>
+
+    </section>
+
+    <!-- USER REVIEWS -->
+
+    <section class="section">
+
+        <h2>Users Who Submitted Ratings and Reviews</h2>
+
+        <p class="section-description">
+            View user rating activity, including demonstration reviews.
+        </p>
+
+        <div class="table-wrapper">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Latest Rating Date</th>
+                        <th>Total Ratings</th>
+                        <th>Average Rating</th>
+                        <th>Demo Ratings</th>
+                    </tr>
+                </thead>
+
+                <tbody id="users-table">
+                    <tr>
+                        <td colspan="5">
+                            Loading reviewers...
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <button
+            id="toggle-users"
+            class="show-button"
+            type="button">
+            Show All Users
+        </button>
+
+    </section>
+
+    <p id="dashboard-error" class="error"></p>
+
+</main>
+
+<script>
+
+// =====================================
+// GLOBAL VARIABLES
+// =====================================
+
+let allDestinations = [];
+let allReviewers = [];
+
+let showAllDestinations = false;
+let showAllUsers = false;
+
+let previousRankings = {};
+let rankingMovements = {};
+
+try {
+    previousRankings = JSON.parse(
+        localStorage.getItem("previousDestinationRankings") || "{}"
+    );
+
+    rankingMovements = JSON.parse(
+        localStorage.getItem("destinationRankingMovements") || "{}"
+    );
+} catch (error) {
+    previousRankings = {};
+    rankingMovements = {};
+}
+
+
+
+// =====================================
+// HELPER FUNCTIONS
+// =====================================
+
+function getDestinationKey(destination) {
+    return String(
+        destination.destination_id ||
+        destination.id ||
+        destination.name
+    );
+}
+
+function sortDestinations(destinations) {
+    return [...destinations].sort((a, b) => {
+
+        const ratingDiff =
+            Number(b.average_rating || 0) -
+            Number(a.average_rating || 0);
+
+        if (ratingDiff !== 0) {
+            return ratingDiff;
+        }
+
+        const countDiff =
+            Number(b.total_ratings || 0) -
+            Number(a.total_ratings || 0);
+
+        if (countDiff !== 0) {
+            return countDiff;
+        }
+
+        return String(a.name || "").localeCompare(
+            String(b.name || "")
+        );
+    });
+}
+
+function createCell(value, className = "") {
+    const cell = document.createElement("td");
+    cell.textContent = value;
+
+    if (className) {
+        cell.className = className;
+    }
+
+    return cell;
+}
+
+function showTableMessage(table, message) {
+    table.replaceChildren();
+
+    const row = document.createElement("tr");
+    const cell = createCell(message);
+
+    cell.colSpan = 5;
+    row.appendChild(cell);
+    table.appendChild(row);
+}
+
+
+// =====================================
+// DESTINATION RANKING TABLE
+// =====================================
+
+function displayDestinationRankings() {
+
+    const table = document.getElementById("ratings-table");
+
+    const toggleButton =
+        document.getElementById("toggle-destinations");
+
+    const description =
+        document.getElementById("ranking-description");
+
+    const searchText =
+        document.getElementById(
+            "destination-ranking-search"
+        ).value.trim().toLowerCase();
+
+    const rankedDestinations =
+        sortDestinations(allDestinations);
+
+    const filteredDestinations = searchText
+        ? rankedDestinations.filter(destination => {
+
+            const name =
+                String(destination.name || "").toLowerCase();
+
+            const state =
+                String(destination.state || "").toLowerCase();
+
+            return name.includes(searchText)
+                || state.includes(searchText);
+
+        })
+        : rankedDestinations;
+
+    const visibleDestinations = searchText
+        ? filteredDestinations
+        : showAllDestinations
+            ? rankedDestinations
+            : rankedDestinations.slice(0, 10);
+
+    table.replaceChildren();
+
+    if (visibleDestinations.length === 0) {
+        showTableMessage(table, "No destinations found.");
+    }
+
+    visibleDestinations.forEach(destination => {
+
+        const row = document.createElement("tr");
+
+        const currentRank =
+            rankedDestinations.indexOf(destination) + 1;
+
+        const destinationKey =
+            getDestinationKey(destination);
+
+        const change =
+        Number(rankingMovements[destinationKey] || 0);
+
+        const rankCell = document.createElement("td");
+
+        const number = document.createElement("div");
+        number.className = "rank-number";
+        number.textContent = currentRank;
+
+        const indicator = document.createElement("div");
+        indicator.className = "rank-change";
+
+        
+if (change > 0) {
+    indicator.classList.add("rank-up");
+    indicator.innerHTML = `
+        <svg viewBox="0 0 28 24" width="18" height="18"
+             fill="none" stroke="currentColor"
+             stroke-width="2.5" stroke-linecap="round"
+             stroke-linejoin="round">
+            <path d="M2 19 L10 12 L15 16 L25 5"/>
+            <path d="M18 5 H25 V12"/>
+        </svg>
+        <span>+${change}</span>
+    `;
+    indicator.title = `Moved up ${change} position(s)`;
+
+        } else if (change < 0) {
+            indicator.classList.add("rank-down");
+            indicator.innerHTML = `
+                <svg viewBox="0 0 28 24" width="18" height="18"
+                    fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M2 5 L10 12 L15 8 L25 19"/>
+                    <path d="M18 19 H25 V12"/>
+                </svg>
+                <span>${change}</span>
+            `;
+            indicator.title = `Moved down ${Math.abs(change)} position(s)`;
+
+        } else {
+            indicator.classList.add("rank-same");
+            indicator.textContent = "—";
+            indicator.title = "No ranking change";
+        }
+
+
+        rankCell.append(number, indicator);
+        row.appendChild(rankCell);
+
+        row.appendChild(
+            createCell(destination.name || "Unknown", "destination-name")
+        );
+
+        row.appendChild(
+            createCell(destination.state || "—")
+        );
+
+        row.appendChild(
+            createCell(
+                Number(destination.average_rating || 0)
+                    .toFixed(2) + " ★",
+                "rating-value"
+            )
+        );
+
+        row.appendChild(
+            createCell(destination.total_ratings ?? 0)
+        );
+
+        table.appendChild(row);
+    });
+
+    toggleButton.style.display =
+        !searchText && rankedDestinations.length > 10
+            ? "block"
+            : "none";
+
+    toggleButton.textContent = showAllDestinations
+        ? "Show Top 10 Only ▲"
+        : "Show All Destinations ▼";
+
+    if (searchText) {
+
+        description.textContent =
+            `Found ${filteredDestinations.length} matching destinations.`;
+
+    } else {
+
+        description.textContent = showAllDestinations
+            ? `Showing all ${rankedDestinations.length} destinations.`
+            : "Top 10 destinations based on average user ratings.";
+    }
+}
+
+
+// =====================================
+// LOAD ADMIN ANALYTICS
+// =====================================
+
+async function loadDashboard() {
+
+    const errorElement =
+        document.getElementById("dashboard-error");
+
+    try {
+
+        const response = await fetch(
+            "/api/admin/analytics",
+            { credentials: "same-origin" }
+        );
+
+        if (response.status === 401 ||
+            response.status === 403) {
+
+            window.location.href = "/admin";
+            return;
+        }
+
+        if (!response.ok) {
+            throw new Error("Unable to load analytics.");
+        }
+
+        const data = await response.json();
+
+        document.getElementById("total-users")
+            .textContent = data.total_users ?? 0;
+
+        document.getElementById("total-destinations")
+            .textContent = data.total_destinations ?? 0;
+
+        document.getElementById("total-ratings")
+            .textContent = data.total_ratings ?? 0;
+
+        document.getElementById("average-rating")
+            .textContent = data.average_rating ?? 0;
+
+        allDestinations = data.destinations || [];
+
+        // Calculate current rankings
+
+        
+// =====================================
+// REAL RANKING MOVEMENT TRACKING
+// =====================================
+
+const sorted = sortDestinations(allDestinations);
+const currentRankings = {};
+
+sorted.forEach((destination, index) => {
+    const key = getDestinationKey(destination);
+    currentRankings[key] = index + 1;
+});
+
+const hasPreviousRanking =
+    Object.keys(previousRankings).length > 0;
+
+let rankingChanged = false;
+const newMovements = {};
+
+// Compare current ranking against last saved ranking
+if (hasPreviousRanking) {
+
+    Object.keys(currentRankings).forEach(key => {
+
+        const oldRank = previousRankings[key];
+        const newRank = currentRankings[key];
+
+        if (oldRank !== undefined) {
+
+            const difference = oldRank - newRank;
+
+            newMovements[key] = difference;
+
+            if (difference !== 0) {
+                rankingChanged = true;
+            }
+        } else {
+            // Newly ranked destination
+            newMovements[key] = 0;
+        }
+    });
+
+} else {
+    // First load: establish the ranking baseline
+    Object.keys(currentRankings).forEach(key => {
+        newMovements[key] = 0;
+    });
+}
+
+// Update indicators only when rankings actually change.
+// Otherwise keep the last recorded movement visible.
+if (!hasPreviousRanking || rankingChanged) {
+
+    rankingMovements = newMovements;
+    previousRankings = currentRankings;
+
+    try {
+        localStorage.setItem(
+            "previousDestinationRankings",
+            JSON.stringify(previousRankings)
+        );
+
+        localStorage.setItem(
+            "destinationRankingMovements",
+            JSON.stringify(rankingMovements)
+        );
+    } catch (error) {
+        console.warn("Unable to save ranking history:", error);
+    }
+}
+
+        displayDestinationRankings();
+
+        errorElement.textContent = "";
+
+    } catch (error) {
+
+        errorElement.textContent = error.message;
+    }
+}
+
+
+// =====================================
+// USER REVIEW TABLE
+// =====================================
+
+function displayRecentReviewers() {
+
+    const table =
+        document.getElementById("users-table");
+
+    const toggleButton =
+        document.getElementById("toggle-users");
+
+    const sortedUsers = [...allReviewers].sort((a, b) =>
+        String(b.latest_review || "").localeCompare(
+            String(a.latest_review || "")
+        )
+    );
+
+    const visibleUsers = showAllUsers
+        ? sortedUsers
+        : sortedUsers.slice(0, 10);
+
+    table.replaceChildren();
+
+    if (visibleUsers.length === 0) {
+        showTableMessage(table, "No reviewers found.");
+    }
+
+    visibleUsers.forEach(user => {
+
+        const row = document.createElement("tr");
+
+        let latestDate = "Unknown";
+
+        if (user.latest_review) {
+
+            const date = new Date(user.latest_review);
+
+            latestDate = Number.isNaN(date.getTime())
+                ? String(user.latest_review)
+                : date.toLocaleString();
+        }
+
+        row.appendChild(
+            createCell(user.user_id || "Unknown", "destination-name")
+        );
+
+        row.appendChild(createCell(latestDate));
+
+        row.appendChild(
+            createCell(user.total_reviews ?? 0)
+        );
+
+        row.appendChild(
+            createCell(
+                Number(user.average_rating || 0)
+                    .toFixed(1) + " ★",
+                "rating-value"
+            )
+        );
+
+        row.appendChild(
+            createCell(user.demo_reviews ?? 0)
+        );
+
+        table.appendChild(row);
+    });
+
+    toggleButton.style.display =
+        sortedUsers.length > 10 ? "block" : "none";
+
+    toggleButton.textContent = showAllUsers
+        ? "Show Recent 10 Only ▲"
+        : "Show All Users ▼";
+}
+
+
+// =====================================
+// LOAD REVIEWERS
+// =====================================
+
+async function loadUsers() {
+
+    const table = document.getElementById("users-table");
+
+    try {
+
+        const response = await fetch(
+            "/api/admin/users",
+            { credentials: "same-origin" }
+        );
+
+        if (response.status === 401 ||
+            response.status === 403) {
+
+            window.location.href = "/admin";
+            return;
+        }
+
+        if (!response.ok) {
+            throw new Error("Unable to load reviewers.");
+        }
+
+        const data = await response.json();
+
+        allReviewers = data.users || [];
+
+        displayRecentReviewers();
+
+    } catch (error) {
+
+        showTableMessage(table, error.message);
+
+        document.getElementById("toggle-users")
+            .style.display = "none";
+    }
+}
+
+
+// =====================================
+// RATINGS DISTRIBUTION CHART
+// =====================================
+
+async function loadRatingDistribution() {
+
+    const target =
+        document.getElementById("ratings-distribution");
+
+    const note =
+        document.getElementById("ratings-distribution-note");
+
+    try {
+
+        const response = await fetch(
+            "/api/travel/all-reviews",
+            { credentials: "same-origin" }
+        );
+
+        if (!response.ok) {
+            throw new Error("Ratings data unavailable.");
+        }
+
+        const data = await response.json();
+
+        const counts = [0, 0, 0, 0, 0];
+
+        for (const destination of (data.destinations || [])) {
+
+            for (const review of (destination.reviews || [])) {
+
+                const rating = Number(review.rating);
+
+                if (
+                    Number.isInteger(rating) &&
+                    rating >= 1 &&
+                    rating <= 5
+                ) {
+                    counts[rating - 1]++;
+                }
+            }
+        }
+
+        const total = counts.reduce(
+            (sum, count) => sum + count,
+            0
+        );
+
+        const maxCount = Math.max(...counts, 1);
+
+        target.replaceChildren();
+
+        for (let stars = 5; stars >= 1; stars--) {
+
+            const count = counts[stars - 1];
+
+            const row = document.createElement("div");
+            row.className = "rating-dist-row";
+
+            const label = document.createElement("span");
+            label.className = "rating-dist-label";
+            label.textContent = stars + " ★";
+
+            const track = document.createElement("div");
+            track.className = "rating-dist-track";
+
+            const bar = document.createElement("div");
+            bar.className = "rating-dist-fill";
+
+            bar.style.width =
+                (count / maxCount * 100) + "%";
+
+            track.appendChild(bar);
+
+            const value = document.createElement("span");
+            value.className = "rating-dist-count";
+            value.textContent = count;
+
+            row.append(label, track, value);
+
+            target.appendChild(row);
+        }
+
+        note.textContent =
+            `Based on ${total} valid individual ratings from saved reviews.`;
+
+    } catch (error) {
+
+        target.textContent =
+            "Unable to load rating distribution.";
+
+        note.textContent =
+            "Destination and user tables remain available.";
+    }
+}
+
+
+// =====================================
+// BUTTON EVENTS
+// =====================================
+
+// Search destinations
+
+document.getElementById(
+    "destination-ranking-search"
+).addEventListener("input", displayDestinationRankings);
+
+
+// Show All Destinations
+
+document.getElementById(
+    "toggle-destinations"
+).addEventListener("click", function() {
+
+    showAllDestinations = !showAllDestinations;
+
+    displayDestinationRankings();
+});
+
+
+// Show All Users
+
+document.getElementById(
+    "toggle-users"
+).addEventListener("click", function() {
+
+    showAllUsers = !showAllUsers;
+
+    displayRecentReviewers();
+});
+
+
+// Admin Logout
+
+document.getElementById(
+    "admin-logout"
+).addEventListener("click", async function() {
+
+    try {
+
+        const response = await fetch(
+            "/api/admin/logout",
+            {
+                method: "POST",
+                credentials: "same-origin"
+            }
+        );
+
+        if (response.ok) {
+            window.location.href = "/admin";
+        } else {
+            alert("Logout failed. Please try again.");
+        }
+
+    } catch (error) {
+        alert("Unable to log out.");
+    }
+});
+
+
+// =====================================
+// INITIALISE DASHBOARD
+// =====================================
+
+loadDashboard();
+loadUsers();
+loadRatingDistribution();
+
+// Refresh data every 30 seconds
+
+setInterval(() => {
+    loadDashboard();
+    loadUsers();
+    loadRatingDistribution();
+}, 30000);
+
+</script>
+
+</body>
+</html>

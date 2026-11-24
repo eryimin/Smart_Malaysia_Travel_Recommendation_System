@@ -1,0 +1,90 @@
+[
+    {
+        "id": "res_001",
+        "title": "Python Crash Course",
+        "type": "book",
+        "subject": "programming",
+        "difficulty": "beginner",
+        "format": "text",
+        "duration_hours": 20,
+        "url": "https://nostarch.com/pythoncrashcourse2e",
+        "tags": ["python", "coding", "basics"]
+    },
+    {
+        "id": "res_002",
+        "title": "CS50: Introduction to Computer Science",
+        "type": "course",
+        "subject": "computer science",
+        "difficulty": "beginner",
+        "format": "video",
+        "duration_hours": 50,
+        "url": "https://cs50.harvard.edu/x/",
+        "tags": ["c", "python", "algorithms", "web"]
+    },
+    {
+        "id": "res_003",
+        "title": "3Blue1Brown: Essence of Linear Algebra",
+        "type": "video",
+        "subject": "mathematics",
+        "difficulty": "intermediate",
+        "format": "video",
+        "duration_hours": 5,
+        "url": "https://www.3blue1brown.com/topics/linear-algebra",
+        "tags": ["math", "algebra", "visual"]
+    },
+    {
+        "id": "res_004",
+        "title": "Fluent Python",
+        "type": "book",
+        "subject": "programming",
+        "difficulty": "advanced",
+        "format": "text",
+        "duration_hours": 35,
+        "url": "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/",
+        "tags": ["python", "advanced", "best-practices"]
+    },
+    {
+        "id": "res_005",
+        "title": "MIT 18.06 Linear Algebra",
+        "type": "course",
+        "subject": "mathematics",
+        "difficulty": "advanced",
+        "format": "video",
+        "duration_hours": 40,
+        "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+        "tags": ["math", "algebra", "university"]
+    },
+    {
+        "id": "res_006",
+        "title": "Automate the Boring Stuff with Python",
+        "type": "book",
+        "subject": "programming",
+        "difficulty": "beginner",
+        "format": "text",
+        "duration_hours": 15,
+        "url": "https://automatetheboringstuff.com/",
+        "tags": ["python", "automation", "practical"]
+    },
+    {
+        "id": "res_007",
+        "title": "CrashCourse: Biology",
+        "type": "video",
+        "subject": "science",
+        "difficulty": "beginner",
+        "format": "video",
+        "duration_hours": 10,
+        "url": "https://thecrashcourse.com/topic/biology/",
+        "tags": ["biology", "science", "overview"]
+    },
+    {
+        "id": "res_008",
+        "title": "Deep Learning Specialization",
+        "type": "course",
+        "subject": "artificial intelligence",
+        "difficulty": "intermediate",
+        "format": "video",
+        "duration_hours": 60,
+        "url": "https://www.coursera.org/specializations/deep-learning",
+        "tags": ["ai", "machine-learning", "neural-networks"]
+    }
+]
